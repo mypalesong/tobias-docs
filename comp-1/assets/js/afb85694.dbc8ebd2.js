@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkgithub_docs=globalThis.webpackChunkgithub_docs||[]).push([[6230],{1373:o=>{o.exports=JSON.parse('{"metadata":{"permalink":"/tobias-docs/comp-1/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
