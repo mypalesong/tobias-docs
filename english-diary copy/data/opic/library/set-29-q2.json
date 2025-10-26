@@ -1,0 +1,33 @@
+{
+  "title": "How have libraries changed in your country?",
+  "diary": {
+    "korean": [
+      "한국의 도서관이 예전과 많이 달라졌어.",
+      "예전엔 그냥 책만 빌리는 곳이었는데, 지금은 복합 문화 공간이야.",
+      "시설이 정말 좋아져서 카페 같은 분위기야.",
+      "의자랑 책상도 편하고 디자인도 예뻐.",
+      "디지털화도 많이 됐어.",
+      "전자책이나 오디오북도 대출할 수 있어.",
+      "앱으로 예약하고 연장하는 것도 가능해.",
+      "프로그램도 다양하게 운영해.",
+      "강연이나 독서 토론회 같은 것도 많이 열려.",
+      "어린이 도서관도 따로 있어서 가족 단위로 오기 좋아.",
+      "야간 개방하는 곳도 많아져서 직장인들도 이용하기 편해.",
+      "전체적으로 접근성과 편의성이 많이 개선된 것 같아."
+    ],
+    "english": [
+      "Libraries in Korea have changed a lot from before.",
+      "Before, they were just places to borrow books, but now they're complex cultural spaces.",
+      "The facilities have improved so much that the atmosphere is like a café.",
+      "The chairs and desks are comfortable and the design is pretty.",
+      "Digitalization has also progressed a lot.",
+      "You can also borrow e-books and audiobooks.",
+      "You can also make reservations and renewals through the app.",
+      "They also run various programs.",
+      "Many lectures and book discussion groups are held.",
+      "There are also separate children's libraries, so it's good for families to come.",
+      "Many places have extended night hours, so it's convenient for office workers too.",
+      "Overall, I think accessibility and convenience have improved a lot."
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "title": "Describe a memorable movie you watched recently. What made it special?",
+  "diary": {
+    "korean": [
+      "지난달에 '오펜하이머' 봤는데, 진짜 인상 깊었어.",
+      "원자폭탄 만든 과학자 이야기인데, 3시간짜리 영화야.",
+      "처음엔 길어서 지루할까 걱정했는데, 완전 몰입했어.",
+      "연출이랑 음악이 정말 압도적이어서 눈을 뗄 수가 없었어.",
+      "배우들 연기도 다 훌륭했는데, 주연 배우가 특히 대단했어.",
+      "역사적 사실을 다루면서도 인간적인 고뇌를 잘 표현했어.",
+      "핵폭탄 실험 장면은 정말 소름 돋을 정도로 웅장했어.",
+      "하지만 그 이후 전쟁으로 이어진 결과를 보니 마음이 무거웠어.",
+      "영화 끝나고 한동안 생각에 잠겼어, 여운이 오래갔어.",
+      "친구랑 영화 보고 나와서 한 시간 동안 토론했어.",
+      "이런 영화는 극장에서 봐야 제맛인 것 같아.",
+      "올해 본 영화 중에 최고였어, 강추해."
+    ],
+    "english": [
+      "Last month, I watched 'Oppenheimer', and it was, like, really impressive.",
+      "It's a story about the scientist who created the atomic bomb, and it's a 3-hour movie.",
+      "At first, I worried it would be boring because it was long, but I was completely immersed.",
+      "The direction and music were really overwhelming, so I couldn't take my eyes off.",
+      "All the actors' performances were excellent, but, you know, the lead actor was especially great.",
+      "While dealing with historical facts, it well expressed human anguish.",
+      "The nuclear bomb test scene was so magnificent that it gave me goosebumps.",
+      "But seeing the results that led to war after that, well, my heart felt heavy.",
+      "After the movie ended, I was lost in thought for a while, the lingering feeling lasted long.",
+      "My friend and I came out after watching the movie and discussed for an hour.",
+      "I think movies like this should be watched in a theater to get the full experience.",
+      "It was the best movie I saw this year, I mean, I highly recommend it."
+    ]
+  }
+}

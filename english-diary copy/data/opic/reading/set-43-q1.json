@@ -1,0 +1,33 @@
+{
+  "title": "Do you like reading? What do you read?",
+  "diary": {
+    "korean": [
+      "네, 저는 책 읽는 걸 좋아해요.",
+      "음, 요즘은 주로 에세이나 자기계발서를 많이 읽는 편이에요.",
+      "예전엔 소설도 많이 읽었는데, 요즘은 시간이 없어서요.",
+      "짧게 읽을 수 있는 에세이가 더 편하더라고요.",
+      "출퇴근할 때 지하철에서 주로 읽어요.",
+      "한 달에 2-3권 정도 읽는 것 같아요.",
+      "요즘은 종이책보다 전자책으로 더 많이 읽고 있어요.",
+      "휴대폰으로 읽으니까 들고 다니기도 편하고 좋더라고요.",
+      "가끔 서점에 가서 신간 책들 구경하는 것도 좋아해요.",
+      "베스트셀러 코너에서 사람들이 어떤 책 읽는지 보고요,",
+      "괜찮아 보이면 샘플 읽기로 조금 읽어보고 구매하죠.",
+      "독서가 스트레스 해소에도 도움이 되는 것 같아요."
+    ],
+    "english": [
+      "Yes, I like reading books.",
+      "Um, these days I mostly read essays and self-development books.",
+      "I used to read a lot of novels, but I don't have time these days.",
+      "Essays that I can read quickly are more comfortable.",
+      "I mainly read on the subway during my commute.",
+      "I think I read about 2-3 books a month.",
+      "These days I read more e-books than paper books.",
+      "Reading on my phone is convenient to carry around too.",
+      "I also like going to bookstores sometimes to browse new releases.",
+      "I look at what books people are reading in the bestseller section,",
+      "and if it looks good, I read a sample and then buy it.",
+      "I think reading also helps with stress relief."
+    ]
+  }
+}

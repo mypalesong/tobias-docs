@@ -1,0 +1,33 @@
+{
+  "title": "Tell me about your favorite coffee shop. Why do you like going there?",
+  "diary": {
+    "korean": [
+      "우리 집 근처에 단골 카페가 있는데, 거기 정말 자주 가.",
+      "작은 개인 카페인데, 분위기가 아늑하고 조용해서 좋아.",
+      "인테리어가 빈티지 스타일이라 독특하고 예뻐.",
+      "무엇보다 커피 맛이 정말 좋아서 계속 찾게 돼.",
+      "사장님이 직접 로스팅한 원두를 쓰는데, 향이 정말 좋아.",
+      "메뉴도 다양하고, 계절마다 특별한 메뉴가 나와.",
+      "디저트도 맛있는데, 특히 치즈케이크가 진짜 맛있어.",
+      "조명이 따뜻한 느낌이라 저녁에 가면 더 좋아.",
+      "와이파이도 잘 터지고 콘센트도 많아서 작업하기 좋아.",
+      "주말엔 사람이 좀 많긴 한데, 그래도 가고 싶어.",
+      "사장님도 친절하시고 단골들도 많이 보여.",
+      "나만의 아지트 같은 느낌이라 계속 가게 돼."
+    ],
+    "english": [
+      "There's a café I go to regularly near my house, and I, like, go there really often.",
+      "It's a small independent café, and I like it because the atmosphere is cozy and quiet.",
+      "The interior is vintage style, so it's unique and pretty.",
+      "Most of all, the coffee tastes really good, so I keep, you know, going back.",
+      "The owner uses beans they roast themselves, and the aroma is really nice.",
+      "The menu is varied, and special menus come out each season.",
+      "The desserts are also delicious, especially the cheesecake is, like, really good.",
+      "The lighting has a warm feeling, so it's even better when I go in the evening.",
+      "The WiFi works well and there are many outlets, so it's good for working.",
+      "On weekends, there are a bit more people, but I still want to go.",
+      "The owner is kind and you can see many regulars too.",
+      "It feels like my own hideout, so I keep going."
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "title": "Compare taking the bus to taking the subway. Which do you prefer?",
+  "diary": {
+    "korean": [
+      "오늘은 지하철 대신 버스를 타봤는데, 색다른 경험이었어.",
+      "버스 정류장에서 앱으로 버스 도착 시간 확인하는데, 진짜 편하더라.",
+      "버스가 5분 뒤에 온다길래 여유롭게 기다렸어.",
+      "막상 버스가 오니까 사람들이 우르르 몰려들더라고.",
+      "교통카드 찍고 타는데, 지하철보다 요금이 더 싸서 좋았어.",
+      "창가 자리에 앉아서 밖 구경하면서 가는 게 재미있었어.",
+      "지하철은 지하로만 가니까 경치를 못 보잖아.",
+      "버스는 도로 상황에 따라 시간이 달라지는 게 단점이긴 해.",
+      "운전이 좀 거칠어서 핸드폰 보다가 멀미 날 뻔했어.",
+      "그래도 평소 안 가본 길로 가니까 새로운 가게들도 보이고 좋더라.",
+      "목적지에 거의 다 왔을 때 하차벨 눌렀는데, 소리가 크게 나서 깜짝 놀랐어.",
+      "가끔은 버스 타는 것도 나쁘지 않은 것 같아, 기분 전환도 되고."
+    ],
+    "english": [
+      "So today I took the bus instead of the subway, and, like, it was a different experience.",
+      "At the bus stop, I checked the bus arrival time on the app, and it was, you know, really convenient.",
+      "It said the bus would come in 5 minutes, so I, like, waited comfortably.",
+      "When the bus actually arrived, people, um, rushed in all at once.",
+      "I tapped my transit card to get on, and the fare was cheaper than the subway, which was, like, nice.",
+      "Sitting by the window and looking outside while riding was, you know, pretty fun.",
+      "The subway only goes underground, so, like, you can't see the scenery.",
+      "The downside of the bus is that, well, the time varies depending on traffic conditions.",
+      "The driving was a bit rough, so I, like, almost got motion sickness while looking at my phone.",
+      "Still, going through routes I don't usually take was nice because I saw, you know, new shops and places.",
+      "When we were almost at the destination, I pressed the stop button, and the sound was so loud it, like, startled me.",
+      "Sometimes taking the bus isn't bad, you know, it's like a change of pace."
+    ]
+  }
+}

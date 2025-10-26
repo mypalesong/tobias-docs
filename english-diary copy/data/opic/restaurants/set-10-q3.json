@@ -1,0 +1,33 @@
+{
+  "title": "How do you usually choose a restaurant when eating out with friends?",
+  "diary": {
+    "korean": [
+      "보통 친구들이랑 단톡방에서 먹고 싶은 거 물어봐.",
+      "한식, 양식, 일식 중에서 투표해서 결정하는 편이야.",
+      "그 다음엔 네이버나 카카오맵에서 맛집 검색해.",
+      "별점이랑 리뷰 수 보면서 평가 좋은 곳 추려.",
+      "리뷰 사진 보면서 음식 비주얼도 체크해.",
+      "가격대도 중요해서 1인당 2만원 이내로 정하려고 해.",
+      "위치도 고려하는데, 대중교통으로 가기 편한 곳 선호해.",
+      "주차 가능한지도 확인하고, 예약 필요하면 미리 전화해.",
+      "가끔 인스타그램에서 핫한 곳 보면 가보기도 해.",
+      "웨이팅 너무 길면 포기하고 다른 데 가.",
+      "다 같이 만족할 만한 곳 찾으려면 시간 좀 걸려.",
+      "그래도 맛있게 먹으면 그게 최고지."
+    ],
+    "english": [
+      "Usually, I ask what friends want to eat in the group chat.",
+      "We tend to decide by voting among Korean, Western, and Japanese food.",
+      "Then I search for good restaurants on Naver or Kakao Map.",
+      "While looking at ratings and the number of reviews, I, like, narrow down places with good reviews.",
+      "I check the food visuals while looking at review photos.",
+      "The price range is also important, so I try to set it within 20,000 won per person.",
+      "I also consider the location, and I prefer places that are easy to get to by public transportation.",
+      "I also check if parking is available, and if reservation is needed, well, I call in advance.",
+      "Sometimes I go to hot places I see on Instagram.",
+      "If the wait is too long, I give up and go somewhere else.",
+      "It takes some time to find a place that everyone will be satisfied with.",
+      "But if we eat deliciously, you know, that's the best."
+    ]
+  }
+}

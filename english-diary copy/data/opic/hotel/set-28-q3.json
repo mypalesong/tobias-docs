@@ -1,0 +1,33 @@
+{
+  "title": "Tell me about a problem you experienced at a hotel.",
+  "diary": {
+    "korean": [
+      "작년에 호텔에서 좀 불편한 경험이 있었어.",
+      "체크인했는데 방 에어컨이 고장 나 있었어.",
+      "여름이라 너무 더워서 참을 수가 없었어.",
+      "프론트에 전화해서 상황을 설명했어.",
+      "직원이 기사를 보낸다고 했는데, 한 시간이나 기다렸어.",
+      "기사가 와서 확인했는데, 바로 고칠 수 없다고 하더라고.",
+      "결국 다른 방으로 옮겨달라고 요청했어.",
+      "다행히 빈 방이 있어서 옮길 수 있었어.",
+      "짐 싸서 옮기는 게 번거로웠지만 어쩔 수 없었어.",
+      "새 방은 괜찮았는데, 처음부터 이런 문제가 없었으면 좋았을 텐데.",
+      "호텔 측에서 사과하면서 조식 무료로 제공해 줬어.",
+      "그래도 기분은 별로 안 좋았어."
+    ],
+    "english": [
+      "Last year, I had a somewhat uncomfortable experience at a hotel.",
+      "After checking in, the room's air conditioner was broken.",
+      "It was summer, so it was too hot and I couldn't stand it.",
+      "I called the front desk and explained the situation.",
+      "The staff said they would send a technician, but I waited a whole hour.",
+      "The technician came and checked, but said it couldn't be fixed right away.",
+      "Eventually I requested to move to another room.",
+      "Fortunately there was an empty room, so I could move.",
+      "Packing and moving was bothersome, but there was no choice.",
+      "The new room was okay, but it would have been nice if there hadn't been this problem from the start.",
+      "The hotel apologized and provided breakfast for free.",
+      "Still, I didn't feel very good."
+    ]
+  }
+}

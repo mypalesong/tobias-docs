@@ -1,0 +1,39 @@
+{
+  "title": "피자 주문",
+  "diary": {
+    "korean": [
+      "오늘 저녁은 요리하기 귀찮아서 피자 시켰어.",
+      "앱 켜자마자 할인 쿠폰 있는지 확인하는 게 우선이지.",
+      "쿠폰 쓰면 진짜 많이 싸지는데, 없으면 좀 아까워.",
+      "메뉴 고르는 데만 20분 걸렸는데, 선택 장애가 있나 봐.",
+      "콤비네이션이랑 페퍼로니 사이에서 계속 고민했어.",
+      "결국 둘 다 시켜버렸는데, 혼자 먹기엔 좀 많은 것 같아.",
+      "그래도 내일 아침에 먹으면 되니까, 괜찮지 뭐.",
+      "사이드로 치킨도 추가할까 했는데, 너무 과한 것 같아서 패스.",
+      "배달 시간이 30분이라는데, 항상 그것보단 오래 걸려.",
+      "초인종 울리고 피자 받는 순간이 제일 행복해, 솔직히.",
+      "박스 열자마자 치즈 냄새가 나는데, 완전 침 고여.",
+      "첫 조각 뜨거울 때 먹는 게 제일 맛있는데, 입천장 데이기 딱 좋아.",
+      "콜라랑 같이 먹으면 환상의 조합이지.",
+      "배부르게 먹고 나니 완전 행복해.",
+      "설거지 안 해도 되는 게 배달음식의 최고 장점이야."
+    ],
+    "english": [
+      "I didn't feel like cooking dinner tonight, so I ordered pizza.",
+      "As soon as I open the app, the first thing is checking if there are any discount coupons.",
+      "With a coupon it's so much cheaper, but without one it feels wasteful.",
+      "It took me 20 minutes just to choose, I think I have decision paralysis.",
+      "I kept going back and forth between combo and pepperoni.",
+      "I ended up ordering both, which is probably too much for one person.",
+      "But I can eat it tomorrow morning, so whatever, right?",
+      "I thought about adding chicken as a side, but that seemed like too much so I passed.",
+      "They said delivery would be 30 minutes, but it always takes longer than that.",
+      "The moment the doorbell rings and I get the pizza is honestly the happiest.",
+      "As soon as I open the box and smell the cheese, I'm literally drooling.",
+      "Eating the first slice when it's hot is the best, but perfect for burning the roof of your mouth.",
+      "Having it with Coke is an amazing combo.",
+      "After eating until I'm full, I'm totally happy.",
+      "Not having to do dishes is the best part of delivery food."
+    ]
+  }
+}

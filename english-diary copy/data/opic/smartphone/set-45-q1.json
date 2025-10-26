@@ -1,0 +1,33 @@
+{
+  "title": "How do you use your smartphone?",
+  "diary": {
+    "korean": [
+      "음, 저는 스마트폰을 거의 모든 일에 사용하는 것 같아요.",
+      "아침에 일어나자마자 알람 끄고 날씨 확인하는 것부터 시작하죠.",
+      "출퇴근할 때는 음악 듣거나 유튜브 보거나 뉴스 읽어요.",
+      "카카오톡으로 친구들이랑 연락하는 것도 하루에 엄청 많이 하고요.",
+      "업무 중에도 이메일 확인하고 메시지 답장하고 그래요.",
+      "점심시간에는 인스타그램이나 페이스북 같은 SNS 구경하고요.",
+      "쇼핑도 거의 다 스마트폰으로 하는 것 같아요.",
+      "쿠팡이나 네이버 쇼핑에서 뭐든지 주문하거든요.",
+      "은행 업무도 다 앱으로 하니까 은행 갈 일이 거의 없어요.",
+      "저녁에는 넷플릭스 보거나 게임도 하고요.",
+      "자기 전에는 전자책 읽거나 유튜브 보다가 자요.",
+      "솔직히 하루 종일 스마트폰을 손에서 놓질 못하는 것 같아요."
+    ],
+    "english": [
+      "Um, I think I use my smartphone for almost everything.",
+      "Starting from turning off the alarm and checking the weather as soon as I wake up in the morning.",
+      "During my commute, I listen to music, watch YouTube, or read news.",
+      "I also contact friends through KakaoTalk a lot throughout the day.",
+      "During work, I check emails and reply to messages too.",
+      "During lunch break, I browse SNS like Instagram or Facebook.",
+      "I also do almost all my shopping on my smartphone.",
+      "I order anything on Coupang or Naver Shopping.",
+      "All banking is done through apps too, so I rarely need to go to the bank.",
+      "In the evening, I watch Netflix or play games.",
+      "Before sleeping, I read e-books or watch YouTube and then sleep.",
+      "Honestly, I think I can't put down my smartphone all day long."
+    ]
+  }
+}

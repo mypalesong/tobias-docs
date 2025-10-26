@@ -1,0 +1,33 @@
+{
+  "title": "How has banking changed with mobile apps?",
+  "diary": {
+    "korean": [
+      "모바일 뱅킹이 나오면서 은행 업무가 정말 편해졌어요.",
+      "예전에는 이체 한 번 하려고 은행 가거나 ATM 찾아다녔거든요.",
+      "지금은 집에서 누워서도 다 할 수 있잖아요.",
+      "24시간 언제든지 가능하니까 정말 편리하죠.",
+      "수수료도 많이 줄었어요.",
+      "은행 앱으로 하면 수수료 무료인 경우가 많고.",
+      "타행 이체도 일정 횟수까지는 공짜고요.",
+      "보안도 많이 강화됐어요.",
+      "지문 인식, 얼굴 인식, OTP 같은 걸로 안전하게 거래할 수 있고.",
+      "다만 나이 드신 분들은 사용하기 어려워하시는 것 같아요.",
+      "우리 부모님도 처음에 많이 헷갈려 하셨거든요.",
+      "전반적으로는 정말 혁신적인 변화라고 생각해요."
+    ],
+    "english": [
+      "Since mobile banking came out, banking has become really convenient.",
+      "In the past, you had to go to the bank or find an ATM just to make one transfer.",
+      "Now you can do everything while lying down at home, right?",
+      "It's possible 24 hours anytime, so it's really convenient.",
+      "Fees have also decreased a lot.",
+      "When you do it through the bank app, fees are often free.",
+      "Transfers to other banks are also free up to a certain number of times.",
+      "Security has been strengthened a lot too.",
+      "You can do transactions safely with fingerprint recognition, face recognition, OTP and stuff.",
+      "But it seems older people find it difficult to use.",
+      "My parents were very confused at first too, you know.",
+      "Overall, I think it's a really innovative change."
+    ]
+  }
+}

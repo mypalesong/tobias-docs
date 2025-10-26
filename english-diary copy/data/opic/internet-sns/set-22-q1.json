@@ -1,0 +1,33 @@
+{
+  "title": "How often do you use the internet? What do you usually do online?",
+  "diary": {
+    "korean": [
+      "솔직히 말하면 하루 종일 인터넷을 쓴다고 봐야 해.",
+      "아침에 일어나자마자 핸드폰으로 뉴스 확인하고.",
+      "출근할 때도 유튜브나 음악 스트리밍 서비스 이용해.",
+      "회사에서 일할 때는 거의 컴퓨터로 작업하니까 인터넷 필수야.",
+      "점심시간에는 온라인 쇼핑 구경하거나 유튜브 영상 봐.",
+      "퇴근하고 집에 오면 OTT로 드라마나 영화 보고.",
+      "SNS도 자주 확인하는 편이야.",
+      "인스타그램이랑 유튜브를 제일 많이 쓰고.",
+      "가끔 온라인 게임도 하고, 친구들이랑 메신저로 연락도 많이 해.",
+      "정보 검색도 자주 하고, 맛집이나 여행지 찾을 때 인터넷 활용해.",
+      "잠들기 전까지 핸드폰 보는 습관이 있어.",
+      "인터넷 없는 생활은 상상할 수 없을 정도야."
+    ],
+    "english": [
+      "To be honest, I'd say I use the internet all day long.",
+      "As soon as I wake up in the morning, I check the news on my phone.",
+      "When commuting, I also use YouTube or music streaming services.",
+      "When working at the office, I work mostly on the computer, so the internet is essential.",
+      "During lunch break, I browse online shopping or watch YouTube videos.",
+      "After work when I get home, I watch dramas or movies on OTT.",
+      "I also, like, check SNS frequently.",
+      "I use Instagram and YouTube the most.",
+      "Sometimes I play online games and contact friends a lot through messenger.",
+      "I often search for information and use the internet when looking for restaurants or travel destinations.",
+      "I have a habit of looking at my phone until I fall asleep.",
+      "Life without the internet is, you know, unimaginable."
+    ]
+  }
+}

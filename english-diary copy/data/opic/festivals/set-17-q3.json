@@ -1,0 +1,33 @@
+{
+  "title": "How do people in your country celebrate New Year's Day?",
+  "diary": {
+    "korean": [
+      "한국에서는 양력 1월 1일이랑 음력 설날 두 번 다 기념하는 편이야.",
+      "12월 31일 밤엔 제야의 종 타종 행사가 유명해.",
+      "서울 종각에서 타종하는 걸 TV로 보거나 직접 보러 가기도 해.",
+      "친구들이랑 모여서 파티하면서 새해를 맞이하기도 해.",
+      "자정 되면 다 같이 카운트다운하고 새해 인사해.",
+      "1월 1일은 공휴일이라 쉬는 사람들이 많아.",
+      "아침에 떡국 먹는 전통이 있는데, 요즘은 안 먹는 사람들도 많아.",
+      "첫날 해돋이 보러 동해안 가는 사람들도 많아.",
+      "새해 소원 빌면서 일출 보는 게 인기 있어.",
+      "백화점이나 마트에서 새해 세일 행사도 많이 해.",
+      "신년 운세 보러 다니는 사람들도 있고.",
+      "요즘은 각자 다양한 방식으로 새해를 보내는 것 같아."
+    ],
+    "english": [
+      "In Korea, people tend to celebrate both January 1st and Lunar New Year.",
+      "On the night of December 31st, the New Year's Eve bell-ringing ceremony is famous.",
+      "People watch the bell ringing at Seoul Jonggak on TV or go to see it in person.",
+      "Sometimes people gather with friends and have parties to welcome the new year.",
+      "At midnight, everyone counts down together and greets the new year.",
+      "January 1st is a public holiday, so many people are off.",
+      "There's a tradition of eating tteokguk in the morning, but these days many people don't.",
+      "Many people also go to the east coast to see the first sunrise.",
+      "Watching the sunrise while making new year wishes is popular.",
+      "Department stores and supermarkets also have, like, many new year sale events.",
+      "Some people also go to check their new year fortune.",
+      "These days, it seems people spend the new year in various ways."
+    ]
+  }
+}

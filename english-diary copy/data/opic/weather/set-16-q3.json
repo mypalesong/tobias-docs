@@ -1,0 +1,33 @@
+{
+  "title": "What kind of weather do you like and dislike? Why?",
+  "diary": {
+    "korean": [
+      "나는 선선한 가을 날씨를 제일 좋아해.",
+      "너무 덥지도 춥지도 않아서 활동하기 딱 좋거든.",
+      "하늘도 맑고 공기도 상쾌해서 기분이 좋아져.",
+      "산책하거나 야외 활동하기에 완벽한 날씨야.",
+      "봄 날씨도 좋긴 한데, 미세먼지 때문에 좀 그래.",
+      "맑은 날엔 괜찮은데, 뿌연 날엔 밖에 나가기 싫어져.",
+      "반대로 여름 날씨는 정말 싫어.",
+      "너무 덥고 습해서 조금만 걸어도 땀이 나.",
+      "에어컨 없으면 잠도 제대로 못 자.",
+      "여름엔 밖에 나가는 것도 싫고 집에만 있고 싶어.",
+      "겨울도 추운 건 괜찮은데, 너무 춥고 바람 부는 날은 힘들어.",
+      "전체적으로 적당히 따뜻하거나 선선한 날씨가 제일 좋아."
+    ],
+    "english": [
+      "I like cool fall weather the best.",
+      "It's not too hot or cold, so it's, you know, just right for activities.",
+      "The sky is clear and the air is refreshing, so I feel good.",
+      "It's perfect weather for walking or outdoor activities.",
+      "Spring weather is good too, but, like, it's a bit annoying because of fine dust.",
+      "On clear days it's okay, but on hazy days, I don't want to go outside.",
+      "On the other hand, I really hate summer weather.",
+      "It's so hot and humid that even if I walk a little, I sweat.",
+      "Without air conditioning, I can't even sleep properly.",
+      "In summer, I don't want to go outside and just want to stay home.",
+      "Winter is okay if it's cold, but days that are too cold and windy are tough.",
+      "Overall, I like weather that's moderately warm or cool the best."
+    ]
+  }
+}

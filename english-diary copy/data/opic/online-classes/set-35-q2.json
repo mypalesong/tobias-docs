@@ -1,0 +1,33 @@
+{
+  "title": "What are advantages and disadvantages of online learning?",
+  "diary": {
+    "korean": [
+      "온라인 수업의 가장 큰 장점은 역시 시간과 장소의 자유예요.",
+      "어디서든 인터넷만 되면 수업을 들을 수 있잖아요.",
+      "카페에서 듣든, 집에서 듣든, 심지어 여행 가서도 가능하고.",
+      "비용도 오프라인보다 저렴한 경우가 많아요.",
+      "강의실 임대료 같은 게 안 들어가니까 그런 것 같고요.",
+      "반복 학습이 가능한 것도 큰 장점이에요.",
+      "단점은 역시 집중력 유지가 어렵다는 거죠.",
+      "주변에 유혹이 너무 많고, 스스로 관리해야 하니까.",
+      "질문하거나 토론하기도 좀 어색해요.",
+      "화상으로 하는 게 대면으로 하는 것만큼 자연스럽지 않거든요.",
+      "인터넷 연결이 안 좋으면 수업이 중단되는 것도 문제고.",
+      "그래도 코로나 이후로는 온라인 수업이 필수가 된 것 같아요."
+    ],
+    "english": [
+      "The biggest advantage of online classes is definitely the freedom of time and place.",
+      "You can take classes anywhere as long as you have internet, right?",
+      "Whether it's at a cafe, at home, or even when you're traveling.",
+      "The cost is often cheaper than offline classes too.",
+      "I think it's because they don't have to pay for classroom rentals and stuff.",
+      "Being able to study repeatedly is also a big advantage.",
+      "The disadvantage is that it's hard to maintain concentration.",
+      "There are too many distractions around you, and you have to manage yourself.",
+      "Asking questions or having discussions feels a bit awkward too.",
+      "Doing it over video isn't as natural as doing it face-to-face, you know.",
+      "It's also a problem when the internet connection is bad and the class gets interrupted.",
+      "But after COVID, I think online classes have become essential."
+    ]
+  }
+}

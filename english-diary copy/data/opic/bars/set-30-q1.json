@@ -1,0 +1,33 @@
+{
+  "title": "Do you like going to bars? What kind of bars do you prefer?",
+  "diary": {
+    "korean": [
+      "나는 가끔 친구들이랑 바에 가는 걸 좋아해.",
+      "주로 금요일 저녁이나 주말에 가.",
+      "시끄러운 클럽보다는 조용한 바를 선호해.",
+      "대화하면서 술 마시는 걸 좋아하거든.",
+      "칵테일 바나 와인 바 같은 데 자주 가.",
+      "분위기 좋고 조명이 은은한 곳이 좋아.",
+      "음악도 너무 크지 않고 적당한 곳.",
+      "맥주보다는 칵테일을 주로 마셔.",
+      "바텐더가 만들어주는 시그니처 칵테일 마시는 게 재밌어.",
+      "안주도 다양하게 나오는 곳을 선호해.",
+      "너무 비싸지 않으면서 분위기 좋은 곳이 베스트야.",
+      "친구들이랑 편하게 얘기하면서 스트레스 푸는 시간이야."
+    ],
+    "english": [
+      "I sometimes like going to bars with friends.",
+      "I mainly go on Friday evenings or weekends.",
+      "I prefer quiet bars rather than noisy clubs.",
+      "I like drinking while having conversations.",
+      "I often go to places like cocktail bars or wine bars.",
+      "I like places with a good atmosphere and soft lighting.",
+      "Places where the music isn't too loud, just moderate.",
+      "I mainly drink cocktails rather than beer.",
+      "It's fun to drink signature cocktails made by the bartender.",
+      "I prefer places that offer a variety of snacks.",
+      "A place with a good atmosphere that's not too expensive is the best.",
+      "It's time to relieve stress while comfortably chatting with friends."
+    ]
+  }
+}

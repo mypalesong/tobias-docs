@@ -1,0 +1,33 @@
+{
+  "title": "How often do you go to the hair salon?",
+  "diary": {
+    "korean": [
+      "보통 두 달에 한 번 정도 미용실 가는 것 같아요.",
+      "머리가 좀 길어지고 스타일이 망가지면 가거든요.",
+      "남자들은 한 달에 한 번 가는 경우가 많은데 저는 좀 덜 가는 편이에요.",
+      "항상 가는 단골 미용실이 있어요.",
+      "집 근처에 있는 작은 곳인데 원장님이랑 친해졌거든요.",
+      "스타일도 제 취향을 잘 아시고 편하게 얘기할 수 있어서 좋아요.",
+      "예약은 카톡으로 하고 대기 시간도 거의 없어요.",
+      "가격도 합리적이라 부담 없이 다닐 수 있고요.",
+      "가끔 특별한 날 전에는 좀 더 비싼 곳 가기도 해요.",
+      "펌이나 염색할 때는 전문적인 곳이 낫더라고요.",
+      "요즘은 남자들도 헤어스타일에 관심 많아서 미용실이 엄청 많아요.",
+      "선택지가 많은 건 좋은데 고르기가 어렵긴 하죠."
+    ],
+    "english": [
+      "I usually go to the hair salon about once every two months.",
+      "I go when my hair gets a bit long and the style gets ruined.",
+      "Many guys go once a month, but I go less often.",
+      "I have a regular salon I always go to.",
+      "It's a small place near my house, and I've become close with the owner.",
+      "They know my style preferences well and I can talk comfortably, so it's nice.",
+      "I make reservations through KakaoTalk and there's almost no waiting time.",
+      "The price is reasonable too, so I can go without burden.",
+      "Sometimes before a special day, I go to a more expensive place.",
+      "For perms or dyeing, professional places are better, you know.",
+      "These days, men are also very interested in hairstyles, so there are tons of salons.",
+      "Having many options is good, but it's hard to choose."
+    ]
+  }
+}

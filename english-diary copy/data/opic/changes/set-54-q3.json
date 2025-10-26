@@ -1,0 +1,33 @@
+{
+  "title": "What changes have you noticed in society?",
+  "diary": {
+    "korean": [
+      "최근 몇 년 사이에 사회가 정말 많이 변한 것 같아요.",
+      "가장 크게 느끼는 건 디지털화가 엄청 빨리 진행됐다는 거예요.",
+      "이제는 거의 모든 게 스마트폰으로 가능하잖아요.",
+      "은행, 쇼핑, 예약, 결제 등 오프라인으로 할 필요가 거의 없어졌어요.",
+      "그리고 1인 가구가 정말 많이 늘었어요.",
+      "제 주변만 봐도 혼자 사는 친구들이 대부분이거든요.",
+      "그래서 1인용 제품이나 서비스도 많이 생겼고요.",
+      "또 일하는 방식도 많이 바뀐 것 같아요.",
+      "재택근무나 유연근무제가 코로나 이후로 많이 늘었죠.",
+      "환경 문제에 대한 관심도 높아졌어요.",
+      "분리수거나 일회용품 줄이기 같은 실천들이 일상화됐고요.",
+      "전반적으로 사회가 더 개인화되고 디지털화된 것 같아요."
+    ],
+    "english": [
+      "I think society has really changed a lot in recent years.",
+      "What I feel most is that digitalization has progressed incredibly fast.",
+      "Now almost everything is possible with a smartphone.",
+      "Banking, shopping, reservations, payments - there's almost no need to do them offline.",
+      "And single-person households have really increased a lot.",
+      "Just looking around me, most of my friends live alone.",
+      "So many products and services for single people have also appeared.",
+      "Also, the way of working seems to have changed a lot.",
+      "Remote work and flexible work systems increased a lot after COVID.",
+      "Interest in environmental issues has also increased.",
+      "Practices like separating recycling and reducing disposable products have become routine.",
+      "Overall, I think society has become more individualized and digitalized."
+    ]
+  }
+}

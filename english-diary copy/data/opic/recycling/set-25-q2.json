@@ -1,0 +1,33 @@
+{
+  "title": "How has recycling culture changed in your country?",
+  "diary": {
+    "korean": [
+      "한국의 재활용 문화가 정말 많이 발전했어.",
+      "예전엔 그냥 쓰레기를 한데 모아서 버렸는데, 지금은 세분화됐어.",
+      "분리수거 규정도 점점 엄격해지고 있어.",
+      "위반하면 과태료도 부과되니까 다들 열심히 해.",
+      "아파트마다 분리수거장이 잘 갖춰져 있어.",
+      "요즘은 투명 페트병을 따로 모으기도 해.",
+      "정부에서도 환경 보호 캠페인을 많이 하고.",
+      "카페에서도 일회용 컵 사용이 많이 줄었어.",
+      "대신 다회용 컵을 쓰거나 텀블러 할인을 해줘.",
+      "플라스틱 빨대 대신 종이 빨대 쓰는 곳도 많아졌고.",
+      "사람들의 인식이 많이 변했다는 게 느껴져.",
+      "환경을 생각하는 문화가 점점 자리 잡는 것 같아."
+    ],
+    "english": [
+      "Recycling culture in Korea has really developed a lot.",
+      "Before, we just collected garbage together and threw it away, but now it's subdivided.",
+      "Recycling regulations are also becoming stricter.",
+      "If you violate them, fines are imposed, so everyone does it diligently.",
+      "Each apartment complex has well-equipped recycling stations.",
+      "These days, transparent PET bottles are also collected separately.",
+      "The government also runs many environmental protection campaigns.",
+      "The use of disposable cups in cafés has also decreased a lot.",
+      "Instead, they use reusable cups or give tumbler discounts.",
+      "Many places have also started using paper straws instead of plastic ones.",
+      "I can feel that people's awareness has changed a lot.",
+      "It seems like an environmentally conscious culture is gradually taking root."
+    ]
+  }
+}

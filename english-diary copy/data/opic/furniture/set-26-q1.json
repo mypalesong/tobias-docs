@@ -1,0 +1,33 @@
+{
+  "title": "Tell me about the furniture in your home. What do you have?",
+  "diary": {
+    "korean": [
+      "우리 집은 기본적인 가구들로 구성되어 있어.",
+      "거실에는 소파랑 TV 거치대, 작은 테이블이 있어.",
+      "소파는 2인용인데, 색깔은 베이지색이야.",
+      "침실에는 퀸 사이즈 침대랑 작은 협탁이 있어.",
+      "옷장은 붙박이장이라 따로 안 샀어.",
+      "책상은 작업실 겸 공부방에 있는데, IKEA에서 산 거야.",
+      "의자도 거기서 같이 샀는데, 오래 앉아도 편해.",
+      "주방에는 식탁이랑 의자 네 개가 있어.",
+      "원래 식탁이 없었는데, 최근에 새로 들였어.",
+      "수납공간이 부족해서 선반 몇 개 추가로 샀고.",
+      "전체적으로 미니멀한 스타일을 선호해.",
+      "너무 많은 가구는 공간을 좁게 만드는 것 같아."
+    ],
+    "english": [
+      "My home consists of basic furniture.",
+      "In the living room, there's a sofa, TV stand, and small table.",
+      "The sofa is for two people, and the color is beige.",
+      "In the bedroom, there's a queen-size bed and a small nightstand.",
+      "The wardrobe is built-in, so I didn't buy it separately.",
+      "The desk is in the workspace/study room, and I bought it from IKEA.",
+      "I also bought the chair there, and it's comfortable even after sitting for a long time.",
+      "In the kitchen, there's a dining table and four chairs.",
+      "I originally didn't have a dining table, but I recently got a new one.",
+      "Storage space was insufficient, so I bought a few additional shelves.",
+      "Overall, I prefer a minimal style.",
+      "Too much furniture seems to make the space narrow."
+    ]
+  }
+}

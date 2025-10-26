@@ -1,0 +1,35 @@
+{
+  "title": "월요병",
+  "diary": {
+    "korean": [
+      "월요일 아침이 진짜 힘들어, 알람 소리만 들어도 우울해.",
+      "주말이 너무 빨리 지나간 것 같아서, 뭔가 억울해.",
+      "출근 준비하면서 이미 피곤한데, 하루가 어떻게 지나갈지 막막해.",
+      "지하철에서 사람들 표정 보면 다들 나랑 똑같아 보여.",
+      "회사 도착해서 컴퓨터 켜는 순간이 제일 현실감 들어.",
+      "이메일 확인하는데, 벌써 쌓여있는 업무들이 한숨 나와.",
+      "커피 한 잔 마시면서 정신 차리려고 하는데, 잘 안 돼.",
+      "회의 스케줄 보니까 오늘 회의가 세 개나 있어, 진짜 싫어.",
+      "점심시간까지 버티는 게 목표인데, 시간이 안 가.",
+      "동료들이랑 얘기하면서 다들 월요일 힘들어하는 거 보면 위로돼.",
+      "그래도 일주일 시작이니까, 어떻게든 해내야지.",
+      "퇴근 시간만 기다리는 게 문제인데, 뭐 어쩔 수 없어.",
+      "내일은 화요일이니까 조금 나아지겠지, 라고 스스로 위로해."
+    ],
+    "english": [
+      "Monday mornings are really hard, just hearing the alarm sound makes me depressed.",
+      "The weekend seems like it went by too fast, so it feels kind of unfair.",
+      "I'm already tired while getting ready for work, and the day ahead seems daunting.",
+      "Looking at people's faces on the subway, everyone looks exactly like me.",
+      "The moment I arrive at the office and turn on my computer is when reality really hits.",
+      "Checking emails, and the tasks already piling up make me sigh.",
+      "I try to wake myself up with a cup of coffee, but it doesn't really work.",
+      "Looking at my meeting schedule, I have three meetings today, I really hate it.",
+      "My goal is to make it to lunch, but time doesn't pass.",
+      "Talking with coworkers and seeing that everyone struggles with Mondays is comforting.",
+      "Still, it's the start of the week, so I have to get through it somehow.",
+      "The problem is just waiting for quitting time, but what can you do.",
+      "I comfort myself thinking tomorrow's Tuesday so it'll be a bit better."
+    ]
+  }
+}

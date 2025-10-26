@@ -1,0 +1,33 @@
+{
+  "title": "Tell me about the types of movies you enjoy watching. What attracts you to them?",
+  "diary": {
+    "korean": [
+      "나는 액션 영화랑 스릴러 영화 정말 좋아해.",
+      "손에 땀 쥐는 장면이 많아서 몰입감이 엄청나.",
+      "특히 마블 시리즈 나오면 개봉일에 꼭 보러 가.",
+      "CGI 화려한 거 보면 스트레스가 확 풀려.",
+      "스릴러는 반전 있는 게 재미있어, 결말 예측하면서 보는 재미가 있어.",
+      "로맨스 영화는 가끔 기분 전환용으로 봐.",
+      "감동적인 스토리 나오면 눈물 나올 때도 있어.",
+      "공포 영화는 혼자는 못 보고, 친구랑 같이 봐야 해.",
+      "코미디 영화는 가볍게 웃고 싶을 때 딱이야.",
+      "다큐멘터리도 가끔 보는데, 배우는 게 많아서 좋아.",
+      "애니메이션도 좋아하는데, 디즈니나 픽사 작품 거의 다 봤어.",
+      "장르 가리지 않고 재미있으면 다 보는 편이야."
+    ],
+    "english": [
+      "I really like action movies and thriller movies.",
+      "There are many nail-biting scenes, so, like, the immersion is tremendous.",
+      "Especially when a Marvel series comes out, I definitely go see it on opening day.",
+      "When I see flashy CGI, stress is completely relieved.",
+      "Thrillers with plot twists are fun, there's fun in watching while predicting the ending.",
+      "I sometimes watch romance movies, you know, for a change of mood.",
+      "When a touching story comes out, sometimes tears come out.",
+      "I can't watch horror movies alone, I have to watch with a friend.",
+      "Comedy movies are perfect when I want to laugh lightly.",
+      "I also sometimes watch documentaries, and I like that there's a lot to learn.",
+      "I also like animation, I've seen almost all Disney or Pixar works.",
+      "I tend to watch everything if it's fun, well, regardless of genre."
+    ]
+  }
+}

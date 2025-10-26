@@ -1,0 +1,33 @@
+{
+  "title": "Tell me about your neighborhood. What do you like about it?",
+  "diary": {
+    "korean": [
+      "우리 동네는 조용한 주택가라서 살기 정말 좋아.",
+      "역까지는 걸어서 10분 정도 걸리는데, 출퇴근하기 딱 좋은 거리야.",
+      "편의점이 바로 앞에 있어서 급할 때 너무 편해.",
+      "카페도 몇 군데 있는데, 주말에 브런치 먹으러 자주 가.",
+      "동네 마트가 24시간이라 언제든 장 보러 갈 수 있어서 좋아.",
+      "공원이 가까워서 저녁에 산책하기 딱 좋더라고.",
+      "요즘엔 강아지 산책시키는 사람들 많이 보여, 귀여워.",
+      "주변에 병원도 있고 약국도 있어서 아플 때 편해.",
+      "버스 정류장도 가까워서 교통이 진짜 편리해.",
+      "치안도 좋은 편이라 밤늦게 들어와도 안전하다고 느껴.",
+      "동네 사람들도 조용하고 친절해서 살기 편해.",
+      "여기 이사 온 게 정말 잘한 선택인 것 같아."
+    ],
+    "english": [
+      "Well, my neighborhood is, like, a quiet residential area, so it's really nice to live here.",
+      "The station is about a 10-minute walk, which is, you know, perfect for commuting.",
+      "There's a convenience store right in front, which is super handy when I, like, need something quickly.",
+      "There are a few cafés too, and I often go for brunch on weekends, you know.",
+      "The local supermarket is open 24 hours, so I can, like, go grocery shopping anytime, which is great.",
+      "There's a park nearby, which is, um, perfect for evening walks.",
+      "These days I see lots of people walking their dogs, and they're, like, so cute.",
+      "There's a hospital and pharmacy nearby too, which is, you know, convenient when I'm sick.",
+      "The bus stop is also pretty close, so, well, transportation is really convenient.",
+      "The area is, like, pretty safe, so I feel secure even when coming home late at night.",
+      "The neighbors are quiet and friendly, which, you know, makes it comfortable to live here.",
+      "I think moving here was, like, really a good choice."
+    ]
+  }
+}

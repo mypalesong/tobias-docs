@@ -1,0 +1,33 @@
+{
+  "title": "How do you usually spend weekends?",
+  "diary": {
+    "korean": [
+      "주말에는 주로 집에서 쉬면서 보내는 편이에요.",
+      "평일에 회사 다니느라 피곤해서 토요일 아침엔 늦잠 자요.",
+      "보통 11시나 12시쯤 일어나는 것 같아요.",
+      "일어나서 브런치로 간단하게 먹고, 집 청소하고 그래요.",
+      "밀린 빨래도 하고, 방 정리도 하고 그런 집안일 하죠.",
+      "오후에는 넷플릭스 보거나 유튜브 보면서 쉬어요.",
+      "가끔 친구들 만나서 카페 가거나 영화 보러 가기도 하고요.",
+      "일요일에는 좀 더 활동적으로 보내려고 노력해요.",
+      "운동하러 가거나 산책하거나 그렇게 밖에 나가곤 해요.",
+      "저녁에는 다음 주 준비하면서 조용히 보내고요.",
+      "월요병 안 걸리려고 일요일 밤엔 일찍 자려고 해요.",
+      "주말이 너무 짧게 느껴져서 항상 아쉬워요."
+    ],
+    "english": [
+      "On weekends, I mainly spend time resting at home.",
+      "I'm tired from going to work on weekdays, so I sleep in on Saturday morning.",
+      "I think I usually wake up around 11 or 12 o'clock.",
+      "After waking up, I eat something simple for brunch and clean the house.",
+      "I do housework like doing piled-up laundry and organizing my room.",
+      "In the afternoon, I rest while watching Netflix or YouTube.",
+      "Sometimes I meet friends and go to cafes or go to see movies.",
+      "On Sundays, I try to spend time more actively.",
+      "I go out to exercise or take walks.",
+      "In the evening, I spend time quietly while preparing for the next week.",
+      "I try to sleep early on Sunday night to avoid the Monday blues.",
+      "Weekends always feel too short, so I'm always disappointed."
+    ]
+  }
+}

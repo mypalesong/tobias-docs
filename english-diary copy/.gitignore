@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# Server files (not needed for GitHub Pages)
+server.js
+package.json
+package-lock.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.log

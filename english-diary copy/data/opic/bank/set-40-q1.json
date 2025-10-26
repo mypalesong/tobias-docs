@@ -1,0 +1,33 @@
+{
+  "title": "How do you usually do your banking?",
+  "diary": {
+    "korean": [
+      "요즘은 거의 모든 은행 업무를 모바일로 처리해요.",
+      "계좌 이체나 잔액 조회는 다 앱으로 하거든요.",
+      "토스나 카카오뱅크 같은 인터넷 은행도 쓰고 있어요.",
+      "수수료가 없거나 저렴해서 좋더라고요.",
+      "ATM도 가끔 이용하는데 현금 뽑을 때 정도예요.",
+      "요즘은 카드 결제를 주로 해서 현금 쓸 일이 별로 없거든요.",
+      "공과금 같은 건 자동이체로 다 설정해놨고요.",
+      "적금이나 예금도 앱에서 바로 가입할 수 있어서 편해요.",
+      "은행 지점은 정말 특별한 일 아니면 안 가요.",
+      "대출 상담받을 때나 통장 만들 때 정도?",
+      "그것도 요즘은 비대면으로 가능한 경우가 많아서.",
+      "은행 가는 게 옛날처럼 번거롭지 않아졌어요."
+    ],
+    "english": [
+      "These days, I handle almost all banking through mobile.",
+      "Account transfers and balance checks are all done through apps, you know.",
+      "I also use internet banks like Toss or Kakao Bank.",
+      "They're good because the fees are free or cheap.",
+      "I sometimes use ATMs too, mostly when I withdraw cash.",
+      "These days I mainly use card payments, so I don't really use cash.",
+      "Things like utility bills are all set up for automatic transfer.",
+      "It's convenient because I can sign up for savings or deposits right in the app.",
+      "I really don't go to bank branches unless it's something special.",
+      "Like when I need a loan consultation or to open a new account?",
+      "Even those can often be done remotely these days.",
+      "Going to the bank isn't as troublesome as it used to be."
+    ]
+  }
+}

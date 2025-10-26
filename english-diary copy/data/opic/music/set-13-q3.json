@@ -1,0 +1,33 @@
+{
+  "title": "When and where do you usually listen to music? Describe your music listening habits.",
+  "diary": {
+    "korean": [
+      "나는 하루 종일 음악을 듣는다고 해도 과언이 아니야.",
+      "아침에 일어나자마자 스피커로 음악 틀어놓고 씻어.",
+      "출근할 때는 무조건 이어폰 끼고 음악 들으면서 가.",
+      "지하철이나 버스에서 음악 들으면 시간이 금방 가더라고.",
+      "회사에서 일할 때도 가끔 조용한 음악 틀어놓고 집중해.",
+      "점심시간에는 카페에서 커피 마시면서 새로운 노래 찾아듣기도 해.",
+      "집에 오면 블루투스 스피커로 음악 틀어놓고 요리하거나 청소해.",
+      "운동할 때도 신나는 음악 들으면 더 힘이 나.",
+      "잠자기 전엔 잔잔한 음악 들으면서 하루를 정리해.",
+      "주말엔 카페에서 책 읽으면서 재즈나 클래식 같은 음악 들어.",
+      "가끔 드라이브할 때도 음악 크게 틀고 가는 게 좋아.",
+      "음악이 없으면 뭔가 허전한 느낌이 들어서 항상 듣는 편이야."
+    ],
+    "english": [
+      "It's no exaggeration to say I listen to music all day long.",
+      "As soon as I wake up in the morning, I, like, play music on the speaker while washing up.",
+      "When I commute, I always, you know, put on my earphones and listen to music.",
+      "Listening to music on the subway or bus makes time, like, pass by quickly.",
+      "Even when working at the office, I sometimes play quiet music and concentrate.",
+      "During lunch break, I also, like, look for new songs while drinking coffee at a café.",
+      "When I get home, I play music on my Bluetooth speaker while cooking or cleaning.",
+      "When exercising, listening to upbeat music gives me more energy.",
+      "Before sleeping, I, you know, organize my day while listening to calm music.",
+      "On weekends, I listen to music like jazz or classical while reading at a café.",
+      "Sometimes when driving, I also like to, like, turn up the music loud.",
+      "Without music, I feel something is missing, so I always, you know, listen to it."
+    ]
+  }
+}

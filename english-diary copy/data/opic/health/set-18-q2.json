@@ -1,0 +1,33 @@
+{
+  "title": "Tell me about a time when you were sick. What did you do?",
+  "diary": {
+    "korean": [
+      "얼마 전에 감기 걸려서 며칠 동안 고생했어.",
+      "처음엔 목이 좀 아프더니 점점 심해지더라고.",
+      "열도 나고 기침도 심해져서 일도 제대로 못했어.",
+      "약국 가서 감기약 사 먹었는데 잘 낫지 않았어.",
+      "결국 병원 가서 진료 받고 처방전 받았어.",
+      "의사 선생님이 충분히 쉬라고 하셔서 회사에 연차 냈어.",
+      "집에서 푹 쉬면서 따뜻한 물 많이 마셨어.",
+      "죽이랑 국 같은 소화 잘 되는 음식 위주로 먹었어.",
+      "비타민C도 챙겨 먹고 일찍 자려고 노력했어.",
+      "3일 정도 푹 쉬니까 많이 좋아지더라고.",
+      "건강의 소중함을 다시 한번 느꼈어.",
+      "그 이후로는 평소에 건강 관리를 더 신경 쓰게 됐어."
+    ],
+    "english": [
+      "A while ago, I caught a cold and suffered for a few days.",
+      "At first, my throat hurt a little, and then it, like, gradually got worse.",
+      "I had a fever and severe coughing, so I couldn't work properly.",
+      "I went to the pharmacy and bought cold medicine, but it didn't get better.",
+      "Eventually I went to the hospital, got examined, and received a prescription.",
+      "The doctor told me to rest enough, so I took a day off from work.",
+      "I rested well at home and drank lots of warm water.",
+      "I mainly ate easily digestible foods like porridge and soup.",
+      "I also took vitamin C and tried to sleep early.",
+      "After resting well for about 3 days, I got, you know, much better.",
+      "I felt the preciousness of health once again.",
+      "Since then, I've been paying more attention to health management."
+    ]
+  }
+}

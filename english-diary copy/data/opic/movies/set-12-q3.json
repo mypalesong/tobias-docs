@@ -1,0 +1,33 @@
+{
+  "title": "Do you prefer watching movies at home or in the theater? Why?",
+  "diary": {
+    "korean": [
+      "둘 다 장단점이 있어서 상황에 따라 다른 것 같아.",
+      "극장은 화면 크고 음향 좋아서 몰입감이 확실히 달라.",
+      "특히 액션이나 SF 영화는 무조건 극장에서 봐야 해.",
+      "팝콘 먹으면서 영화 보는 것도 극장만의 재미야.",
+      "하지만 표값이 비싸서 부담될 때가 있어.",
+      "주말엔 사람 많아서 좌석 예매하기도 힘들어.",
+      "영화 보는 도중에 다른 사람 소음 때문에 집중 안 될 때도 있어.",
+      "집에서 보면 편하고 시간 제약 없이 볼 수 있어.",
+      "OTT 구독하면 영화 선택지도 많고 언제든 볼 수 있어.",
+      "일시정지하고 화장실 갈 수 있는 것도 편해.",
+      "하지만 집에선 유혹이 많아서 집중하기 어려워.",
+      "결론은 블록버스터는 극장, 나머지는 집에서 보는 게 최고야."
+    ],
+    "english": [
+      "Both have pros and cons, so I think it depends on the situation.",
+      "The theater has a big screen and good sound, so, like, the immersion is definitely different.",
+      "Especially action or SF movies must be watched in the theater.",
+      "Watching movies while eating popcorn is also fun unique to theaters.",
+      "But the ticket price is expensive, so sometimes it's burdensome.",
+      "On weekends, there are many people, so it's hard to reserve seats.",
+      "Sometimes during the movie, I can't concentrate because of other people's noise.",
+      "If I watch at home, it's comfortable and I can watch without time constraints.",
+      "If I subscribe to OTT, there are many movie options and I can watch anytime.",
+      "Being able to pause and go to the bathroom is also convenient.",
+      "But at home, there are many temptations, so it's hard to concentrate.",
+      "The conclusion is that blockbusters are best in theaters, and the rest, well, are best at home."
+    ]
+  }
+}

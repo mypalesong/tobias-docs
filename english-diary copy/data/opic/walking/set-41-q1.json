@@ -1,0 +1,33 @@
+{
+  "title": "Do you like walking? Where do you usually walk?",
+  "diary": {
+    "korean": [
+      "네, 저는 걷기를 정말 좋아해요.",
+      "음, 주로 집 근처 한강공원에서 자주 걸어요.",
+      "특히 저녁 시간에 산책하는 걸 좋아하는데요,",
+      "그때가 사람도 적고 날씨도 시원해서 좋더라고요.",
+      "주말에는 남산이나 북한산 둘레길도 가끔 가요.",
+      "뭐, 그렇게 힘든 등산은 아니고 가볍게 걷는 정도예요.",
+      "걷다 보면 스트레스도 풀리고 머리도 맑아지는 느낌이 들어서요.",
+      "요즘은 만보기 앱으로 하루에 8천보 정도 걷는 게 목표예요.",
+      "아, 그리고 회사 근처 점심시간에도 짧게 산책하곤 해요.",
+      "앉아만 있으면 몸도 안 좋고 졸리기도 하고 그래서요.",
+      "날씨 좋은 날엔 정말 걷는 게 최고인 것 같아요.",
+      "건강에도 좋고 돈도 안 드니까 일석이조죠."
+    ],
+    "english": [
+      "Yes, I really love walking.",
+      "Um, I usually walk at Hangang Park near my house.",
+      "I especially like taking walks in the evening,",
+      "because there are fewer people and the weather is cooler then.",
+      "On weekends, I sometimes go to Namsan or Bukhansan trails.",
+      "Well, it's not like hard hiking, just light walking.",
+      "When I walk, I feel like stress melts away and my head clears up.",
+      "These days, my goal is to walk about 8,000 steps a day using a pedometer app.",
+      "Oh, and I also take short walks during lunch break near my office.",
+      "If I just sit all day, it's bad for my body and I get sleepy too.",
+      "On nice weather days, I think walking is really the best.",
+      "It's good for health and doesn't cost money, so it's killing two birds with one stone."
+    ]
+  }
+}

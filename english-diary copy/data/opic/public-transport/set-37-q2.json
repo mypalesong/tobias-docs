@@ -1,0 +1,33 @@
+{
+  "title": "Describe a problem you experienced on public transportation.",
+  "diary": {
+    "korean": [
+      "작년 여름에 지하철에 갇혔던 적이 있어요.",
+      "퇴근 시간이었는데 갑자기 전동차가 터널 안에서 멈춘 거예요.",
+      "처음에는 금방 다시 출발할 줄 알았거든요.",
+      "근데 10분, 20분 지나도 계속 서 있는 거예요.",
+      "에어컨도 제대로 안 나오고 사람들은 꽉 차 있고.",
+      "정말 답답하고 숨 쉬기 힘들더라고요.",
+      "안내 방송도 별로 없어서 뭐가 문제인지도 모르겠고.",
+      "결국 40분 정도 있다가 겨우 다음 역으로 이동했어요.",
+      "신호 시스템에 문제가 생겼다고 하더라고요.",
+      "그날 약속 시간에 한참 늦었죠.",
+      "그 이후로는 중요한 약속 있으면 일찍 출발해요.",
+      "대중교통도 완벽하진 않으니까 여유 시간을 두는 게 좋더라고요."
+    ],
+    "english": [
+      "Last summer, I got stuck on the subway.",
+      "It was during evening rush hour when suddenly the train stopped in the tunnel.",
+      "At first, I thought we'd start moving again soon, you know.",
+      "But 10 minutes, 20 minutes passed and we were still stopped.",
+      "The air conditioning wasn't working properly and the car was packed with people.",
+      "It was really stuffy and hard to breathe.",
+      "There weren't many announcements either, so I didn't even know what the problem was.",
+      "Finally, after about 40 minutes, we barely made it to the next station.",
+      "They said there was a problem with the signal system.",
+      "I was really late for my appointment that day.",
+      "Since then, when I have important appointments, I leave early.",
+      "Public transportation isn't perfect either, so it's better to give yourself extra time."
+    ]
+  }
+}

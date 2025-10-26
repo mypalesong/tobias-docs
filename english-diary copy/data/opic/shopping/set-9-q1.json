@@ -1,0 +1,33 @@
+{
+  "title": "Tell me about your shopping habits. Where and how do you usually shop?",
+  "diary": {
+    "korean": [
+      "요즘엔 온라인 쇼핑을 훨씬 많이 하는 것 같아.",
+      "쿠팡이나 네이버 쇼핑 앱 거의 매일 들어가봐.",
+      "필요한 거 있으면 바로 검색해서 가격 비교해.",
+      "리뷰 꼼꼼히 읽어보고 별점 높은 거 주문해.",
+      "배송 빠른 게 제일 좋은 것 같아, 당일배송 되면 더 좋고.",
+      "옷은 가끔 오프라인 매장 가서 입어보고 사.",
+      "온라인으로 사면 사이즈 안 맞을 때 교환하기 귀찮거든.",
+      "주말에 친구랑 쇼핑몰 가는 것도 좋아해.",
+      "구경하면서 커피 마시고 수다 떠는 재미가 있어.",
+      "세일 기간엔 꼭 쇼핑하러 가, 할인율 높을 때 몰아서 사.",
+      "충동구매 자주 하는 편인데, 나중에 후회할 때도 있어.",
+      "그래도 쇼핑하는 게 스트레스 해소에 도움 돼."
+    ],
+    "english": [
+      "These days, I think I do online shopping, like, much more.",
+      "I go into Coupang or Naver Shopping app, you know, almost every day.",
+      "If there's something I need, I immediately search and compare prices.",
+      "I read reviews carefully and order, well, ones with high ratings.",
+      "Fast delivery is the best thing, and it's even better if it's same-day delivery.",
+      "For clothes, I sometimes go to offline stores, try them on, and buy.",
+      "If I buy online, it's annoying to exchange when the size doesn't fit.",
+      "I also like going to shopping malls with friends on weekends.",
+      "There's fun in drinking coffee and chatting while looking around.",
+      "During sale periods, I definitely go shopping, buying in bulk when the discount rate is high.",
+      "I tend to make impulse purchases often, but, I mean, sometimes I regret it later.",
+      "Still, shopping helps relieve stress."
+    ]
+  }
+}

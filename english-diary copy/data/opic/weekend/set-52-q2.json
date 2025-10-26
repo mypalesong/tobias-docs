@@ -1,0 +1,33 @@
+{
+  "title": "Tell me about a recent weekend.",
+  "diary": {
+    "korean": [
+      "지난주 주말에는 좀 특별하게 보냈어요.",
+      "토요일에 대학 동창들 모임이 있었거든요.",
+      "졸업한 지 2년 만에 처음 다 모인 거였어요.",
+      "홍대에서 만나서 점심 먹고 카페 가서 수다 떨었어요.",
+      "다들 회사 생활하면서 겪은 일들 얘기하고 그랬죠.",
+      "그러다가 저녁에는 술집 가서 치킨이랑 맥주 마시면서 떠들었어요.",
+      "오랜만에 만나니까 할 얘기가 정말 많더라고요.",
+      "밤 11시까지 있다가 집에 왔는데, 정말 재밌었어요.",
+      "일요일에는 전날 술을 너무 많이 마셔서 숙취로 고생했어요.",
+      "거의 하루 종일 침대에 누워서 쉬었던 것 같아요.",
+      "저녁때쯤 되니까 좀 괜찮아져서 해장국 먹으러 나갔어요.",
+      "주말이 순식간에 지나갔지만, 친구들 만나서 좋았어요."
+    ],
+    "english": [
+      "Last weekend I spent it a bit specially.",
+      "There was a college alumni gathering on Saturday.",
+      "It was the first time we all gathered 2 years after graduation.",
+      "We met in Hongdae, had lunch, went to a cafe, and chatted.",
+      "Everyone talked about things they experienced while working at companies.",
+      "Then in the evening we went to a bar, ate chicken and drank beer while talking.",
+      "Since we met after a long time, there was really a lot to talk about.",
+      "I stayed until 11 PM and came home, and it was really fun.",
+      "On Sunday, I suffered from a hangover because I drank too much the day before.",
+      "I think I rested lying in bed almost all day.",
+      "Around evening time I felt a bit better, so I went out to eat hangover soup.",
+      "The weekend passed in an instant, but it was good to meet friends."
+    ]
+  }
+}

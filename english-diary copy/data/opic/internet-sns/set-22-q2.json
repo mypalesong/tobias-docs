@@ -1,0 +1,33 @@
+{
+  "title": "What social media platforms do you use? Tell me how you use them.",
+  "diary": {
+    "korean": [
+      "나는 여러 SNS를 쓰는데, 용도별로 다르게 사용해.",
+      "인스타그램은 거의 매일 확인하는 편이야.",
+      "주로 친구들 일상이나 여행 사진 구경하고, 나도 가끔 사진 올려.",
+      "맛집이나 카페 정보도 인스타그램에서 많이 찾아.",
+      "유튜브는 영상 보는 용도로 쓰는데, 구독한 채널이 정말 많아.",
+      "음악, 요리, 여행 관련 콘텐츠를 주로 봐.",
+      "페이스북은 예전만큼은 안 쓰지만, 가끔 친구 소식 확인해.",
+      "카카오톡은 메신저로 필수적으로 쓰고 있어.",
+      "단체 채팅방도 여러 개 있고, 친구들이랑 연락할 때 항상 써.",
+      "트위터는 실시간 트렌드나 뉴스 확인할 때 가끔 봐.",
+      "요즘엔 릴스나 쇼츠 같은 짧은 영상 콘텐츠를 많이 보게 돼.",
+      "시간 가는 줄 모르고 계속 보게 되는 게 문제야."
+    ],
+    "english": [
+      "I use several SNS platforms, but I use them differently for different purposes.",
+      "I check Instagram almost every day.",
+      "I mainly look at friends' daily lives or travel photos, and sometimes I, like, post photos too.",
+      "I also find a lot of restaurant or café information on Instagram.",
+      "I use YouTube for watching videos, and I have really many subscribed channels.",
+      "I mainly watch music, cooking, and travel-related content.",
+      "I don't use Facebook as much as before, but sometimes I check friends' updates.",
+      "I use KakaoTalk as a messenger essentially.",
+      "There are several group chats, and I always use it when, you know, contacting friends.",
+      "I occasionally check Twitter for real-time trends or news.",
+      "These days, I watch a lot of short video content like Reels or Shorts.",
+      "The problem is I keep watching without realizing how time passes."
+    ]
+  }
+}

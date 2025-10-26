@@ -1,0 +1,33 @@
+{
+  "title": "How often do you go to the hospital? What do you usually go for?",
+  "diary": {
+    "korean": [
+      "나는 자주 병원에 가는 편은 아니야.",
+      "건강한 편이라 아프지 않으면 잘 안 가.",
+      "보통 1년에 한두 번 정도 가는 것 같아.",
+      "감기 걸렸을 때나 건강검진 받으러 갈 때 가.",
+      "치과는 6개월에 한 번씩 스케일링 받으러 가.",
+      "정기적으로 관리하는 게 중요하다고 해서.",
+      "가끔 배가 아프거나 두통이 심할 때도 가.",
+      "내과에서 진료 받고 약 처방받아와.",
+      "약국에서 약 타서 며칠 먹으면 대부분 낫더라고.",
+      "피부과는 가끔 피부 트러블 생겼을 때 가.",
+      "전체적으로 큰 병은 없어서 다행이야.",
+      "앞으로도 건강 잘 챙겨서 병원 일 없었으면 좋겠어."
+    ],
+    "english": [
+      "I'm not the type who goes to the hospital often.",
+      "I'm healthy, so I don't go much unless I'm sick.",
+      "I think I go about once or twice a year.",
+      "I go when I catch a cold or when I go for a health checkup.",
+      "I go to the dentist every six months for scaling.",
+      "They say it's important to manage regularly.",
+      "Sometimes I go when I have a stomachache or severe headache.",
+      "I get examined at internal medicine and get a prescription.",
+      "When I get medicine from the pharmacy and take it for a few days, it mostly gets better.",
+      "I sometimes go to dermatology when I get skin troubles.",
+      "Overall, I'm fortunate not to have any major illnesses.",
+      "I hope I can take good care of my health and have no need for hospitals in the future."
+    ]
+  }
+}

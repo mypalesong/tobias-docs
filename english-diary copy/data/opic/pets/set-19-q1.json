@@ -1,0 +1,33 @@
+{
+  "title": "Do you have a pet? If so, tell me about your pet. If not, would you like to have one?",
+  "diary": {
+    "korean": [
+      "나는 지금 반려동물을 키우고 있지는 않아.",
+      "예전에 고양이를 키웠었는데, 정말 좋은 기억들이 많아.",
+      "요즘도 반려동물 키우고 싶다는 생각을 자주 해.",
+      "특히 강아지를 키우고 싶은데, 여건이 안 돼서 망설이고 있어.",
+      "일단 혼자 사는데 출퇴근 시간이 길어서 걱정이야.",
+      "강아지를 집에 혼자 두고 가는 게 마음에 걸려.",
+      "그리고 아파트에서 키우려면 이웃들한테 피해 주지 않을까 걱정돼.",
+      "경제적인 부담도 생각해 봐야 하고.",
+      "동물 병원비나 사료값이 만만치 않더라고.",
+      "나중에 여유가 생기면 꼭 입양하고 싶어.",
+      "그때까지는 친구네 강아지나 고양이 카페 가서 대신 만족하고 있어.",
+      "언젠가는 책임감 있게 잘 키울 수 있을 때 입양할 거야."
+    ],
+    "english": [
+      "I don't currently have a pet.",
+      "I used to have a cat before, and I have really, like, many good memories.",
+      "These days I often think about wanting to have a pet.",
+      "I especially want to have a dog, but I'm hesitating because, you know, conditions aren't right.",
+      "First of all, I live alone and my commute time is long, so I'm worried.",
+      "Leaving the dog alone at home bothers me.",
+      "And if I raise it in an apartment, I'm worried it might, like, bother the neighbors.",
+      "I also have to think about the financial burden.",
+      "Veterinary bills and pet food costs are, you know, not cheap.",
+      "Later when I have more time, I definitely want to adopt one.",
+      "Until then, I'm satisfying myself by going to my friends' dogs or cat cafés.",
+      "Someday when I can raise one responsibly, I'll adopt."
+    ]
+  }
+}

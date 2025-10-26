@@ -1,0 +1,33 @@
+{
+  "title": "Tell me about a bike ride you remember.",
+  "diary": {
+    "korean": [
+      "아, 지난 5월에 친구들이랑 같이 탄 게 기억에 남아요.",
+      "그날 날씨가 진짜 완벽했거든요. 맑고 바람도 시원하고.",
+      "음, 우리 넷이서 공공자전거 따릉이 빌려서 탔어요.",
+      "여의도에서 시작해서 반포 한강공원까지 갔다가 다시 돌아왔죠.",
+      "중간에 배고파서 편의점에서 삼각김밥이랑 음료수 사먹고요,",
+      "한강 잔디밭에 앉아서 쉬면서 수다도 떨었어요.",
+      "그때 벚꽃이 조금 남아있어서 풍경이 정말 예뻤거든요.",
+      "한 명은 자전거를 잘 못 타서 중간에 휘청거리고 그랬는데,",
+      "그게 또 재밌더라고요. 다들 웃으면서 즐겁게 탔어요.",
+      "총 3시간 정도 탔는데 전혀 안 지루하고 재밌었어요.",
+      "다음엔 좀 더 먼 거리 도전해보고 싶다고 얘기했죠.",
+      "그날 이후로 가끔씩 같이 타러 가곤 해요."
+    ],
+    "english": [
+      "Oh, I remember riding with friends last May.",
+      "The weather was really perfect that day. Clear and the wind was cool too.",
+      "Um, the four of us rented Ttareungyi public bikes and rode.",
+      "We started from Yeouido, went to Banpo Hangang Park, and came back.",
+      "In the middle we got hungry so we bought triangle kimbap and drinks at a convenience store,",
+      "and sat on the Hangang lawn, resting and chatting.",
+      "There were still some cherry blossoms left, so the scenery was really pretty.",
+      "One person couldn't ride a bike well so they wobbled in the middle,",
+      "but that was fun too. Everyone laughed and enjoyed riding.",
+      "We rode for about 3 hours total and it wasn't boring at all, it was fun.",
+      "We talked about wanting to try a longer distance next time.",
+      "Since that day, we occasionally go riding together."
+    ]
+  }
+}

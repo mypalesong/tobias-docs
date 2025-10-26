@@ -1,0 +1,33 @@
+{
+  "title": "How have bicycle facilities improved in your city?",
+  "diary": {
+    "korean": [
+      "서울은 자전거 시설이 정말 많이 좋아진 것 같아요.",
+      "음, 제가 어렸을 때만 해도 자전거 도로가 거의 없었거든요.",
+      "근데 요즘은 한강 자전거 도로가 정말 잘 되어 있어요.",
+      "코스도 다양하고 중간중간 쉴 수 있는 공간도 많고요.",
+      "그리고 따릉이 같은 공공자전거 시스템이 생긴 게 제일 큰 변화인 것 같아요.",
+      "자전거가 없어도 스마트폰 하나로 쉽게 빌릴 수 있잖아요.",
+      "대여소도 지하철역마다 있어서 정말 편하더라고요.",
+      "또 도심에도 자전거 전용 도로가 많이 생겼어요.",
+      "예전엔 차도에서 타야 돼서 위험했는데, 이제는 안전하게 탈 수 있죠.",
+      "자전거 주차 시설도 많이 늘어났고요.",
+      "정부에서도 자전거 이용을 장려하는 정책을 많이 하는 것 같아요.",
+      "앞으로 더 좋아질 것 같아서 기대돼요."
+    ],
+    "english": [
+      "I think Seoul's bicycle facilities have improved a lot.",
+      "Um, when I was young, there were almost no bicycle paths.",
+      "But these days, the Hangang bicycle paths are really well-made.",
+      "There are various courses and many places to rest in between.",
+      "And I think the biggest change is the creation of public bike systems like Ttareungyi.",
+      "Even without a bike, you can easily rent one with just a smartphone.",
+      "Rental stations are at every subway station, so it's really convenient.",
+      "Also, many bicycle-only roads have been created in the city center.",
+      "Before, you had to ride on the road so it was dangerous, but now you can ride safely.",
+      "Bicycle parking facilities have also increased a lot.",
+      "The government also seems to be doing many policies to encourage bicycle use.",
+      "I'm looking forward to it getting even better in the future."
+    ]
+  }
+}

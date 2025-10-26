@@ -1,0 +1,35 @@
+{
+  "title": "출퇴근 시간",
+  "diary": {
+    "korean": [
+      "출근길이 솔직히 말해서 하루 중에 제일 스트레스 받는 시간이야.",
+      "지하철이 항상 사람들로 꽉 차 있어서, 뭐랄까, 숨 쉬기도 힘들 정도야.",
+      "보통 7시 반쯤 집을 나서는데, 그게 딱 러시아워 한가운데거든.",
+      "이어폰 끼고 팟캐스트 듣는 게 그나마 시간 보내는 방법이야.",
+      "가끔 자리에 앉을 수 있으면 정말 럭키한 거지.",
+      "근데 대부분은 그냥 서서 가는데, 솔직히 30분이 진짜 길게 느껴져.",
+      "사람들 표정 보면 다들 피곤해 보이는 게, 나도 똑같을 거야 아마.",
+      "요즘엔 출근 시간 조금 늦춰볼까 생각 중인데, 회사가 허락할지 모르겠어.",
+      "퇴근길은 또 다른 전쟁이야, 사실상.",
+      "저녁 6시쯤 되면 지하철이 진짜 미어터지거든.",
+      "가끔 한 정거장 전에 내려서 걸어갈 때도 있어, 좀 숨통 트이려고.",
+      "집에 도착하면 완전 녹초가 되는데, 출퇴근만 1시간씩이니까.",
+      "주말엔 진짜 집에서 한 발짝도 안 나가고 싶어질 정도야."
+    ],
+    "english": [
+      "My commute is honestly like, the most stressful part of my day, you know?",
+      "The subway's always packed with people, and I mean, it's so crowded you can barely breathe.",
+      "I usually leave around 7:30, which is like, right in the middle of rush hour.",
+      "Listening to podcasts with my earbuds is pretty much the only way I can pass the time.",
+      "If I can get a seat sometimes, that's like, really lucky.",
+      "But most of the time I'm just standing, and honestly, those 30 minutes feel super long.",
+      "When you look at people's faces, everyone looks tired, and I'm probably the same, I guess.",
+      "These days I've been thinking about pushing my start time back a bit, but I don't know if the company will allow it.",
+      "The evening commute is basically like another battle.",
+      "Around 6 PM, the subway gets literally packed, you know?",
+      "Sometimes I get off one stop early and walk, just to kind of get some air.",
+      "By the time I get home, I'm totally exhausted because, I mean, that's an hour each way.",
+      "On weekends, I honestly don't want to leave the house at all."
+    ]
+  }
+}

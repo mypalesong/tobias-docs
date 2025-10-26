@@ -1,0 +1,33 @@
+{
+  "title": "Do you go to the library? What do you usually do there?",
+  "diary": {
+    "korean": [
+      "나는 한 달에 한두 번 정도 도서관에 가.",
+      "주로 주말에 시간 날 때 가는 편이야.",
+      "책 빌리러 가기도 하고, 공부하러 가기도 해.",
+      "집에서는 집중이 잘 안 돼서 도서관이 좋아.",
+      "조용하고 분위기가 집중하기 좋거든.",
+      "새로 나온 책들 구경하는 것도 재미있어.",
+      "베스트셀러 코너에서 요즘 인기 있는 책들 찾아보고.",
+      "관심 가는 책은 바로 대출해.",
+      "한 번에 5권까지 빌릴 수 있어서 여러 권 빌려.",
+      "열람실에서 노트북 들고 작업하기도 해.",
+      "무료 와이파이도 되고 콘센트도 있어서 편해.",
+      "전체적으로 조용하고 편안한 공간이라 자주 가게 돼."
+    ],
+    "english": [
+      "I go to the library about once or twice a month.",
+      "I tend to go on weekends when I have time.",
+      "I go to borrow books and also to study.",
+      "I can't concentrate well at home, so I like the library.",
+      "It's quiet and the atmosphere is good for concentrating.",
+      "It's also fun to look at newly released books.",
+      "I look for popular books these days in the bestseller corner.",
+      "I immediately borrow books I'm interested in.",
+      "You can borrow up to 5 books at a time, so I borrow several.",
+      "I also work with my laptop in the reading room.",
+      "It's convenient because free WiFi works and there are outlets.",
+      "Overall, it's a quiet and comfortable space, so I go often."
+    ]
+  }
+}

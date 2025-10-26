@@ -1,0 +1,33 @@
+{
+  "title": "Tell me about a time when you experienced a problem with transportation.",
+  "diary": {
+    "korean": [
+      "어제 택시 타고 가다가 교통 체증에 걸렸어, 정말 짜증났어.",
+      "약속 시간에 늦을 것 같아서 택시를 탔는데, 오히려 더 늦었어.",
+      "차가 전혀 안 움직이더라고, 완전 꽉 막혀서.",
+      "기사님이 우회로로 가보자고 했는데, 그것도 막혀 있었어.",
+      "택시 미터기만 계속 올라가는 걸 보니까 속상하더라.",
+      "핸드폰으로 약속한 친구한테 늦는다고 연락했어.",
+      "창밖 보면서 그냥 걸어갈까 하는 생각도 들었어.",
+      "30분 넘게 갇혀 있으니까 진짜 답답하더라고.",
+      "사고가 났나 했는데, 그냥 차가 많은 거였어.",
+      "결국 약속 장소에 20분 늦게 도착했어.",
+      "다음부턴 중요한 약속 있을 땐 일찍 나가야겠어.",
+      "지하철이 시간은 정확하긴 한데, 불편한 건 어쩔 수 없지."
+    ],
+    "english": [
+      "Well, yesterday I took a taxi and got stuck in traffic, and it was, like, so frustrating.",
+      "I took a taxi because I thought I'd be late for my appointment, but, you know, I was even later.",
+      "The car wasn't moving at all, like, completely jammed.",
+      "The driver suggested taking a detour, but, um, that was jammed too.",
+      "Watching the taxi meter keep going up made me, like, really upset.",
+      "I texted the friend I was meeting to say I'd be late, you know.",
+      "Looking out the window, I even thought about, like, just walking.",
+      "Being stuck for over 30 minutes was, I mean, really suffocating.",
+      "I thought there was an accident, but it was, like, just heavy traffic.",
+      "In the end, I arrived 20 minutes late to meet my friend.",
+      "Next time, I'll have to, you know, leave earlier when I have important appointments.",
+      "The subway is reliable with time, but, well, the inconvenience is unavoidable."
+    ]
+  }
+}

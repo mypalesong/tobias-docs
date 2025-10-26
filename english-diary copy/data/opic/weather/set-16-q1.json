@@ -1,0 +1,33 @@
+{
+  "title": "What's the weather like in your country? Describe the four seasons.",
+  "diary": {
+    "korean": [
+      "한국은 사계절이 정말 뚜렷한 편이야.",
+      "봄에는 날씨가 따뜻해지고 꽃들이 피기 시작해.",
+      "특히 벚꽃 시즌엔 정말 예쁜데, 황사나 미세먼지가 좀 심한 게 단점이야.",
+      "여름은 덥고 습해서 견디기 힘들 때가 많아.",
+      "장마철엔 비도 많이 오고, 태풍도 가끔 와.",
+      "에어컨 없이는 살 수 없을 정도로 무더워.",
+      "가을은 개인적으로 가장 좋아하는 계절이야.",
+      "날씨가 선선하고 하늘도 높고 맑아서 활동하기 좋아.",
+      "단풍도 예쁘고, 여행 가기 딱 좋은 시기지.",
+      "겨울엔 꽤 추운 편이라 두꺼운 옷 입어야 해.",
+      "눈이 오면 예쁘긴 한데, 출퇴근이 힘들어져.",
+      "최근 몇 년은 날씨가 예전보다 더 극단적으로 변한 것 같아."
+    ],
+    "english": [
+      "Korea has, like, really distinct four seasons.",
+      "In spring, the weather gets warmer and flowers start blooming.",
+      "Especially during cherry blossom season, it's really pretty, but the downside is yellow dust and fine dust can be severe.",
+      "Summer is hot and humid, so it's, you know, often hard to bear.",
+      "During the rainy season, it rains a lot, and typhoons occasionally come.",
+      "It's so hot that you can't live without air conditioning.",
+      "Fall is, like, personally my favorite season.",
+      "The weather is cool and the sky is high and clear, so it's good for activities.",
+      "The autumn leaves are pretty too, and it's, you know, the perfect time to travel.",
+      "In winter, it's quite cold, so you have to wear thick clothes.",
+      "When it snows, it's pretty, but commuting becomes difficult.",
+      "In recent years, the weather seems to have, like, changed more extremely than before."
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "title": "Do you like watching sports? What sports do you enjoy watching?",
+  "diary": {
+    "korean": [
+      "나는 스포츠 보는 걸 좋아하는 편이야.",
+      "특히 축구랑 야구를 자주 봐.",
+      "축구는 월드컵이나 유럽 리그 경기를 주로 봐.",
+      "응원하는 팀이 있어서 경기 있을 때마다 챙겨봐.",
+      "야구는 한국 프로야구를 즐겨 봐.",
+      "특히 시즌 후반 플레이오프 때는 정말 재밌어.",
+      "농구나 배구도 가끔 보는데, 결승전 같은 중요한 경기 위주로.",
+      "올림픽 때는 여러 종목 다 보려고 노력해.",
+      "특히 한국 선수들 경기는 꼭 봐.",
+      "응원하면서 보면 정말 짜릿해.",
+      "친구들이랑 같이 보면 더 재밌고.",
+      "스포츠 보면서 스트레스도 풀리는 것 같아."
+    ],
+    "english": [
+      "I'm the type who likes watching sports.",
+      "Especially, I often watch soccer and baseball.",
+      "For soccer, I mainly watch World Cup or European league games.",
+      "I have a team I support, so I watch whenever there's a game.",
+      "For baseball, I enjoy watching Korean professional baseball.",
+      "Especially during the playoffs at the end of the season, it's really fun.",
+      "I also sometimes watch basketball or volleyball, mainly important games like finals.",
+      "During the Olympics, I try to watch various events.",
+      "Especially, I definitely watch Korean athletes' games.",
+      "Watching while cheering is really thrilling.",
+      "It's more fun when watching with friends.",
+      "I think stress is relieved while watching sports."
+    ]
+  }
+}

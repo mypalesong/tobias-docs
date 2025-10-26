@@ -1,0 +1,33 @@
+{
+  "title": "What problems have you experienced with your car?",
+  "diary": {
+    "korean": [
+      "가장 당황스러웠던 건 겨울에 배터리가 방전됐을 때예요.",
+      "일주일 동안 차를 안 타고 뒀더니 시동이 안 걸리더라고요.",
+      "처음에는 뭐가 문제인지도 몰라서 진짜 당황했어요.",
+      "보험사에 전화해서 긴급출동 서비스 받았는데 한 시간 걸렸어요.",
+      "그때부터는 추울 때 일주일에 한 번은 시동 걸어줘야겠다고 생각했죠.",
+      "타이어 펑크 난 적도 있어요.",
+      "고속도로 달리다가 갑자기 '퍽' 소리 나면서 차가 기울더라고요.",
+      "다행히 갓길에 세울 수 있었는데 정말 무서웠어요.",
+      "스페어 타이어로 교체하는 법을 몰라서 견인차 불러야 했고.",
+      "요즘은 유튜브 보면서 기본적인 정비는 배워뒀어요.",
+      "엔진오일 교체 시기 놓쳐서 경고등 켜진 적도 있고.",
+      "차 관리가 생각보다 손이 많이 가더라고요."
+    ],
+    "english": [
+      "The most flustered I've been was when the battery died in winter.",
+      "I left the car for a week without driving it, and then it wouldn't start.",
+      "At first, I didn't even know what the problem was, so I was really panicked.",
+      "I called the insurance company and got emergency service, but it took an hour.",
+      "Since then, I thought I should start the car at least once a week when it's cold.",
+      "I've also had a flat tire before.",
+      "I was driving on the highway when suddenly there was a 'pop' sound and the car tilted.",
+      "Fortunately I could pull over to the shoulder, but it was really scary.",
+      "I didn't know how to replace it with the spare tire, so I had to call a tow truck.",
+      "These days, I've learned basic maintenance by watching YouTube.",
+      "I've also had the warning light come on because I missed the engine oil change time.",
+      "Car maintenance requires more attention than I thought, you know."
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "title": "Tell me about a problem you experienced while camping.",
+  "diary": {
+    "korean": [
+      "캠핑 갔을 때 예상치 못한 문제가 있었어.",
+      "날씨 예보에는 맑다고 했는데, 갑자기 비가 오기 시작했어.",
+      "처음엔 소나기인 줄 알았는데, 계속 내리더라고.",
+      "텐트가 완전 방수가 아니어서 물이 조금씩 샜어.",
+      "짐들이 젖을까 봐 급하게 비닐로 덮었어.",
+      "바비큐 하려던 계획도 취소해야 했어.",
+      "텐트 안에만 있으니까 심심하고 답답했어.",
+      "밤에도 계속 비가 와서 잠도 잘 못 잤어.",
+      "빗소리가 크고, 텐트가 바람에 흔들려서 불안했어.",
+      "다음날 아침에 비가 그쳤는데, 짐 정리하는 게 힘들었어.",
+      "젖은 텐트랑 장비들 말리는 게 시간이 오래 걸렸어.",
+      "그 이후로는 날씨를 더 꼼꼼히 확인하고 가게 됐어."
+    ],
+    "english": [
+      "There was an unexpected problem when I went camping.",
+      "The weather forecast said it would be clear, but it suddenly started raining.",
+      "At first I thought it was a shower, but it kept coming down.",
+      "The tent wasn't completely waterproof, so water leaked little by little.",
+      "I was worried the luggage would get wet, so I urgently covered it with plastic.",
+      "The plan to have a barbecue also had to be canceled.",
+      "Being only inside the tent was boring and stuffy.",
+      "It kept raining at night too, so I couldn't sleep well.",
+      "The rain sound was loud, and the tent shook in the wind, so I was anxious.",
+      "The rain stopped the next morning, but organizing luggage was difficult.",
+      "Drying the wet tent and equipment took a long time.",
+      "Since then, I've been checking the weather more thoroughly before going."
+    ]
+  }
+}

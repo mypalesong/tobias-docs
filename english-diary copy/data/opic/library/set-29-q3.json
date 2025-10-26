@@ -1,0 +1,33 @@
+{
+  "title": "Tell me about a memorable experience at the library.",
+  "diary": {
+    "korean": [
+      "대학생 때 도서관에서 있었던 일이 기억나.",
+      "시험 기간이라 도서관이 사람들로 가득 찼었어.",
+      "자리 잡으려고 새벽부터 줄 서서 기다렸어.",
+      "겨우 자리 잡고 하루 종일 공부했어.",
+      "점심때 잠깐 나갔다 왔는데, 자리에 책이랑 노트를 두고 갔어.",
+      "근데 돌아와 보니까 누가 내 자리에 앉아 있더라고.",
+      "내 물건은 옆에 치워져 있었어.",
+      "너무 황당해서 그 사람한테 얘기했더니 미안하다고 하더라.",
+      "자리가 없어서 그랬다면서.",
+      "결국 다시 자리를 찾아야 했는데, 빈자리가 없었어.",
+      "복도에 있는 의자에 앉아서 공부했어.",
+      "그때부터는 자리 비울 때 꼭 친구한테 부탁하고 가게 됐어."
+    ],
+    "english": [
+      "I remember something that happened at the library when I was a college student.",
+      "It was exam period, so the library was packed with people.",
+      "I waited in line from dawn to get a seat.",
+      "I barely got a seat and studied all day.",
+      "I went out briefly for lunch, leaving my books and notes at my seat.",
+      "But when I came back, someone was sitting in my seat.",
+      "My things were pushed aside.",
+      "I was so absurd that I talked to that person, and they apologized.",
+      "They said there were no seats.",
+      "Eventually I had to find a seat again, but there were no empty seats.",
+      "I sat on a chair in the hallway and studied.",
+      "From then on, when leaving my seat, I definitely ask a friend to watch it."
+    ]
+  }
+}

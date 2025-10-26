@@ -1,0 +1,33 @@
+{
+  "title": "How often do you use your smartphone? Describe your daily usage.",
+  "diary": {
+    "korean": [
+      "요즘 스마트폰 너무 많이 보는 것 같아서 걱정돼.",
+      "아침에 일어나자마자 핸드폰 확인하는 게 습관이 됐어.",
+      "출퇴근할 때도, 점심시간에도, 심지어 화장실에서도 보고 있어.",
+      "하루 사용 시간 체크해 봤더니 5시간 넘게 나와서 충격받았어.",
+      "주로 SNS 보면서 시간 보내는데, 별 내용도 아닌 걸 계속 스크롤해.",
+      "유튜브 영상 하나 보다 보면 추천 영상 계속 보게 되더라고.",
+      "게임도 가끔 하는데, 한번 시작하면 멈출 수가 없어.",
+      "밤에 자기 전에 핸드폰 보다가 늦게 자는 게 문제야.",
+      "블루라이트 때문에 눈도 피곤하고 수면 질도 안 좋아진 것 같아.",
+      "스마트폰 사용 줄이려고 알람 설정도 해봤는데, 잘 안 지켜져.",
+      "책 읽거나 다른 취미 활동 더 해야겠다고 생각은 하는데 실천이 어려워.",
+      "의지를 가지고 조금씩 줄여봐야겠어, 건강을 위해서라도."
+    ],
+    "english": [
+      "I'm worried that I'm looking at my smartphone too much these days.",
+      "So checking my phone as soon as I wake up has become a habit.",
+      "During my commute, at lunch, and even, like, in the bathroom, I'm looking at it.",
+      "When I checked my daily usage time, I, like, was shocked to see it was over 5 hours.",
+      "I mostly spend time looking at SNS, continuously scrolling through nothing important.",
+      "When I watch one YouTube video,, you know, I keep watching the recommended videos.",
+      "I play games sometimes too, and once I start, I can't stop.",
+      "The problem , like, is looking at my phone before bed and staying up late.",
+      "My eyes , like, are tired from the blue light,, well, and I think my sleep quality has gotten worse.",
+      "I tried setting alarms to reduce smartphone, well, use, but I don't stick to it.",
+      "I think I should read books or do other, like, hobbies more, but it's hard to actually do it.",
+      "I should gradually reduce it with willpower, at least for my health."
+    ]
+  }
+}

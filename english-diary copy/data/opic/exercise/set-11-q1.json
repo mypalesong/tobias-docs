@@ -1,0 +1,33 @@
+{
+  "title": "Tell me about your exercise routine. How often do you work out?",
+  "diary": {
+    "korean": [
+      "요즘 헬스장 다니면서 운동하는 중이야.",
+      "주 3회 정도 가려고 노력하는데, 바쁘면 2회로 줄어.",
+      "보통 퇴근하고 7시쯤 헬스장 가서 한 시간 반 정도 운동해.",
+      "먼저 러닝머신에서 10분 정도 워밍업해.",
+      "그 다음엔 웨이트 트레이닝하는데, 부위별로 나눠서 해.",
+      "월요일엔 가슴, 수요일엔 등, 금요일엔 하체 이런 식으로.",
+      "트레이너한테 PT도 몇 번 받아서 자세 교정했어.",
+      "운동 끝나고 스트레칭 꼭 하고, 단백질 쉐이크 마셔.",
+      "주말엔 친구들이랑 축구하거나 등산 가기도 해.",
+      "처음엔 힘들었는데, 이제 습관이 돼서 안 하면 찜찜해.",
+      "몸이 좋아지는 게 눈에 보여서 동기부여 돼.",
+      "목표는 여름까지 복근 만들기야."
+    ],
+    "english": [
+      "These days, I'm working out while going to the gym.",
+      "I try to go about 3 times a week, but if I'm busy, it, like, decreases to 2 times.",
+      "Usually, after work, I go to the gym around 7 and work out for about an hour and a half.",
+      "First, I warm up on the treadmill for about 10 minutes.",
+      "Then I do weight training, dividing it by body part.",
+      "On Monday chest, Wednesday back, Friday lower body, you know, like that.",
+      "I also received PT from a trainer a few times and corrected my posture.",
+      "After exercising, I definitely stretch and drink a protein shake.",
+      "On weekends, I sometimes play soccer with friends or go hiking.",
+      "It was hard at first, but now it's a habit, so if I don't do it, well, I feel uneasy.",
+      "I can see my body getting better, so I'm motivated.",
+      "My goal is to build abs by summer."
+    ]
+  }
+}

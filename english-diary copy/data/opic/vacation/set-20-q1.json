@@ -1,0 +1,33 @@
+{
+  "title": "How do you usually spend your vacation? Tell me about your vacation plans.",
+  "diary": {
+    "korean": [
+      "휴가 때는 보통 여행 가는 걸 선호하는 편이야.",
+      "길게 쉴 수 있으면 해외여행 가려고 계획하고.",
+      "짧은 연휴면 국내 여행지로 다녀오곤 해.",
+      "여행 가기 전에 미리 계획 세우는 걸 좋아해.",
+      "가고 싶은 장소 리스트 만들고, 맛집도 찾아보고.",
+      "숙소는 미리 예약하는 편인데, 위치가 제일 중요한 것 같아.",
+      "여행 중에는 유명 관광지도 가지만, 현지 문화를 경험하는 것도 좋아해.",
+      "로컬 마켓이나 골목 구경하는 게 재밌어.",
+      "사진도 많이 찍고, SNS에 올리기도 해.",
+      "가끔은 아무 계획 없이 쉬면서 보내기도 하는데, 그것도 나름 좋아.",
+      "집에서 밀린 드라마 보거나 책 읽으면서 여유롭게 보내.",
+      "휴가는 재충전하는 시간이라서 정말 소중해."
+    ],
+    "english": [
+      "During vacation, I usually, like, prefer to travel.",
+      "If I can rest for a long time, I plan to go on an overseas trip.",
+      "If it's a short holiday, I often go to domestic travel destinations.",
+      "I like planning ahead before traveling.",
+      "I make a list of places I want to go and look up good restaurants too.",
+      "I tend to book accommodation in advance, and I think location is most important.",
+      "While traveling, I go to famous tourist spots but also, you know, like experiencing local culture.",
+      "It's fun to look around local markets or alleys.",
+      "I take many pictures and sometimes post on SNS.",
+      "Sometimes I spend time resting without any plans, and that's good in its own way.",
+      "I spend time leisurely watching dramas I've missed or reading books at home.",
+      "Vacation is a time to recharge, so it's really precious."
+    ]
+  }
+}

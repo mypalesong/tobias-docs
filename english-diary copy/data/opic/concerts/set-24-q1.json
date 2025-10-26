@@ -1,0 +1,33 @@
+{
+  "title": "Do you enjoy going to concerts? What kind of concerts do you prefer?",
+  "diary": {
+    "korean": [
+      "나는 콘서트 가는 거 정말 좋아해.",
+      "음악을 좋아하는 편이라 라이브로 들으면 정말 감동적이야.",
+      "특히 좋아하는 가수 콘서트는 꼭 가려고 노력해.",
+      "아이돌 콘서트도 좋고, 밴드 공연도 좋아해.",
+      "규모가 큰 대형 콘서트도 좋지만, 소극장 공연도 매력 있어.",
+      "소극장은 가수와 가까워서 더 몰입할 수 있거든.",
+      "관객들이랑 같이 떼창하는 게 정말 짜릿해.",
+      "응원봉 들고 흔들면서 응원하는 것도 재밌어.",
+      "공연 분위기가 정말 좋아서 스트레스가 다 풀려.",
+      "다만 표 구하기가 너무 어려운 게 단점이야.",
+      "티켓팅 전쟁이 정말 치열하거든.",
+      "그래도 좋아하는 가수 보면 다 보상받는 기분이야."
+    ],
+    "english": [
+      "I really love going to concerts.",
+      "I'm the type who likes music, so listening live is really touching.",
+      "I especially try to definitely go to concerts of singers I like.",
+      "I like both idol concerts and band performances.",
+      "Large-scale big concerts are good, but small theater performances are also charming.",
+      "Small theaters are close to the singer, so you can, like, immerse yourself more.",
+      "Singing together with the audience is really thrilling.",
+      "It's also fun to cheer while holding and waving a light stick.",
+      "The performance atmosphere is really good, so all stress is relieved.",
+      "However, the downside is that it's too difficult to get tickets.",
+      "The ticketing war is, you know, really fierce.",
+      "But when I see the singer I like, I feel completely rewarded."
+    ]
+  }
+}

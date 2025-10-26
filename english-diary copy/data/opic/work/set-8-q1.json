@@ -1,0 +1,33 @@
+{
+  "title": "Tell me about your typical workday. What do you do from morning to evening?",
+  "diary": {
+    "korean": [
+      "아침에 9시쯤 출근하는데, 커피부터 마시고 시작해.",
+      "이메일 확인하면서 오늘 할 일 정리하는 게 루틴이야.",
+      "10시쯤 팀 미팅 있으면 참석하고, 프로젝트 진행 상황 공유해.",
+      "점심 전까지는 주로 집중해서 업무 처리하는 시간이야.",
+      "12시 반쯤 동료들이랑 회사 근처 식당 가서 밥 먹어.",
+      "점심 먹고 돌아오면 좀 졸려서 커피 한 잔 더 마셔.",
+      "오후엔 회의나 협업 업무가 많은 편이야.",
+      "3시쯤 되면 간식 먹으면서 잠깐 쉬기도 해.",
+      "5시 넘어가면 슬슬 마무리하면서 내일 할 일 정리해.",
+      "급한 일 없으면 6시쯤 퇴근하는데, 요즘은 좀 늦게 퇴근하는 날이 많아.",
+      "퇴근길엔 팟캐스트 들으면서 집에 가.",
+      "집 도착하면 씻고 쉬면서 하루를 마무리해."
+    ],
+    "english": [
+      "I go to work around 9, and, well, I start by having coffee first.",
+      "While checking emails, I organize what to do today, you know, it's my routine.",
+      "Around 10, if there's a team meeting, I attend and share project progress.",
+      "Before lunch, it's mainly time to focus on, like, work tasks.",
+      "Around 12:30, I go to a restaurant near the office with colleagues to eat.",
+      "When I come back from lunch, I'm a bit sleepy, so I drink another cup of coffee.",
+      "In the afternoon, I mean, there are a lot of meetings and collaborative work.",
+      "Around 3, I sometimes take a short break while eating snacks.",
+      "After 5, I gradually wrap up and, well, organize tomorrow's tasks.",
+      "If there's nothing urgent, I leave around 6, but, like, these days I often leave late.",
+      "On my way home, I listen to podcasts while going home.",
+      "When I get home, I wash up and rest, you know, finishing the day."
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "title": "Tell me about the neighborhood where you live. What is it like?",
+  "diary": {
+    "korean": [
+      "나는 서울 외곽 쪽 주택가에 살고 있어.",
+      "조용한 주거 지역이라 살기에 정말 편해.",
+      "주변에 아파트랑 빌라들이 많이 있어.",
+      "동네가 오래됐지만 관리가 잘 되어 있는 편이야.",
+      "걸어서 5분 거리에 편의점이랑 작은 마트가 있어서 장보기 편해.",
+      "버스 정류장도 가까워서 대중교통 이용하기 좋아.",
+      "지하철역까지는 버스 타고 10분 정도 걸려.",
+      "근처에 공원이 있어서 산책하기 딱 좋아.",
+      "주말에는 주민들이 운동하거나 산책하는 모습을 많이 봐.",
+      "학교랑 병원도 가까워서 생활하기 편리해.",
+      "밤에도 조용하고 안전한 편이라 만족하면서 살고 있어.",
+      "이웃들도 대부분 조용해서 크게 불편한 건 없어."
+    ],
+    "english": [
+      "I live in a residential area on the outskirts of Seoul.",
+      "It's a quiet residential area, so it's, like, really comfortable to live in.",
+      "There are many apartments and villas around.",
+      "The neighborhood is old but well-maintained.",
+      "There's a convenience store and a small mart within a 5-minute walk, so shopping is convenient.",
+      "The bus stop is also close, so it's good for using public transportation.",
+      "It takes about 10 minutes by bus to the subway station.",
+      "There's a park nearby, so it's, you know, perfect for walking.",
+      "On weekends, I often see residents exercising or walking.",
+      "Schools and hospitals are also close, so it's convenient for daily life.",
+      "It's quiet and safe even at night, so I'm living here contentedly.",
+      "Most of the neighbors are also quiet, so there's, like, nothing really inconvenient."
+    ]
+  }
+}

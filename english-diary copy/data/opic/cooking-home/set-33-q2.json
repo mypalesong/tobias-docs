@@ -1,0 +1,33 @@
+{
+  "title": "Tell me about a dish you recently tried to cook.",
+  "diary": {
+    "korean": [
+      "최근에 까르보나라 만들어 보려고 했어.",
+      "유튜브에서 레시피 보고 따라 해봤는데, 생각보다 어려웠어.",
+      "재료는 미리 다 준비했어. 파스타면, 베이컨, 달걀, 파르메산 치즈.",
+      "면 삶는 건 쉬웠는데, 소스 만드는 게 문제였어.",
+      "달걀이 익으면 안 되는데, 타이밍 맞추기가 어려웠어.",
+      "처음엔 너무 빨리 넣어서 달걀이 익어버렸어.",
+      "결국 다시 시작해서 두 번째 시도에 성공했어.",
+      "소스가 부드럽고 크리미하게 나왔어.",
+      "맛은 괜찮았는데, 레스토랑만큼은 아니더라.",
+      "그래도 직접 만들어 먹으니까 뿌듯했어.",
+      "다음엔 좀 더 잘 만들 수 있을 것 같아.",
+      "요리는 연습이 중요한 것 같아."
+    ],
+    "english": [
+      "Recently, I tried to make carbonara.",
+      "I followed a recipe on YouTube, but it was harder than I thought.",
+      "I prepared all the ingredients in advance: pasta, bacon, eggs, Parmesan cheese.",
+      "Boiling the noodles was easy, but making the sauce was the problem.",
+      "The eggs shouldn't cook, but timing was difficult.",
+      "At first, I added them too quickly and the eggs cooked.",
+      "Eventually I started over and succeeded on the second try.",
+      "The sauce came out smooth and creamy.",
+      "The taste was okay, but not as good as a restaurant.",
+      "Still, I felt proud making and eating it myself.",
+      "I think I can make it better next time.",
+      "I think practice is important for cooking."
+    ]
+  }
+}

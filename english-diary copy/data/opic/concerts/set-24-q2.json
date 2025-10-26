@@ -1,0 +1,33 @@
+{
+  "title": "Describe the process of attending a concert from start to finish.",
+  "diary": {
+    "korean": [
+      "콘서트 가려면 일단 티켓팅부터 해야 해.",
+      "예매 오픈 시간에 맞춰서 사이트 접속하는데, 항상 사람이 너무 많아.",
+      "대기 순번 받고 기다리는 게 정말 긴장돼.",
+      "운 좋게 티켓 구하면 그때부터 설레기 시작해.",
+      "콘서트 당일엔 일찍 준비해서 출발해.",
+      "공연장 근처 도착하면 이미 사람들이 엄청 많아.",
+      "입장 전에 굿즈 사는 사람들도 많고.",
+      "입장 시간 되면 티켓 확인하고 들어가.",
+      "좌석 찾아서 앉으면 기대감에 떨려.",
+      "조명 꺼지고 공연 시작하면 환호성이 정말 대단해.",
+      "공연 내내 노래 부르고 응원하면서 즐겨.",
+      "끝나고 나올 때는 아쉽지만 여운이 오래 남아."
+    ],
+    "english": [
+      "To go to a concert, you first have to do ticketing.",
+      "I access the site according to the reservation opening time, but there are always too many people.",
+      "Getting a waiting number and waiting is, like, really nerve-wracking.",
+      "If I'm lucky enough to get a ticket, I start getting excited from then.",
+      "On the concert day, I prepare early and depart.",
+      "When I arrive near the venue, there are already tons of people.",
+      "Many people also buy merchandise before entering.",
+      "When it's entrance time, I check the ticket and go in.",
+      "When I find my seat and sit down, I'm trembling with anticipation.",
+      "When the lights go out and the performance starts, the cheers are really amazing.",
+      "Throughout the performance, I enjoy singing and cheering.",
+      "When leaving after it ends, it's regretful but the lingering feeling lasts long."
+    ]
+  }
+}

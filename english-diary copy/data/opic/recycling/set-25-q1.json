@@ -1,0 +1,33 @@
+{
+  "title": "Do you recycle? Tell me about your recycling habits.",
+  "diary": {
+    "korean": [
+      "나는 분리수거를 꼬박꼬박 하는 편이야.",
+      "한국은 분리수거가 의무라서 안 할 수가 없어.",
+      "집에 분리수거 쓰레기통을 여러 개 두고 있어.",
+      "플라스틱, 종이, 캔, 유리 이렇게 구분해서 버려.",
+      "특히 플라스틱은 라벨 떼고 깨끗이 씻어서 버려야 해.",
+      "처음엔 귀찮았는데, 이제는 습관이 됐어.",
+      "음식물 쓰레기도 따로 모아서 버리고.",
+      "일주일에 두 번 정해진 날에 배출해.",
+      "요즘은 일회용품 사용을 줄이려고 노력해.",
+      "텀블러도 들고 다니고, 장볼 때 에코백 써.",
+      "환경 보호를 위해서 작은 실천이 중요하다고 생각해.",
+      "앞으로도 계속 잘 실천하고 싶어."
+    ],
+    "english": [
+      "I'm the type who recycles diligently.",
+      "In Korea, recycling is mandatory, so you can't not do it.",
+      "I have several recycling bins at home.",
+      "I separate and throw away plastic, paper, cans, and glass.",
+      "Especially for plastic, I have to remove labels and wash them clean before throwing away.",
+      "At first it was bothersome, but now it's become a habit.",
+      "I also collect and throw away food waste separately.",
+      "I put it out on designated days twice a week.",
+      "These days, I'm trying to reduce the use of disposable items.",
+      "I also carry a tumbler and use an eco-bag when shopping.",
+      "I think small actions are important for environmental protection.",
+      "I want to continue practicing well in the future."
+    ]
+  }
+}

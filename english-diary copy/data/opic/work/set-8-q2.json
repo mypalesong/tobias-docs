@@ -1,0 +1,33 @@
+{
+  "title": "Describe a challenging project you worked on recently. How did you handle it?",
+  "diary": {
+    "korean": [
+      "지난달에 새로운 시스템 구축 프로젝트를 맡았어.",
+      "처음엔 요구사항이 명확하지 않아서 막막했어.",
+      "고객이랑 여러 번 미팅하면서 정확히 뭘 원하는지 파악했어.",
+      "일정이 빡빡해서 팀원들이랑 매일 진행 상황 공유했어.",
+      "중간에 기술적인 문제가 생겨서 며칠 동안 머리 싸맸어.",
+      "결국 다른 팀한테 조언 구해서 해결 방법 찾았어.",
+      "야근도 많이 했는데, 팀원들이 다 같이 고생해서 견딜 만했어.",
+      "마감일 일주일 전에 거의 완성했는데, 갑자기 수정 요청이 들어왔어.",
+      "스트레스 받았지만, 우선순위 정해서 하나씩 처리했어.",
+      "결국 마감일 맞춰서 프로젝트 완료했어.",
+      "고객도 만족해하고 팀장님한테도 칭찬받았어.",
+      "힘들었지만 배운 게 많아서 성장한 느낌이야."
+    ],
+    "english": [
+      "Last month, I, like, was assigned a new system development project.",
+      "At first, the requirements weren't clear, so I felt lost.",
+      "I had several meetings with the client and figured out exactly what they wanted.",
+      "The schedule was tight, so I shared progress with team members, you know, every day.",
+      "In the middle, a technical problem occurred, and I racked my brains for several days.",
+      "Eventually, I asked another team for advice and found a solution.",
+      "I worked overtime a lot, but, well, it was bearable because all the team members struggled together.",
+      "A week before the deadline, it was almost complete, but suddenly a modification request came in.",
+      "I was stressed, but I set priorities and, like, handled them one by one.",
+      "Eventually, I completed the project on time.",
+      "The client was satisfied, and I mean, I got praised by my team leader.",
+      "It was hard, but I learned a lot, so I feel like I've grown."
+    ]
+  }
+}

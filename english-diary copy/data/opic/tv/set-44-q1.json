@@ -1,0 +1,33 @@
+{
+  "title": "What TV shows do you watch?",
+  "diary": {
+    "korean": [
+      "음, 저는 주로 예능 프로그램을 많이 보는 편이에요.",
+      "요즘은 '나혼자 산다'랑 '유 퀴즈 온 더 블럭' 자주 봐요.",
+      "예능이 재밌고 부담 없이 볼 수 있어서 좋더라고요.",
+      "드라마도 가끔 보는데, 요즘은 넷플릭스 드라마를 더 많이 봐요.",
+      "한국 드라마보다 미드나 일드를 더 자주 보는 것 같아요.",
+      "TV로 보기보다는 노트북이나 휴대폰으로 보는 편이에요.",
+      "시간 날 때 틈틈이 한두 편씩 보죠.",
+      "뉴스는 아침에 준비하면서 배경으로 틀어놓고요,",
+      "주말에는 예능 몰아보기 할 때도 있어요.",
+      "요리 프로그램이나 여행 프로그램도 종종 봐요.",
+      "특히 먹방 프로그램은 밥 먹을 때 자주 보는 편이에요.",
+      "요즘은 볼 게 너무 많아서 선택하기가 힘들더라고요."
+    ],
+    "english": [
+      "Um, I mainly watch variety shows a lot.",
+      "These days I often watch 'I Live Alone' and 'You Quiz on the Block'.",
+      "Variety shows are fun and easy to watch without pressure.",
+      "I watch dramas sometimes, but these days I watch Netflix dramas more.",
+      "I think I watch American or Japanese dramas more than Korean dramas.",
+      "Rather than watching on TV, I tend to watch on my laptop or phone.",
+      "When I have time, I watch one or two episodes here and there.",
+      "I turn on the news in the background while getting ready in the morning,",
+      "and on weekends I sometimes binge-watch variety shows.",
+      "I also occasionally watch cooking or travel programs.",
+      "Especially mukbang programs, I often watch while eating.",
+      "These days there's so much to watch, it's hard to choose."
+    ]
+  }
+}

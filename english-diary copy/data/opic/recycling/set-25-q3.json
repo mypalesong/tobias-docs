@@ -1,0 +1,33 @@
+{
+  "title": "Tell me about a problem you experienced while recycling.",
+  "diary": {
+    "korean": [
+      "얼마 전에 분리수거하다가 좀 당황한 적이 있어.",
+      "치킨을 시켜 먹었는데 포장 용기를 어떻게 버려야 할지 몰랐어.",
+      "플라스틱인 것 같기도 하고 종이인 것 같기도 하고.",
+      "인터넷 검색해봤는데, 재질에 따라 다르게 버려야 한대.",
+      "결국 용기를 자세히 보고 표시를 확인했어.",
+      "또 한번은 큰 박스를 버리려는데 규격이 안 맞았어.",
+      "접어서 묶어야 하는데 너무 커서 힘들었어.",
+      "결국 칼로 잘라서 작게 만들어 버렸어.",
+      "가끔 분리수거 날짜를 깜빡해서 놓칠 때도 있어.",
+      "그럼 일주일을 더 기다려야 하니까 불편해.",
+      "앱으로 분리수거 날짜 알림 설정해 놨는데도 가끔 까먹어.",
+      "좀 더 신경 써야겠다고 생각했어."
+    ],
+    "english": [
+      "A while ago, I was a bit flustered while recycling.",
+      "I ordered chicken and didn't know how to throw away the packaging container.",
+      "It seemed like plastic or maybe paper.",
+      "I searched online, and apparently you have to throw it away differently depending on the material.",
+      "Eventually I looked closely at the container and checked the marking.",
+      "Another time, I tried to throw away a big box but it didn't meet the size requirements.",
+      "I had to fold and tie it, but it was too big so it was difficult.",
+      "Eventually I cut it with a knife to make it smaller and threw it away.",
+      "Sometimes I forget the recycling day and miss it.",
+      "Then it's inconvenient because I have to wait another week.",
+      "Even though I set recycling day notifications on the app, I sometimes forget.",
+      "I thought I should pay more attention."
+    ]
+  }
+}

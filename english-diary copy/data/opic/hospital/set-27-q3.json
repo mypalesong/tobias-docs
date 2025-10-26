@@ -1,0 +1,33 @@
+{
+  "title": "Tell me about a memorable experience you had at a hospital.",
+  "diary": {
+    "korean": [
+      "몇 년 전에 응급실 간 적이 있는데, 정말 기억에 남아.",
+      "밤늦게 갑자기 배가 너무 아파서 참을 수가 없었어.",
+      "혼자 있었는데, 친구한테 전화해서 병원 데려다 달라고 했어.",
+      "친구가 택시 불러서 같이 응급실로 갔어.",
+      "도착해서 접수하고 기다리는데 사람이 엄청 많았어.",
+      "한 시간 넘게 기다렸는데, 계속 아파서 힘들었어.",
+      "드디어 진료실 들어갔는데, 의사가 맹장염 의심된다고 했어.",
+      "바로 초음파 검사 받고, 다행히 맹장염은 아니었어.",
+      "장염이라고 해서 링거 맞고 약 처방받았어.",
+      "링거 맞는데 몇 시간 걸렸는데, 그 사이 친구가 계속 옆에 있어줬어.",
+      "정말 고마웠고, 건강의 소중함을 다시 느꼈어.",
+      "그 이후로는 건강 관리를 더 신경 쓰게 됐어."
+    ],
+    "english": [
+      "A few years ago, I went to the emergency room, and it's really memorable.",
+      "Late at night, my stomach suddenly hurt so much I couldn't stand it.",
+      "I was alone, so I called a friend and asked them to take me to the hospital.",
+      "My friend called a taxi and we went to the emergency room together.",
+      "After arriving and registering, there were tons of people waiting.",
+      "I waited over an hour, and it was hard because I kept hurting.",
+      "I finally entered the examination room, and the doctor said it might be appendicitis.",
+      "I immediately got an ultrasound, and fortunately it wasn't appendicitis.",
+      "They said it was enteritis, so I got an IV and a prescription.",
+      "The IV took a few hours, and during that time my friend stayed by my side.",
+      "I was really grateful and felt the preciousness of health again.",
+      "Since then, I've been paying more attention to health management."
+    ]
+  }
+}

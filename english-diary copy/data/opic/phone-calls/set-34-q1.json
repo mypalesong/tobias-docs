@@ -1,0 +1,33 @@
+{
+  "title": "How often do you make phone calls? Who do you usually call?",
+  "diary": {
+    "korean": [
+      "요즘에는 전화통화를 예전만큼 자주 하지는 않는 것 같아요.",
+      "대부분 카톡이나 문자로 연락하거든요.",
+      "그래도 부모님한테는 일주일에 한두 번 정도는 전화하는 편이에요.",
+      "특히 엄마는 문자보다 전화로 얘기하는 걸 더 좋아하세요.",
+      "회사 일 때문에 전화하는 경우도 꽤 있고요.",
+      "급한 업무 건이나 회의 일정 같은 건 전화가 빠르잖아요.",
+      "친구들이랑은 거의 전화 안 해요.",
+      "그냥 단톡방에서 다 해결하거든요.",
+      "가끔 오래 못 본 친구가 전화하면 좀 신기하기도 하고.",
+      "배달 음식 주문할 때도 가끔 전화하는데, 요즘은 앱으로 더 많이 시키죠.",
+      "은행이나 관공서에 문의할 때도 전화해야 하는 경우가 있어요.",
+      "그럴 때는 좀 귀찮긴 하지만 어쩔 수 없더라고요."
+    ],
+    "english": [
+      "These days, I don't make phone calls as often as I used to, you know.",
+      "Most of the time, I just use KakaoTalk or text messages to stay in touch.",
+      "But I do call my parents like once or twice a week.",
+      "My mom especially prefers talking on the phone rather than texting.",
+      "I also make quite a few calls for work-related stuff.",
+      "For urgent tasks or meeting schedules, phone calls are just faster, right?",
+      "With my friends, I hardly ever call them.",
+      "We just handle everything in our group chat.",
+      "Sometimes when an old friend calls out of the blue, it feels kind of surprising.",
+      "I also call to order food delivery sometimes, but these days I use apps more often.",
+      "I have to call banks or government offices when I need to inquire about something.",
+      "It's a bit annoying when that happens, but there's no way around it."
+    ]
+  }
+}

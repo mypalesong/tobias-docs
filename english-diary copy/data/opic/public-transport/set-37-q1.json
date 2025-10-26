@@ -1,0 +1,33 @@
+{
+  "title": "What public transportation do you use most often?",
+  "diary": {
+    "korean": [
+      "저는 지하철을 가장 많이 이용해요.",
+      "서울에서 출퇴근하는데 지하철이 제일 빠르고 정확하거든요.",
+      "2호선 타는데 항상 사람이 엄청 많아요.",
+      "특히 출퇴근 시간에는 진짜 만원이죠.",
+      "가끔 너무 붐벼서 한 대 보내고 다음 거 타기도 해요.",
+      "그래도 교통카드 하나면 버스든 지하철이든 다 탈 수 있어서 편해요.",
+      "요즘은 카카오T나 네이버 지도 앱으로 실시간 도착 시간도 확인하고.",
+      "버스는 약속 있을 때 가끔 타는 편이에요.",
+      "지하철역이 멀 때나 밤늦게 집에 갈 때 주로 버스 타요.",
+      "심야버스도 있어서 밤샘 모임 끝나고 집에 가기 편하고요.",
+      "한국 대중교통은 정말 잘 돼 있는 것 같아요.",
+      "요금도 저렴하고 배차 간격도 짧아서 좋아요."
+    ],
+    "english": [
+      "I use the subway the most.",
+      "For my commute in Seoul, the subway is the fastest and most reliable.",
+      "I take Line 2, and it's always super crowded.",
+      "Especially during rush hour, it's really packed.",
+      "Sometimes it's so crowded that I skip one train and take the next one.",
+      "But with just one transportation card, you can take both buses and subways, so it's convenient.",
+      "These days, I check real-time arrival times on KakaoT or Naver Map apps.",
+      "I take the bus occasionally when I have appointments.",
+      "I mainly take the bus when the subway station is far or when I go home late at night.",
+      "There are night buses too, so it's convenient to get home after all-nighters.",
+      "I think Korea's public transportation is really well-developed.",
+      "The fares are cheap and the intervals between vehicles are short, so it's great."
+    ]
+  }
+}

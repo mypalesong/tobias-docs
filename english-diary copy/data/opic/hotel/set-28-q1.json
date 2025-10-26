@@ -1,0 +1,33 @@
+{
+  "title": "Tell me about a hotel you stayed at recently.",
+  "diary": {
+    "korean": [
+      "지난달에 부산 여행 갔을 때 호텔에 묵었어.",
+      "바닷가 근처에 있는 비즈니스 호텔이었는데, 위치가 정말 좋았어.",
+      "체크인할 때 프론트 직원이 친절하게 안내해 줬어.",
+      "방은 그리 크진 않았지만 깔끔하고 정리가 잘 되어 있었어.",
+      "킹 사이즈 침대가 있어서 편하게 잘 잤어.",
+      "욕실도 깨끗했고, 어메니티도 다 갖춰져 있었어.",
+      "창문으로 바다가 보여서 뷰가 정말 좋았어.",
+      "무료 와이파이도 빠르게 잘 터졌어.",
+      "조식 뷔페도 포함되어 있었는데, 음식이 다양하고 맛있었어.",
+      "호텔 로비에 카페도 있어서 커피 마시기 편했어.",
+      "가격 대비 만족스러운 숙박이었어.",
+      "다음에 부산 가면 또 그 호텔 이용하고 싶어."
+    ],
+    "english": [
+      "Last month when I went to Busan, I stayed at a hotel.",
+      "It was a business hotel near the beach, and the location was really good.",
+      "When checking in, the front desk staff kindly guided me.",
+      "The room wasn't very big but it was clean and well-organized.",
+      "There was a king-size bed, so I slept comfortably.",
+      "The bathroom was also clean, and all amenities were provided.",
+      "I could see the ocean through the window, so the view was really nice.",
+      "Free WiFi also worked fast.",
+      "Breakfast buffet was included, and the food was varied and delicious.",
+      "There was also a café in the hotel lobby, so it was convenient to drink coffee.",
+      "It was a satisfying stay for the price.",
+      "If I go to Busan next time, I want to use that hotel again."
+    ]
+  }
+}

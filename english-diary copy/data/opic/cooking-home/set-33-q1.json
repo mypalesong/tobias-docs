@@ -1,0 +1,33 @@
+{
+  "title": "Do you cook at home? What do you usually make?",
+  "diary": {
+    "korean": [
+      "나는 집에서 자주 요리하는 편이야.",
+      "외식하는 것보다 집밥이 건강하고 경제적이거든.",
+      "주로 간단한 요리를 만들어.",
+      "아침은 계란 프라이랑 토스트 정도.",
+      "점심은 회사에서 먹으니까 안 해.",
+      "저녁은 집에서 만들어 먹는데, 볶음밥이나 파스타 같은 거.",
+      "국도 가끔 끓이는데, 김치찌개나 된장찌개 같은 거.",
+      "주말에는 시간이 있으면 좀 더 신경 써서 만들어.",
+      "스테이크나 샐러드 같은 것도 도전해 봐.",
+      "요리하는 게 스트레스 해소가 되기도 해.",
+      "유튜브 보면서 새로운 레시피 배우는 것도 재밌어.",
+      "앞으로 요리 실력을 더 늘리고 싶어."
+    ],
+    "english": [
+      "I often cook at home.",
+      "Home-cooked meals are healthier and more economical than eating out.",
+      "I mainly make simple dishes.",
+      "Breakfast is about fried eggs and toast.",
+      "I don't make lunch because I eat at work.",
+      "For dinner, I make and eat at home, like fried rice or pasta.",
+      "I sometimes make soup too, like kimchi stew or soybean paste stew.",
+      "On weekends, if I have time, I put more effort into it.",
+      "I also try things like steak or salad.",
+      "Cooking also relieves stress.",
+      "It's also fun to learn new recipes while watching YouTube.",
+      "I want to improve my cooking skills more in the future."
+    ]
+  }
+}

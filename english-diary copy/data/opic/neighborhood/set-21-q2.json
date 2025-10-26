@@ -1,0 +1,33 @@
+{
+  "title": "What do you like most about your neighborhood? What could be improved?",
+  "diary": {
+    "korean": [
+      "우리 동네에서 제일 좋은 건 조용하고 안전하다는 거야.",
+      "밤늦게 혼자 걸어 다녀도 크게 위험한 느낌이 안 들어.",
+      "사람들도 친절하고, 분위기가 전반적으로 평화로워.",
+      "생활 편의 시설들도 가까워서 큰 불편함이 없어.",
+      "특히 공원이 가까워서 운동하거나 산책하기 좋아.",
+      "근데 아쉬운 점도 있긴 해.",
+      "먹을 만한 음식점이 별로 없어서 외식하려면 다른 동네로 가야 해.",
+      "특히 저녁 늦게까지 여는 식당이 거의 없어.",
+      "카페도 별로 없어서 작업하거나 공부할 공간이 부족해.",
+      "그리고 주차 공간이 부족해서 차 있는 사람들은 불편해하더라고.",
+      "대중교통은 괜찮은데, 막차 시간이 좀 빨라서 아쉬워.",
+      "전체적으로는 만족하지만, 몇 가지 개선되면 더 좋을 것 같아."
+    ],
+    "english": [
+      "What I like most about my neighborhood is that it's quiet and safe.",
+      "Even if I walk alone late at night, I don't really feel, like, it's dangerous.",
+      "People are also kind, and the atmosphere is generally peaceful.",
+      "Living convenience facilities are also close, so there's no major inconvenience.",
+      "Especially the park is close, so it's good for exercising or walking.",
+      "But there are also some regrettable points.",
+      "There aren't many good restaurants, so if I want to eat out, I have to go to another neighborhood.",
+      "Especially there are hardly any restaurants open late in the evening.",
+      "There aren't many cafés either, so there's, you know, a lack of space to work or study.",
+      "And parking space is insufficient, so people with cars find it inconvenient.",
+      "Public transportation is okay, but the last train time is a bit early, which is regretful.",
+      "Overall, I'm satisfied, but it would be better if a few things were improved."
+    ]
+  }
+}

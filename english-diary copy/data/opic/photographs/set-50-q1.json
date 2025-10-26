@@ -1,0 +1,33 @@
+{
+  "title": "Do you like taking photos? What do you photograph?",
+  "diary": {
+    "korean": [
+      "네, 저는 사진 찍는 걸 좋아해요.",
+      "음, 주로 여행 갔을 때 풍경 사진을 많이 찍어요.",
+      "예쁜 장소나 특별한 순간을 기록으로 남기고 싶거든요.",
+      "친구들이랑 만났을 때도 인증샷 많이 찍고요.",
+      "요즘은 음식 사진도 자주 찍는 편이에요.",
+      "맛집 가면 꼭 사진 찍어서 SNS에 올리곤 해요.",
+      "인스타그램 감성 사진 찍는 것도 재미있더라고요.",
+      "카페 가면 분위기 좋은 곳 찾아서 사진 찍기도 하고요.",
+      "요즘 스마트폰 카메라 성능이 좋아져서 편하게 찍어요.",
+      "예전에는 DSLR 카메라도 있었는데, 너무 무거워서 안 들고 다녀요.",
+      "찍은 사진은 구글 포토에 자동으로 백업되게 해놨어요.",
+      "나중에 추억 떠올릴 때 사진 보면 좋더라고요."
+    ],
+    "english": [
+      "Yes, I like taking photos.",
+      "Um, I mainly take a lot of landscape photos when traveling.",
+      "I want to keep pretty places or special moments as records.",
+      "When I meet with friends, I also take many proof shots.",
+      "These days I also often take food photos.",
+      "When I go to good restaurants, I always take photos and upload them to SNS.",
+      "Taking Instagram aesthetic photos is also fun.",
+      "When I go to cafes, I look for places with good atmosphere and take photos.",
+      "These days smartphone camera performance has improved, so I take them comfortably.",
+      "I used to have a DSLR camera, but I don't carry it because it's too heavy.",
+      "I've set photos I take to automatically back up to Google Photos.",
+      "It's nice to look at photos later when recalling memories."
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "title": "Tell me about a park you often visit. What does it look like?",
+  "diary": {
+    "korean": [
+      "우리 집 근처에 작은 공원이 있는데, 거기 자주 가.",
+      "공원이 크진 않지만 산책하기에 딱 좋은 크기야.",
+      "입구에 들어가면 바로 운동기구들이 있어서 어르신들이 많이 계셔.",
+      "중앙에는 벤치들이 여러 개 있어서 앉아서 쉴 수 있어.",
+      "나무가 많아서 여름에도 그늘이 있어 시원해.",
+      "산책로가 잘 정비되어 있어서 걷기 편해.",
+      "저녁에 가면 조명도 있어서 안전하게 걸을 수 있어.",
+      "작은 분수대도 있는데, 여름엔 아이들이 거기서 놀아.",
+      "화단에 계절마다 꽃들이 피어 있어서 예뻐.",
+      "주말엔 사람들이 돗자리 깔고 피크닉하는 모습도 보여.",
+      "강아지 산책시키는 사람들도 많이 보이고.",
+      "전체적으로 깨끗하고 관리가 잘 되어 있어서 좋아."
+    ],
+    "english": [
+      "There's a small park near my house, and I often, like, go there.",
+      "The park isn't big, but it's, you know, just the right size for a walk.",
+      "When you enter the entrance, there are exercise equipment right away, so many elderly people are there.",
+      "In the center, there are several benches where you can sit and rest.",
+      "There are many trees, so even in summer, there's shade and it's cool.",
+      "The walking path is well-maintained, so it's, like, easy to walk.",
+      "If you go in the evening, there are lights too, so you can walk safely.",
+      "There's also a small fountain, and in summer, kids play there.",
+      "Flowers bloom in the flower beds every season, so it's pretty.",
+      "On weekends, you can see people, like, spreading mats and having picnics.",
+      "You can also see many people walking their dogs.",
+      "Overall, it's clean and well-maintained, so I like it."
+    ]
+  }
+}

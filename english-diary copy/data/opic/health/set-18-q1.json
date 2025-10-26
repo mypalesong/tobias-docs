@@ -1,0 +1,33 @@
+{
+  "title": "What do you do to stay healthy? Tell me about your health habits.",
+  "diary": {
+    "korean": [
+      "건강 관리를 위해 여러 가지 노력하는 편이야.",
+      "일단 규칙적으로 운동하려고 하는데, 꾸준히 하기가 쉽지 않아.",
+      "요즘은 일주일에 3번 정도 헬스장 가려고 노력 중이야.",
+      "못 가는 날은 집에서라도 간단한 스트레칭이나 요가를 해.",
+      "식습관도 신경 쓰려고 하는데, 야식을 끊기가 어려워.",
+      "그래도 아침은 꼭 챙겨 먹으려고 해.",
+      "물도 하루에 2리터 정도 마시려고 노력하고 있어.",
+      "충분한 수면도 중요하다고 생각해서 일찍 자려고 해.",
+      "근데 핸드폰 보다 보면 항상 늦게 자게 돼.",
+      "스트레스 관리도 중요해서 가끔 산책하거나 명상도 해봐.",
+      "비타민 같은 영양제도 챙겨 먹고 있어.",
+      "완벽하진 않지만, 건강을 위해 계속 노력하는 중이야."
+    ],
+    "english": [
+      "I try various things to manage my health.",
+      "First of all, I try to exercise regularly, but it's, like, not easy to be consistent.",
+      "These days I'm trying to go to the gym about 3 times a week.",
+      "On days I can't go, I do simple stretching or yoga at home at least.",
+      "I also try to watch my eating habits, but it's hard to quit late-night snacks.",
+      "Still, I try to make sure I eat breakfast.",
+      "I'm also trying to drink about 2 liters of water a day.",
+      "I think sufficient sleep is important too, so I try to go to bed early.",
+      "But when I look at my phone, I always, you know, end up sleeping late.",
+      "Stress management is also important, so sometimes I take walks or try meditation.",
+      "I also take supplements like vitamins.",
+      "It's not perfect, but I'm, like, continuing to make efforts for my health."
+    ]
+  }
+}

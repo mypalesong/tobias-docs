@@ -1,0 +1,33 @@
+{
+  "title": "What causes you stress?",
+  "diary": {
+    "korean": [
+      "저한테 스트레스를 주는 건 주로 일 관련된 거예요.",
+      "회사에서 업무 마감 기한이 촉박할 때가 제일 힘들어요.",
+      "특히 상사가 갑자기 급한 일을 시키면 정말 스트레스받거든요.",
+      "계획했던 일정이 다 틀어지고 야근해야 하고 그러니까요.",
+      "그리고 사람 관계에서도 스트레스를 받아요.",
+      "직장 동료들이랑 의견이 안 맞을 때나 분위기가 안 좋을 때요.",
+      "음, 또 교통 체증도 스트레스예요.",
+      "출퇴근 시간에 지하철이나 버스가 너무 붐빌 때 정말 짜증나요.",
+      "개인적으로는 돈 문제도 스트레스거든요.",
+      "월급날 되면 카드값, 월세, 공과금 내면 남는 게 별로 없어서요.",
+      "건강 걱정도 가끔 스트레스가 되고요.",
+      "현대 사회에서 스트레스 안 받고 살기는 정말 어려운 것 같아요."
+    ],
+    "english": [
+      "What causes me stress is mainly work-related things.",
+      "It's hardest when work deadlines at the company are tight.",
+      "Especially when my boss suddenly gives me urgent work, I really get stressed.",
+      "Because my planned schedule all gets messed up and I have to work overtime.",
+      "And I also get stressed from relationships.",
+      "When opinions don't match with coworkers or when the atmosphere is bad.",
+      "Um, also traffic jams are stressful.",
+      "When the subway or bus is too crowded during commute times, it's really annoying.",
+      "Personally, money problems are also stressful.",
+      "On payday, after paying credit card bills, rent, and utility bills, there's not much left.",
+      "Health concerns also sometimes become stress.",
+      "I think it's really difficult to live without stress in modern society."
+    ]
+  }
+}

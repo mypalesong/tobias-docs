@@ -1,0 +1,33 @@
+{
+  "title": "Do you ride a bicycle? How often?",
+  "diary": {
+    "korean": [
+      "네, 저는 자전거 타는 걸 좋아해요.",
+      "음, 요즘은 한 달에 2-3번 정도 타는 것 같아요.",
+      "예전에는 거의 안 탔었는데, 작년에 자전거를 새로 사고 나서요,",
+      "주말마다 타려고 노력하는 편이에요.",
+      "주로 한강 자전거 도로를 따라서 타는데요,",
+      "여의도에서 출발해서 잠실까지 가는 코스를 자주 타요.",
+      "평일에는 시간이 없어서 거의 못 타고요,",
+      "토요일이나 일요일 오전에 주로 타는 편이에요.",
+      "날씨가 안 좋거나 미세먼지가 심한 날은 안 타고요,",
+      "날씨 좋은 봄이나 가을에 제일 많이 타는 것 같아요.",
+      "여름엔 너무 덥고 겨울엔 너무 추워서 좀 힘들거든요.",
+      "운동도 되고 스트레스 해소도 돼서 좋은 취미인 것 같아요."
+    ],
+    "english": [
+      "Yes, I like riding a bicycle.",
+      "Um, these days I think I ride about 2-3 times a month.",
+      "I hardly rode before, but after I bought a new bike last year,",
+      "I try to ride every weekend.",
+      "I mainly ride along the Hangang bicycle path,",
+      "and I often take the route from Yeouido to Jamsil.",
+      "On weekdays I don't have time so I rarely ride,",
+      "I usually ride on Saturday or Sunday mornings.",
+      "I don't ride when the weather is bad or fine dust is heavy,",
+      "I think I ride the most in spring or fall when the weather is nice.",
+      "Summer is too hot and winter is too cold, so it's a bit tough.",
+      "It's good exercise and stress relief too, so I think it's a good hobby."
+    ]
+  }
+}

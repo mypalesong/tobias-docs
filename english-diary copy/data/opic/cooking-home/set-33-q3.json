@@ -1,0 +1,33 @@
+{
+  "title": "How have cooking habits changed in your country?",
+  "diary": {
+    "korean": [
+      "한국의 요리 습관이 많이 변한 것 같아.",
+      "예전엔 집에서 거의 다 해먹었는데, 요즘은 배달이나 외식이 많아.",
+      "특히 1인 가구가 늘면서 간편식 수요가 늘었어.",
+      "편의점이나 마트에 간편하게 데워 먹는 음식들이 정말 많아.",
+      "밀키트도 인기가 많아졌어.",
+      "재료가 다 손질돼서 나오니까 요리하기 편해.",
+      "요리 초보자들도 쉽게 따라 할 수 있어.",
+      "유튜브나 인스타그램에 레시피도 많이 공유되고.",
+      "홈쿡 문화가 다시 활성화되는 느낌도 있어.",
+      "건강을 생각해서 직접 만들어 먹는 사람들도 늘었고.",
+      "하지만 여전히 바쁜 사람들은 배달에 많이 의존해.",
+      "전체적으로 다양한 선택지가 생긴 것 같아."
+    ],
+    "english": [
+      "I think cooking habits in Korea have changed a lot.",
+      "Before, people cooked almost everything at home, but these days there's a lot of delivery and eating out.",
+      "Especially as single-person households increased, demand for convenience foods grew.",
+      "There are really many foods at convenience stores or supermarkets that can be easily heated and eaten.",
+      "Meal kits have also become popular.",
+      "All ingredients come prepared, so it's convenient to cook.",
+      "Even cooking beginners can easily follow along.",
+      "Many recipes are also shared on YouTube or Instagram.",
+      "There's also a feeling that home cooking culture is being revitalized.",
+      "The number of people who cook themselves for health has also increased.",
+      "But busy people still rely a lot on delivery.",
+      "Overall, it seems various options have emerged."
+    ]
+  }
+}

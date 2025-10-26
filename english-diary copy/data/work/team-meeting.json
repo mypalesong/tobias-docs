@@ -1,0 +1,37 @@
+{
+  "title": "팀 미팅",
+  "diary": {
+    "korean": [
+      "오늘 오전에 팀 미팅 있었는데, 진짜 길었어.",
+      "원래 30분 예정이었는데, 1시간 넘게 걸렸거든.",
+      "회의실 들어가자마자 분위기가 좀 무거운 게 느껴졌어.",
+      "팀장이 프로젝트 진행 상황 물어보는데, 다들 할 말이 없어.",
+      "내 차례 됐을 때 진짜 떨렸는데, 준비한 대로 말했어.",
+      "근데 중간에 질문 받으니까 당황해서 대답을 제대로 못 했어.",
+      "다른 팀원이 도와줘서 겨우 넘어갔는데, 진짜 고마웠어.",
+      "회의 중간에 커피 마시러 가고 싶었는데, 참았어.",
+      "누가 자기 의견 말하는데 너무 길어서 지루했어, 솔직히.",
+      "결론은 결국 다 같이 더 열심히 하자는 건데, 항상 그래.",
+      "회의 끝나고 나니까 점심시간인데, 배고파 죽을 뻔했어.",
+      "동료들이랑 밥 먹으면서 회의 얘기하는데, 다들 힘들어했어.",
+      "다음 주에 또 미팅 있다는데, 벌써 걱정돼.",
+      "회의를 줄이면 안 되나 싶은데, 절대 안 줄어들 것 같아."
+    ],
+    "english": [
+      "We had a team meeting this morning, and it was literally so long.",
+      "It was supposed to be 30 minutes, but it took over an hour.",
+      "As soon as I entered the meeting room, I could feel the atmosphere was kind of heavy.",
+      "The team leader asked about project progress, and nobody had much to say.",
+      "When it was my turn I was really nervous, but I said what I prepared.",
+      "But when I got questions in the middle I panicked and couldn't answer properly.",
+      "Another team member helped me out so I barely got through, I was really grateful.",
+      "During the meeting I wanted to go get coffee, but I held back.",
+      "Someone was giving their opinion and it was so long it was boring, honestly.",
+      "The conclusion was basically everyone needs to work harder together, like always.",
+      "After the meeting ended it was lunchtime, and I was starving.",
+      "Eating with coworkers and talking about the meeting, everyone found it tough.",
+      "They said we have another meeting next week, and I'm already worried.",
+      "I wish we could reduce meetings, but I don't think they'll ever decrease."
+    ]
+  }
+}

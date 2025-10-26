@@ -1,0 +1,2644 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diary Viewer - Professional Edition</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;600;700&family=Noto+Serif+KR:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&family=Crimson+Text:wght@400;600;700&family=Georgia&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            /* Light Theme */
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8f9fa;
+            --bg-tertiary: #f1f3f5;
+            --bg-hover: #e9ecef;
+            --bg-active: #dee2e6;
+
+            --text-primary: #212529;
+            --text-secondary: #495057;
+            --text-tertiary: #6c757d;
+            --text-muted: #adb5bd;
+
+            --border-color: #dee2e6;
+            --border-hover: #adb5bd;
+            --border-active: #495057;
+
+            --accent-primary: #4263eb;
+            --accent-secondary: #5c7cfa;
+            --accent-hover: #364fc7;
+
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.05);
+            --shadow-md: 0 4px 6px rgba(0,0,0,0.07);
+            --shadow-lg: 0 10px 24px rgba(0,0,0,0.1);
+
+            --sidebar-width: 320px;
+            --header-height: 72px;
+        }
+
+        [data-theme="dark"] {
+            --bg-primary: #1a1b1e;
+            --bg-secondary: #25262b;
+            --bg-tertiary: #2c2e33;
+            --bg-hover: #373a40;
+            --bg-active: #424550;
+
+            --text-primary: #e9ecef;
+            --text-secondary: #ced4da;
+            --text-tertiary: #adb5bd;
+            --text-muted: #6c757d;
+
+            --border-color: #373a40;
+            --border-hover: #495057;
+            --border-active: #ced4da;
+
+            --accent-primary: #5c7cfa;
+            --accent-secondary: #748ffc;
+            --accent-hover: #4c6ef5;
+
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.2);
+            --shadow-md: 0 4px 6px rgba(0,0,0,0.3);
+            --shadow-lg: 0 10px 24px rgba(0,0,0,0.4);
+        }
+
+        [data-theme="auto"] {
+            /* Will be handled by JS based on system preference */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            height: 100vh;
+            overflow: hidden;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            margin: 0;
+            padding: 0;
+        }
+
+        .app-container {
+            display: grid;
+            grid-template-columns: var(--sidebar-width) 1fr;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .app-container.settings-open {
+            grid-template-columns: var(--sidebar-width) 1fr 380px;
+        }
+
+        /* Hamburger Menu Button */
+        .hamburger-btn {
+            display: none;
+            position: fixed;
+            top: 1rem;
+            left: 1rem;
+            z-index: 1002;
+            background: var(--bg-primary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 0.75rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            box-shadow: var(--shadow-md);
+        }
+
+        .hamburger-btn:hover {
+            background: var(--bg-hover);
+            border-color: var(--accent-primary);
+        }
+
+        .hamburger-btn.active {
+            background: var(--accent-primary);
+            border-color: var(--accent-primary);
+        }
+
+        .hamburger-icon {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            width: 20px;
+        }
+
+        .hamburger-icon span {
+            display: block;
+            height: 2px;
+            background: var(--text-primary);
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+
+        .hamburger-btn.active .hamburger-icon span {
+            background: white;
+        }
+
+        .hamburger-btn.active .hamburger-icon span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .hamburger-btn.active .hamburger-icon span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger-btn.active .hamburger-icon span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+
+        /* Sidebar Overlay for Mobile */
+        .sidebar-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+        }
+
+        .sidebar-overlay.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            background: var(--bg-secondary);
+            border-right: 1px solid var(--border-color);
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            position: sticky;
+            top: 0;
+        }
+
+        .sidebar-header {
+            padding: 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+            background: var(--bg-primary);
+        }
+
+        .app-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            color: var(--text-primary);
+            margin-bottom: 0.25rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .app-subtitle {
+            font-size: 0.8125rem;
+            color: var(--text-tertiary);
+            font-weight: 400;
+        }
+
+        /* Search & Controls */
+        .sidebar-controls {
+            padding: 1rem 1.25rem;
+            border-bottom: 1px solid var(--border-color);
+            background: var(--bg-primary);
+        }
+
+        .category-selector-box {
+            margin-bottom: 0.75rem;
+        }
+
+        .category-select {
+            width: 100%;
+            padding: 0.625rem 0.875rem;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+            font-size: 0.875rem;
+            font-family: inherit;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .category-select:hover,
+        .category-select:focus {
+            outline: none;
+            border-color: var(--accent-primary);
+            box-shadow: 0 0 0 3px rgba(66, 99, 235, 0.1);
+        }
+
+        .search-box {
+            position: relative;
+            margin-bottom: 0.75rem;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 0.625rem 0.875rem 0.625rem 2.25rem;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+            font-size: 0.875rem;
+            font-family: inherit;
+            transition: all 0.2s ease;
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: var(--accent-primary);
+            box-shadow: 0 0 0 3px rgba(66, 99, 235, 0.1);
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 0.75rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-muted);
+            font-size: 0.875rem;
+        }
+
+        .filter-stats {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.75rem;
+            color: var(--text-tertiary);
+            margin-top: 0.5rem;
+        }
+
+        .stats-count {
+            font-weight: 500;
+            color: var(--text-secondary);
+        }
+
+        /* File List */
+        .file-list {
+            flex: 1;
+            overflow-y: auto;
+            padding: 0.75rem 0;
+        }
+
+        .category {
+            margin-bottom: 0.5rem;
+        }
+
+        .category-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.5rem 1.25rem;
+            cursor: pointer;
+            user-select: none;
+            transition: background-color 0.15s ease;
+        }
+
+        .category-header:hover {
+            background: var(--bg-hover);
+        }
+
+        .category-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-tertiary);
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .category-count {
+            background: var(--bg-tertiary);
+            color: var(--text-tertiary);
+            font-size: 0.6875rem;
+            padding: 0.125rem 0.5rem;
+            border-radius: 12px;
+            font-weight: 600;
+        }
+
+        .category-toggle {
+            color: var(--text-muted);
+            font-size: 0.75rem;
+            transition: transform 0.2s ease;
+        }
+
+        .category.collapsed .category-toggle {
+            transform: rotate(-90deg);
+        }
+
+        .category-items {
+            max-height: 1000px;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .category.collapsed .category-items {
+            max-height: 0;
+        }
+
+        .file-item {
+            padding: 0.75rem 1.25rem 0.75rem 2.5rem;
+            cursor: pointer;
+            transition: all 0.15s ease;
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+            border-left: 2px solid transparent;
+            font-weight: 400;
+            position: relative;
+        }
+
+        .file-item::before {
+            content: '●';
+            position: absolute;
+            left: 1.5rem;
+            color: var(--text-muted);
+            font-size: 0.5rem;
+        }
+
+        .file-item:hover {
+            background: var(--bg-hover);
+            color: var(--text-primary);
+            border-left-color: var(--border-hover);
+        }
+
+        .file-item.active {
+            background: var(--bg-active);
+            color: var(--accent-primary);
+            border-left-color: var(--accent-primary);
+            font-weight: 500;
+        }
+
+        .file-item.active::before {
+            color: var(--accent-primary);
+        }
+
+        /* Main Content */
+        .main-content {
+            background: var(--bg-primary);
+            overflow-y: auto;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content-header {
+            padding: 1.5rem 2.5rem;
+            border-bottom: 1px solid var(--border-color);
+            background: var(--bg-primary);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            backdrop-filter: blur(10px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .diary-title {
+            font-size: 1.75rem;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            color: var(--text-primary);
+        }
+
+        /* Chip Grid for file selection */
+        .chip-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+            padding: 2rem;
+            max-width: var(--content-max-width, 1400px);
+            margin: 0 auto;
+        }
+
+        .file-chip {
+            padding: 1rem 1.25rem;
+            background: var(--bg-secondary);
+            border: 2px solid var(--border-color);
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-align: center;
+            font-size: 0.9375rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .file-chip:hover {
+            background: var(--bg-hover);
+            border-color: var(--accent-primary);
+            color: var(--accent-primary);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .file-chip.active {
+            background: var(--accent-primary);
+            border-color: var(--accent-primary);
+            color: white;
+        }
+
+        .category-header-section {
+            padding: 2rem 2.5rem;
+            border-bottom: 1px solid var(--border-color);
+            background: var(--bg-secondary);
+            flex-shrink: 0;
+        }
+
+        .category-display-name {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            text-transform: capitalize;
+        }
+
+        .category-description {
+            font-size: 0.9375rem;
+            color: var(--text-tertiary);
+            margin-top: 0.5rem;
+        }
+
+        /* Breadcrumb */
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2.5rem;
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border-color);
+            font-size: 0.875rem;
+            color: var(--text-tertiary);
+            flex-shrink: 0;
+        }
+
+        .breadcrumb-item {
+            color: var(--text-secondary);
+        }
+
+        .breadcrumb-item.active {
+            color: var(--accent-primary);
+            font-weight: 600;
+        }
+
+        .breadcrumb-separator {
+            color: var(--text-muted);
+        }
+
+        /* Chip Section */
+        .chip-section {
+            padding: 1.5rem 2.5rem;
+            border-bottom: 1px solid var(--border-color);
+            background: var(--bg-primary);
+            flex-shrink: 0;
+            position: relative;
+            z-index: 1;
+            overflow: visible;
+        }
+
+        .chip-section-title {
+            font-size: 0.8125rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-tertiary);
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .chip-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .chip-row:last-child {
+            margin-bottom: 0;
+        }
+
+        .small-chip {
+            padding: 0.5rem 1rem;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+            position: relative;
+            z-index: 10;
+            pointer-events: auto;
+            user-select: none;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .small-chip:hover {
+            background: var(--bg-hover);
+            border-color: var(--accent-primary);
+            color: var(--accent-primary);
+        }
+
+        .small-chip:active {
+            transform: scale(0.98);
+        }
+
+        .small-chip.active {
+            background: var(--accent-primary);
+            border-color: var(--accent-primary);
+            color: white;
+            z-index: 11;
+        }
+
+        /* Content Area */
+        .content-area {
+            padding: 2.5rem;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 2rem 1rem;
+            color: var(--text-tertiary);
+            font-size: 0.875rem;
+        }
+
+        .header-nav {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+        }
+
+        .header-controls {
+            display: flex;
+            gap: 0.75rem;
+            align-items: center;
+        }
+
+        .btn {
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            background: var(--bg-secondary);
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+            font-family: inherit;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn:hover:not(:disabled) {
+            background: var(--bg-hover);
+            border-color: var(--border-hover);
+            color: var(--text-primary);
+        }
+
+        .btn.active {
+            background: var(--accent-primary);
+            border-color: var(--accent-primary);
+            color: white;
+        }
+
+        .btn:disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+        }
+
+        .btn-nav {
+            font-size: 0.8125rem;
+            padding: 0.4rem 0.875rem;
+        }
+
+        .btn-icon {
+            font-size: 1rem;
+        }
+
+        .content-body {
+            padding: 0;
+            flex: 1;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content-body > #content {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .content-area {
+            flex: 1;
+            overflow: hidden;
+            padding: 2.5rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .dual-panel {
+            display: grid;
+            gap: var(--panel-gap, 2rem);
+            max-width: var(--content-max-width, 1400px);
+            margin: 0 auto;
+            height: 100%;
+        }
+
+        .dual-panel.layout-dual {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .dual-panel.layout-single {
+            grid-template-columns: 1fr;
+        }
+
+        .dual-panel.layout-single .english-panel {
+            display: none;
+        }
+
+        .panel {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: var(--panel-padding, 2rem);
+            transition: all 0.2s ease;
+            box-shadow: var(--shadow-sm);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .panel:hover {
+            border-color: var(--border-hover);
+            box-shadow: var(--shadow-md);
+        }
+
+        .panel-title {
+            font-size: 0.8125rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-tertiary);
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+            padding-bottom: 0.75rem;
+            border-bottom: 2px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-shrink: 0;
+        }
+
+        .text-content {
+            line-height: var(--line-height, 1.8);
+            font-size: var(--font-size, 1rem);
+            counter-reset: line-number;
+            flex: 1;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .text-content p {
+            margin-bottom: var(--paragraph-spacing, 1.5rem);
+            color: var(--text-secondary);
+            transition: all 0.2s ease;
+            font-weight: 400;
+            position: relative;
+            padding-left: 3.5rem;
+            counter-increment: line-number;
+        }
+
+        .text-content p::before {
+            content: counter(line-number);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 2.5rem;
+            text-align: right;
+            color: var(--text-muted);
+            font-size: 0.875em;
+            font-weight: 400;
+            user-select: none;
+            font-family: 'Inter', monospace;
+            opacity: 0.6;
+        }
+
+        .text-content p:hover::before,
+        .text-content p.highlighted::before {
+            opacity: 1;
+            color: #60a5fa;
+        }
+
+        .text-content p:last-child {
+            margin-bottom: 0;
+        }
+
+        .text-content p:hover,
+        .text-content p.highlighted {
+            color: #60a5fa;
+            background: rgba(96, 165, 250, 0.08);
+            border-radius: 4px;
+            padding-left: 3.5rem;
+            margin-left: -0.25rem;
+            padding-right: 0.25rem;
+        }
+
+        .korean-panel .text-content {
+            font-family: var(--korean-font, 'Noto Sans KR'), -apple-system, sans-serif;
+        }
+
+        .english-panel .text-content {
+            font-family: var(--english-font, 'Inter'), -apple-system, sans-serif;
+        }
+
+        /* Translation Popup Overlay */
+        .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: transparent;
+            z-index: 999;
+        }
+
+        /* Translation Popup */
+        .translation-popup {
+            position: fixed;
+            background: var(--bg-primary);
+            border: 2px solid #60a5fa;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+            z-index: 1000;
+            max-width: 700px;
+            font-size: 1rem;
+            line-height: 1.7;
+            color: var(--text-primary);
+            animation: popupFadeIn 0.3s ease;
+        }
+
+        .popup-korean-text {
+            font-family: var(--korean-font, 'Noto Sans KR'), -apple-system, sans-serif;
+            font-size: 1.125rem;
+            line-height: 1.8;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .popup-english-text {
+            font-family: var(--english-font, 'Inter'), -apple-system, sans-serif;
+            font-size: 1.125rem;
+            line-height: 1.7;
+            color: var(--text-secondary);
+        }
+
+        @keyframes popupFadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .popup-text {
+            font-weight: 500;
+            line-height: 1.7;
+        }
+
+        .popup-char {
+            color: var(--text-primary);
+            transition: color 0.2s ease;
+        }
+
+        .popup-char.read {
+            color: #60a5fa;
+        }
+
+        .popup-close-hint {
+            font-size: 0.6875rem;
+            color: var(--text-muted);
+            margin-top: 0.5rem;
+            font-style: italic;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .popup-countdown {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #60a5fa;
+            font-family: var(--english-font, 'Inter'), -apple-system, sans-serif;
+            font-style: normal;
+            margin-left: 0.5rem;
+        }
+
+        /* Hide line numbers when disabled */
+        .app-container.hide-line-numbers .text-content p {
+            padding-left: 0;
+        }
+
+        .app-container.hide-line-numbers .text-content p::before {
+            display: none;
+        }
+
+        /* Settings Panel */
+        .settings-sidebar {
+            background: var(--bg-secondary);
+            border-left: 1px solid var(--border-color);
+            height: 100vh;
+            position: sticky;
+            top: 0;
+            overflow-y: auto;
+            display: none;
+            flex-direction: column;
+        }
+
+        .app-container.settings-open .settings-sidebar {
+            display: flex;
+        }
+
+        .settings-panel {
+            background: var(--bg-secondary);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .settings-header {
+            padding: 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--bg-primary);
+        }
+
+        .settings-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .close-btn {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--text-tertiary);
+            cursor: pointer;
+            padding: 0.25rem;
+            line-height: 1;
+            transition: color 0.2s ease;
+        }
+
+        .close-btn:hover {
+            color: var(--text-primary);
+        }
+
+        .settings-content {
+            padding: 1.5rem;
+            flex: 1;
+            overflow-y: auto;
+        }
+
+        .setting-section {
+            margin-bottom: 2rem;
+        }
+
+        .setting-section:last-child {
+            margin-bottom: 0;
+        }
+
+        .section-title {
+            font-size: 0.9375rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-size: 0.8125rem;
+        }
+
+        .setting-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .setting-row:last-child {
+            border-bottom: none;
+        }
+
+        .setting-label {
+            font-size: 0.9375rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        .setting-control {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+        }
+
+        .select-control,
+        .range-control {
+            padding: 0.5rem 0.75rem;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+            font-size: 0.875rem;
+            font-family: inherit;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .select-control:hover,
+        .select-control:focus {
+            border-color: var(--accent-primary);
+            outline: none;
+        }
+
+        .range-control {
+            width: 150px;
+        }
+
+        .range-value {
+            min-width: 3rem;
+            text-align: right;
+            font-size: 0.875rem;
+            color: var(--text-tertiary);
+            font-weight: 500;
+        }
+
+        .theme-selector {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .theme-btn {
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            background: var(--bg-secondary);
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-weight: 500;
+        }
+
+        .theme-btn:hover {
+            background: var(--bg-hover);
+            border-color: var(--border-hover);
+        }
+
+        .theme-btn.active {
+            background: var(--accent-primary);
+            border-color: var(--accent-primary);
+            color: white;
+        }
+
+        /* Toggle Switch */
+        .toggle-switch {
+            position: relative;
+            display: inline-block;
+            width: 48px;
+            height: 24px;
+        }
+
+        .toggle-switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .toggle-slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: var(--bg-tertiary);
+            border: 1px solid var(--border-color);
+            transition: 0.3s;
+            border-radius: 24px;
+        }
+
+        .toggle-slider:before {
+            position: absolute;
+            content: "";
+            height: 16px;
+            width: 16px;
+            left: 3px;
+            bottom: 3px;
+            background-color: white;
+            transition: 0.3s;
+            border-radius: 50%;
+        }
+
+        .toggle-switch input:checked + .toggle-slider {
+            background-color: var(--accent-primary);
+            border-color: var(--accent-primary);
+        }
+
+        .toggle-switch input:checked + .toggle-slider:before {
+            transform: translateX(24px);
+        }
+
+        .toggle-slider:hover {
+            border-color: var(--border-hover);
+        }
+
+        .reset-btn {
+            margin-top: 1.5rem;
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            background: var(--bg-secondary);
+            color: var(--text-secondary);
+            font-size: 0.9375rem;
+            font-family: inherit;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-weight: 600;
+        }
+
+        .reset-btn:hover {
+            background: var(--bg-hover);
+            border-color: var(--accent-primary);
+            color: var(--accent-primary);
+        }
+
+        /* Loading & Error */
+        .loading,
+        .error-message {
+            text-align: center;
+            padding: 4rem 2rem;
+            color: var(--text-tertiary);
+            font-size: 0.9375rem;
+        }
+
+        .error-message {
+            color: var(--text-secondary);
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            margin: 2rem;
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+            height: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--bg-secondary);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--border-color);
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--border-hover);
+        }
+
+        /* Selection */
+        ::selection {
+            background: var(--accent-primary);
+            color: white;
+        }
+
+        /* Korean text with translate button */
+        .text-content p {
+            position: relative;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.5rem;
+        }
+
+        .korean-panel .text-content p {
+            padding-right: 3rem;
+        }
+
+        .translate-btn {
+            position: absolute;
+            right: 0;
+            top: 0;
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border-color);
+            color: var(--text-tertiary);
+            border-radius: 6px;
+            padding: 0.375rem 0.625rem;
+            font-size: 0.75rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-weight: 500;
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .korean-panel .text-content p:hover .translate-btn,
+        .korean-panel .text-content p .translate-btn.always-visible {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .translate-btn:hover {
+            background: var(--accent-primary);
+            border-color: var(--accent-primary);
+            color: white;
+            transform: scale(1.05);
+        }
+
+        /* Responsive */
+        @media (max-width: 1200px) {
+            :root {
+                --sidebar-width: 280px;
+            }
+        }
+
+        @media (max-width: 1200px) {
+            .app-container.settings-open {
+                grid-template-columns: 280px 1fr 340px;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .dual-panel.layout-dual {
+                grid-template-columns: 1fr;
+            }
+
+            .content-header,
+            .content-body {
+                padding: 1.5rem;
+            }
+
+            /* Make translate button always visible on tablets */
+            .translate-btn.always-visible {
+                opacity: 1;
+                pointer-events: auto;
+            }
+        }
+
+        @media (max-width: 768px) {
+            /* Mobile layout - hide sidebar by default, show hamburger */
+            .app-container,
+            .app-container.settings-open {
+                grid-template-columns: 1fr;
+            }
+
+            .hamburger-btn {
+                display: block;
+            }
+
+            .sidebar-overlay {
+                display: block;
+            }
+
+            .sidebar {
+                position: fixed;
+                top: 0;
+                left: 0;
+                height: 100vh;
+                width: 280px;
+                z-index: 1000;
+                transform: translateX(-100%);
+                transition: transform 0.3s ease;
+                border-right: 1px solid var(--border-color);
+                box-shadow: var(--shadow-lg);
+            }
+
+            .sidebar.open {
+                transform: translateX(0);
+            }
+
+            .settings-sidebar {
+                position: fixed;
+                top: 0;
+                right: 0;
+                width: 100%;
+                max-width: 320px;
+                z-index: 1000;
+                box-shadow: var(--shadow-lg);
+            }
+
+            /* Mobile-optimized layout */
+            .content-header {
+                padding: 1rem;
+                padding-left: 4rem; /* Make room for hamburger button */
+            }
+
+            .breadcrumb {
+                padding: 0.75rem 1rem;
+            }
+
+            .chip-section {
+                padding: 1rem;
+                overflow: visible;
+            }
+
+            .content-area {
+                padding: 1rem;
+                overflow: hidden;
+            }
+
+            .panel {
+                padding: 1rem;
+                min-height: 0;
+                overflow: hidden;
+            }
+
+            .text-content {
+                overflow: hidden;
+            }
+
+            .dual-panel.layout-dual {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            /* Force single view on mobile */
+            .dual-panel {
+                grid-template-columns: 1fr !important;
+            }
+
+            .dual-panel .english-panel {
+                display: none !important;
+            }
+
+            .panel {
+                height: 100%;
+                max-height: none;
+            }
+
+            .text-content p {
+                padding-left: 2rem;
+                font-size: 0.95rem;
+            }
+
+            .text-content p::before {
+                width: 1.5rem;
+                font-size: 0.8125em;
+            }
+
+            /* Always show translate button on mobile */
+            .korean-panel .text-content p .translate-btn {
+                opacity: 1;
+                pointer-events: auto;
+            }
+
+            /* Translation popup mobile optimization */
+            .translation-popup {
+                max-width: calc(100vw - 2rem);
+                font-size: 1rem;
+                padding: 1rem;
+                left: 1rem !important;
+                right: 1rem;
+                width: calc(100vw - 2rem);
+            }
+        }
+
+        @media (max-width: 640px) {
+            body {
+                overflow: hidden !important;
+            }
+
+            .content-header {
+                padding: 0.75rem 1rem 0.75rem 4rem;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                gap: 0.5rem;
+                flex-shrink: 0;
+                min-height: auto;
+            }
+
+            .diary-title {
+                font-size: 1rem;
+                flex: 1;
+            }
+
+            .header-nav {
+                display: flex;
+                gap: 0.25rem;
+            }
+
+            .header-controls {
+                display: none;
+            }
+
+            .btn-nav {
+                font-size: 0.75rem;
+                padding: 0.35rem 0.65rem;
+            }
+
+            .settings-sidebar {
+                max-width: 100%;
+            }
+
+            .setting-row {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+            }
+
+            .chip-section {
+                padding: 0.5rem 0.75rem;
+                flex-shrink: 0;
+                overflow: visible;
+                max-height: none;
+            }
+
+            .chip-section-title {
+                font-size: 0.6875rem;
+                margin-bottom: 0.5rem;
+            }
+
+            .chip-row {
+                gap: 0.5rem;
+                margin-bottom: 0.75rem;
+            }
+
+            .small-chip {
+                font-size: 0.75rem;
+                padding: 0.35rem 0.65rem;
+            }
+
+            .breadcrumb {
+                padding: 0.5rem 1rem;
+                font-size: 0.75rem;
+                flex-shrink: 0;
+            }
+
+            .content-area {
+                padding: 0.5rem 1rem;
+                flex: 1;
+                overflow: hidden;
+            }
+
+            .panel {
+                padding: 1rem;
+                overflow: hidden;
+            }
+
+            .panel-title {
+                font-size: 0.75rem;
+                margin-bottom: 1rem;
+            }
+
+            .text-content {
+                overflow: hidden;
+                line-height: 1.6;
+            }
+
+            .text-content p {
+                font-size: 0.875rem;
+                margin-bottom: 1rem;
+                padding-left: 1.75rem;
+            }
+
+            .text-content p::before {
+                width: 1.25rem;
+                font-size: 0.75rem;
+            }
+
+            .translate-btn {
+                padding: 0.25rem 0.5rem;
+                font-size: 0.6875rem;
+            }
+
+            .korean-panel .text-content p {
+                padding-right: 2.5rem;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .panel {
+            animation: fadeIn 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hamburger Menu Button -->
+    <button class="hamburger-btn" id="hamburgerBtn">
+        <div class="hamburger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </button>
+
+    <!-- Sidebar Overlay -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <div class="app-container" id="appContainer">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h1 class="app-title">
+                    <span>📔</span>
+                    Diary Viewer
+                </h1>
+                <p class="app-subtitle">Korean & English</p>
+            </div>
+
+            <div class="sidebar-controls">
+                <div class="search-box">
+                    <span class="search-icon">🔍</span>
+                    <input
+                        type="text"
+                        class="search-input"
+                        id="searchInput"
+                        placeholder="Search categories..."
+                        autocomplete="off"
+                    >
+                </div>
+                <div class="filter-stats">
+                    <span class="stats-count" id="categoryCount">0 categories</span>
+                </div>
+            </div>
+
+            <nav id="categoryList" class="file-list">
+                <div class="loading">Loading categories...</div>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="content-header">
+                <h2 id="diaryTitle" class="diary-title">Select a diary</h2>
+                <div class="header-nav">
+                    <button class="btn btn-nav" id="prevBtn" disabled>
+                        <span class="btn-icon">◀</span>
+                        Previous
+                    </button>
+                    <button class="btn btn-nav" id="nextBtn" disabled>
+                        Next
+                        <span class="btn-icon">▶</span>
+                    </button>
+                </div>
+                <div class="header-controls">
+                    <button class="btn" id="layoutBtn">
+                        <span class="btn-icon">⚏</span>
+                        Dual View
+                    </button>
+                    <button class="btn" id="settingsBtn">
+                        <span class="btn-icon">⚙</span>
+                        Settings
+                    </button>
+                </div>
+            </header>
+            <div class="content-body">
+                <div id="content">
+                    <div class="loading">Select a file from the sidebar</div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Settings Sidebar -->
+        <aside class="settings-sidebar" id="settingsSidebar">
+        <div class="settings-panel">
+            <div class="settings-header">
+                <h3 class="settings-title">Settings</h3>
+                <button class="close-btn" id="closeSettings">✕</button>
+            </div>
+            <div class="settings-content">
+                <!-- Theme -->
+                <div class="setting-section">
+                    <h4 class="section-title">Theme</h4>
+                    <div class="setting-row">
+                        <span class="setting-label">Color Scheme</span>
+                        <div class="theme-selector">
+                            <button class="theme-btn" data-theme="light">☀️ Light</button>
+                            <button class="theme-btn active" data-theme="auto">⚙ Auto</button>
+                            <button class="theme-btn" data-theme="dark">🌙 Dark</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Typography -->
+                <div class="setting-section">
+                    <h4 class="section-title">Typography</h4>
+                    <div class="setting-row">
+                        <span class="setting-label">Show Line Numbers</span>
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="showLineNumbers" checked>
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+                    <div class="setting-row">
+                        <span class="setting-label">Font Size</span>
+                        <div class="setting-control">
+                            <input type="range" class="range-control" id="fontSize" min="12" max="24" value="16" step="1">
+                            <span class="range-value" id="fontSizeValue">16px</span>
+                        </div>
+                    </div>
+                    <div class="setting-row">
+                        <span class="setting-label">Line Height</span>
+                        <div class="setting-control">
+                            <input type="range" class="range-control" id="lineHeight" min="1.2" max="2.5" value="1.8" step="0.1">
+                            <span class="range-value" id="lineHeightValue">1.8</span>
+                        </div>
+                    </div>
+                    <div class="setting-row">
+                        <span class="setting-label">English Font</span>
+                        <select class="select-control" id="englishFont">
+                            <option value="'Inter'">Inter (Sans-serif)</option>
+                            <option value="'Merriweather'">Merriweather (Serif)</option>
+                            <option value="'Crimson Text'">Crimson Text (Serif)</option>
+                            <option value="Georgia">Georgia (System Serif)</option>
+                        </select>
+                    </div>
+                    <div class="setting-row">
+                        <span class="setting-label">Korean Font</span>
+                        <select class="select-control" id="koreanFont">
+                            <option value="'Noto Sans KR'">Noto Sans KR (Sans-serif)</option>
+                            <option value="'Noto Serif KR'">Noto Serif KR (Serif)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Layout -->
+                <div class="setting-section">
+                    <h4 class="section-title">Layout</h4>
+                    <div class="setting-row">
+                        <span class="setting-label">Content Width</span>
+                        <div class="setting-control">
+                            <input type="range" class="range-control" id="contentWidth" min="800" max="2000" value="1400" step="50">
+                            <span class="range-value" id="contentWidthValue">1400px</span>
+                        </div>
+                    </div>
+                    <div class="setting-row">
+                        <span class="setting-label">Panel Padding</span>
+                        <div class="setting-control">
+                            <input type="range" class="range-control" id="panelPadding" min="1" max="4" value="2" step="0.5">
+                            <span class="range-value" id="panelPaddingValue">2rem</span>
+                        </div>
+                    </div>
+                    <div class="setting-row">
+                        <span class="setting-label">Panel Gap</span>
+                        <div class="setting-control">
+                            <input type="range" class="range-control" id="panelGap" min="1" max="5" value="2" step="0.5">
+                            <span class="range-value" id="panelGapValue">2rem</span>
+                        </div>
+                    </div>
+                    <div class="setting-row">
+                        <span class="setting-label">Paragraph Spacing</span>
+                        <div class="setting-control">
+                            <input type="range" class="range-control" id="paragraphSpacing" min="0.5" max="3" value="1.5" step="0.25">
+                            <span class="range-value" id="paragraphSpacingValue">1.5rem</span>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="reset-btn" id="resetSettings">Reset to Defaults</button>
+            </div>
+        </div>
+        </aside>
+    </div>
+
+    <!-- Load file list (generated by generate-file-list.js) -->
+    <script src="files.js"></script>
+
+    <script>
+        // DOM Elements
+        const categoryListEl = document.getElementById('categoryList');
+        const content = document.getElementById('content');
+        const diaryTitle = document.getElementById('diaryTitle');
+        const searchInput = document.getElementById('searchInput');
+        const categoryCount = document.getElementById('categoryCount');
+        const settingsBtn = document.getElementById('settingsBtn');
+        const appContainer = document.getElementById('appContainer');
+        const settingsSidebar = document.getElementById('settingsSidebar');
+        const closeSettings = document.getElementById('closeSettings');
+        const layoutBtn = document.getElementById('layoutBtn');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const sidebar = document.getElementById('sidebar');
+        const sidebarOverlay = document.getElementById('sidebarOverlay');
+
+        // State
+        let currentFile = null;
+        let currentMainCategory = null;
+        let currentSubcategory = null;
+        let allFiles = [];
+        let categories = {};
+
+        // Force single view on mobile (768px or less)
+        let currentLayout = window.innerWidth <= 768 ? 'single' : 'dual';
+
+        // Settings with defaults
+        const defaultSettings = {
+            theme: 'auto',
+            showLineNumbers: true,
+            fontSize: 16,
+            lineHeight: 1.8,
+            englishFont: "'Inter'",
+            koreanFont: "'Noto Sans KR'",
+            contentWidth: 1400,
+            panelPadding: 2,
+            panelGap: 2,
+            paragraphSpacing: 1.5
+        };
+
+        let settings = { ...defaultSettings };
+
+        // Load settings from localStorage
+        function loadSettings() {
+            const saved = localStorage.getItem('diarySettings');
+            if (saved) {
+                settings = { ...defaultSettings, ...JSON.parse(saved) };
+            }
+            applySettings();
+        }
+
+        // Save settings to localStorage
+        function saveSettings() {
+            localStorage.setItem('diarySettings', JSON.stringify(settings));
+        }
+
+        // Apply settings to the page
+        function applySettings() {
+            // Theme
+            applyTheme(settings.theme);
+
+            // Line Numbers
+            if (settings.showLineNumbers) {
+                appContainer.classList.remove('hide-line-numbers');
+            } else {
+                appContainer.classList.add('hide-line-numbers');
+            }
+
+            // Typography
+            document.documentElement.style.setProperty('--font-size', `${settings.fontSize}px`);
+            document.documentElement.style.setProperty('--line-height', settings.lineHeight);
+            document.documentElement.style.setProperty('--english-font', settings.englishFont);
+            document.documentElement.style.setProperty('--korean-font', settings.koreanFont);
+
+            // Layout
+            document.documentElement.style.setProperty('--content-max-width', `${settings.contentWidth}px`);
+            document.documentElement.style.setProperty('--panel-padding', `${settings.panelPadding}rem`);
+            document.documentElement.style.setProperty('--panel-gap', `${settings.panelGap}rem`);
+            document.documentElement.style.setProperty('--paragraph-spacing', `${settings.paragraphSpacing}rem`);
+
+            // Update UI controls
+            updateSettingsUI();
+        }
+
+        // Apply theme
+        function applyTheme(theme) {
+            if (theme === 'auto') {
+                const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                document.documentElement.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
+            } else {
+                document.documentElement.setAttribute('data-theme', theme);
+            }
+        }
+
+        // Update settings UI controls
+        function updateSettingsUI() {
+            // Theme buttons
+            document.querySelectorAll('.theme-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.theme === settings.theme);
+            });
+
+            // Checkbox controls
+            document.getElementById('showLineNumbers').checked = settings.showLineNumbers;
+
+            // Range controls
+            document.getElementById('fontSize').value = settings.fontSize;
+            document.getElementById('fontSizeValue').textContent = `${settings.fontSize}px`;
+
+            document.getElementById('lineHeight').value = settings.lineHeight;
+            document.getElementById('lineHeightValue').textContent = settings.lineHeight;
+
+            document.getElementById('contentWidth').value = settings.contentWidth;
+            document.getElementById('contentWidthValue').textContent = `${settings.contentWidth}px`;
+
+            document.getElementById('panelPadding').value = settings.panelPadding;
+            document.getElementById('panelPaddingValue').textContent = `${settings.panelPadding}rem`;
+
+            document.getElementById('panelGap').value = settings.panelGap;
+            document.getElementById('panelGapValue').textContent = `${settings.panelGap}rem`;
+
+            document.getElementById('paragraphSpacing').value = settings.paragraphSpacing;
+            document.getElementById('paragraphSpacingValue').textContent = `${settings.paragraphSpacing}rem`;
+
+            // Select controls
+            document.getElementById('englishFont').value = settings.englishFont;
+            document.getElementById('koreanFont').value = settings.koreanFont;
+        }
+
+        // Settings event listeners
+        document.querySelectorAll('.theme-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                settings.theme = btn.dataset.theme;
+                applySettings();
+                saveSettings();
+            });
+        });
+
+        // Checkbox inputs
+        document.getElementById('showLineNumbers').addEventListener('change', (e) => {
+            settings.showLineNumbers = e.target.checked;
+            applySettings();
+            saveSettings();
+        });
+
+        // Range inputs
+        const rangeInputs = [
+            { id: 'fontSize', key: 'fontSize', suffix: 'px' },
+            { id: 'lineHeight', key: 'lineHeight', suffix: '' },
+            { id: 'contentWidth', key: 'contentWidth', suffix: 'px' },
+            { id: 'panelPadding', key: 'panelPadding', suffix: 'rem' },
+            { id: 'panelGap', key: 'panelGap', suffix: 'rem' },
+            { id: 'paragraphSpacing', key: 'paragraphSpacing', suffix: 'rem' }
+        ];
+
+        rangeInputs.forEach(({ id, key, suffix }) => {
+            const input = document.getElementById(id);
+            const valueDisplay = document.getElementById(`${id}Value`);
+
+            input.addEventListener('input', (e) => {
+                const value = parseFloat(e.target.value);
+                settings[key] = value;
+                valueDisplay.textContent = `${value}${suffix}`;
+                applySettings();
+                saveSettings();
+            });
+        });
+
+        // Select inputs
+        document.getElementById('englishFont').addEventListener('change', (e) => {
+            settings.englishFont = e.target.value;
+            applySettings();
+            saveSettings();
+        });
+
+        document.getElementById('koreanFont').addEventListener('change', (e) => {
+            settings.koreanFont = e.target.value;
+            applySettings();
+            saveSettings();
+        });
+
+        // Reset settings
+        document.getElementById('resetSettings').addEventListener('click', () => {
+            if (confirm('Reset all settings to defaults?')) {
+                settings = { ...defaultSettings };
+                applySettings();
+                saveSettings();
+            }
+        });
+
+        // Settings panel toggle
+        settingsBtn.addEventListener('click', () => {
+            appContainer.classList.toggle('settings-open');
+            settingsBtn.classList.toggle('active');
+        });
+
+        closeSettings.addEventListener('click', () => {
+            appContainer.classList.remove('settings-open');
+            settingsBtn.classList.remove('active');
+        });
+
+        // Layout toggle (disable on mobile)
+        layoutBtn.addEventListener('click', () => {
+            // Force single view on mobile
+            if (window.innerWidth <= 768) {
+                currentLayout = 'single';
+                return;
+            }
+
+            currentLayout = currentLayout === 'dual' ? 'single' : 'dual';
+            layoutBtn.innerHTML = currentLayout === 'dual'
+                ? '<span class="btn-icon">⚏</span> Dual View'
+                : '<span class="btn-icon">▭</span> Single View';
+
+            if (currentFile) {
+                // Reload current file to apply new layout
+                const filepath = currentFile;
+                currentFile = null;
+                loadDiary(filepath);
+            }
+        });
+
+        // Update layout button text on load
+        function updateLayoutButton() {
+            if (window.innerWidth <= 768) {
+                layoutBtn.style.display = 'none';
+            } else {
+                layoutBtn.style.display = 'flex';
+                layoutBtn.innerHTML = currentLayout === 'dual'
+                    ? '<span class="btn-icon">⚏</span> Dual View'
+                    : '<span class="btn-icon">▭</span> Single View';
+            }
+        }
+
+        window.addEventListener('resize', () => {
+            if (window.innerWidth <= 768) {
+                currentLayout = 'single';
+            }
+            updateLayoutButton();
+        });
+
+        updateLayoutButton();
+
+        // Load file list from files.js and fetch titles
+        async function loadFileList() {
+            try {
+                // jsonFiles is loaded from files.js
+                if (typeof jsonFiles === 'undefined') {
+                    throw new Error('File list not loaded. Please run: node generate-file-list.js');
+                }
+
+                // Load all files with their titles
+                allFiles = await Promise.all(jsonFiles.map(async file => {
+                    const parts = file.split('/');
+                    const mainCategory = parts[0];
+                    const subcategory = parts.length > 2 ? parts[1] : null;
+                    const fileName = parts.pop().replace('.json', '');
+                    const fullPath = `data/${file}`;
+
+                    // Fetch the file to get the title
+                    let title = fileName;
+                    try {
+                        const fileResponse = await fetch(fullPath);
+                        if (fileResponse.ok) {
+                            const data = await fileResponse.json();
+                            title = data.title || fileName;
+                        }
+                    } catch (e) {
+                        console.error(`Failed to load title for ${file}:`, e);
+                    }
+
+                    return {
+                        path: file,
+                        mainCategory: mainCategory,
+                        subcategory: subcategory,
+                        fileName: fileName,
+                        title: title,
+                        fullPath: fullPath
+                    };
+                }));
+
+                // Group files by main category
+                categories = {};
+                allFiles.forEach(file => {
+                    if (!categories[file.mainCategory]) {
+                        categories[file.mainCategory] = {
+                            hasSubcategories: false,
+                            subcategories: {},
+                            files: []
+                        };
+                    }
+
+                    if (file.subcategory) {
+                        categories[file.mainCategory].hasSubcategories = true;
+                        if (!categories[file.mainCategory].subcategories[file.subcategory]) {
+                            categories[file.mainCategory].subcategories[file.subcategory] = [];
+                        }
+                        categories[file.mainCategory].subcategories[file.subcategory].push(file);
+                    } else {
+                        categories[file.mainCategory].files.push(file);
+                    }
+                });
+
+                renderCategoryList();
+                updateStats();
+                showWelcomeMessage();
+            } catch (error) {
+                categoryListEl.innerHTML = `
+                    <div class="error-message">
+                        Error: ${error.message}
+                    </div>
+                `;
+            }
+        }
+
+        // Show welcome message
+        function showWelcomeMessage() {
+            content.innerHTML = `
+                <div class="category-header-section">
+                    <h2 class="category-display-name">Welcome to Diary Viewer</h2>
+                    <p class="category-description">Select a category from the sidebar to begin</p>
+                </div>
+            `;
+            diaryTitle.textContent = 'Select a category';
+        }
+
+        // Render main category list in sidebar
+        function renderCategoryList() {
+            const searchQuery = searchInput.value.toLowerCase().trim();
+            const filteredCategories = Object.keys(categories).filter(cat =>
+                cat.toLowerCase().includes(searchQuery)
+            ).sort();
+
+            categoryListEl.innerHTML = '';
+
+            if (filteredCategories.length === 0) {
+                categoryListEl.innerHTML = '<div class="loading">No categories found</div>';
+                return;
+            }
+
+            filteredCategories.forEach(categoryName => {
+                const categoryItem = document.createElement('div');
+                categoryItem.className = 'file-item';
+                categoryItem.textContent = categoryName.charAt(0).toUpperCase() + categoryName.slice(1).replace(/-/g, ' ');
+                categoryItem.dataset.category = categoryName;
+
+                if (currentMainCategory === categoryName) {
+                    categoryItem.classList.add('active');
+                }
+
+                categoryItem.addEventListener('click', () => {
+                    currentMainCategory = categoryName;
+                    currentSubcategory = null;
+                    currentFile = null;
+                    document.querySelectorAll('#categoryList .file-item').forEach(item => {
+                        item.classList.remove('active');
+                    });
+                    categoryItem.classList.add('active');
+                    showMainCategory(categoryName);
+                    closeSidebarOnMobile();
+                });
+
+                categoryListEl.appendChild(categoryItem);
+            });
+        }
+
+        // Show main category content
+        function showMainCategory(categoryName) {
+            const category = categories[categoryName];
+            if (!category) return;
+
+            updateBreadcrumb();
+
+            if (category.hasSubcategories) {
+                // Show subcategory chips + empty content
+                renderSubcategoryChips(categoryName);
+                showEmptyContent();
+            } else {
+                // Show file chips + empty content
+                renderFileChips(categoryName, category.files);
+                showEmptyContent();
+            }
+
+            prevBtn.disabled = true;
+            nextBtn.disabled = true;
+        }
+
+        // Render subcategory chips
+        function renderSubcategoryChips(categoryName) {
+            const category = categories[categoryName];
+            const subcategoryNames = Object.keys(category.subcategories).sort();
+
+            const chipsHTML = subcategoryNames.map(subcat => `
+                <span class="small-chip" data-subcategory="${subcat}">
+                    ${subcat.charAt(0).toUpperCase() + subcat.slice(1).replace(/-/g, ' ')}
+                </span>
+            `).join('');
+
+            const breadcrumbHTML = `
+                <div class="breadcrumb">
+                    <span class="breadcrumb-item">${categoryName.charAt(0).toUpperCase() + categoryName.slice(1)}</span>
+                </div>
+            `;
+
+            const chipSectionHTML = `
+                <div class="chip-section">
+                    <div class="chip-section-title">Subcategories</div>
+                    <div class="chip-row" id="subcategoryChips">
+                        ${chipsHTML}
+                    </div>
+                    <div id="fileChipsContainer"></div>
+                </div>
+            `;
+
+            content.innerHTML = breadcrumbHTML + chipSectionHTML + '<div class="content-area" id="contentArea"></div>';
+
+            // Add click handlers
+            content.querySelectorAll('.small-chip[data-subcategory]').forEach(chip => {
+                chip.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const subcategory = chip.dataset.subcategory;
+                    currentSubcategory = subcategory;
+
+                    // Update active state
+                    content.querySelectorAll('.small-chip[data-subcategory]').forEach(c => c.classList.remove('active'));
+                    chip.classList.add('active');
+
+                    // Show file chips
+                    const files = categories[categoryName].subcategories[subcategory] || [];
+                    renderFileChipsInContainer(subcategory, files);
+                    showEmptyContent();
+                    updateBreadcrumb();
+                });
+            });
+        }
+
+        // Render file chips in container (for subcategory view)
+        function renderFileChipsInContainer(subcategory, files) {
+            const container = document.getElementById('fileChipsContainer');
+            if (!container) return;
+
+            const filesHTML = files.map(file => `
+                <span class="small-chip" data-filepath="${file.fullPath}">
+                    ${file.title}
+                </span>
+            `).join('');
+
+            container.innerHTML = `
+                <div class="chip-section-title" style="margin-top: 1.5rem;">Files</div>
+                <div class="chip-row" id="fileChips">
+                    ${filesHTML}
+                </div>
+            `;
+
+            // Add click handlers
+            container.querySelectorAll('.small-chip[data-filepath]').forEach(chip => {
+                chip.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const filepath = chip.dataset.filepath;
+
+                    // Update active state
+                    container.querySelectorAll('.small-chip[data-filepath]').forEach(c => c.classList.remove('active'));
+                    chip.classList.add('active');
+
+                    loadDiary(filepath);
+                });
+            });
+        }
+
+        // Render file chips directly (for categories without subcategories)
+        function renderFileChips(categoryName, files) {
+            const filesHTML = files.map(file => `
+                <span class="small-chip" data-filepath="${file.fullPath}">
+                    ${file.title}
+                </span>
+            `).join('');
+
+            const breadcrumbHTML = `
+                <div class="breadcrumb">
+                    <span class="breadcrumb-item">${categoryName.charAt(0).toUpperCase() + categoryName.slice(1)}</span>
+                </div>
+            `;
+
+            const chipSectionHTML = `
+                <div class="chip-section">
+                    <div class="chip-section-title">Files</div>
+                    <div class="chip-row" id="fileChips">
+                        ${filesHTML}
+                    </div>
+                </div>
+            `;
+
+            content.innerHTML = breadcrumbHTML + chipSectionHTML + '<div class="content-area" id="contentArea"></div>';
+
+            // Add click handlers
+            content.querySelectorAll('.small-chip[data-filepath]').forEach(chip => {
+                chip.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const filepath = chip.dataset.filepath;
+
+                    // Update active state
+                    content.querySelectorAll('.small-chip[data-filepath]').forEach(c => c.classList.remove('active'));
+                    chip.classList.add('active');
+
+                    loadDiary(filepath);
+                });
+            });
+        }
+
+        // Update breadcrumb
+        function updateBreadcrumb() {
+            const breadcrumbEl = document.querySelector('.breadcrumb');
+            if (!breadcrumbEl) return;
+
+            let parts = [];
+            if (currentMainCategory) {
+                parts.push(currentMainCategory.charAt(0).toUpperCase() + currentMainCategory.slice(1));
+            }
+            if (currentSubcategory) {
+                parts.push(currentSubcategory.charAt(0).toUpperCase() + currentSubcategory.slice(1).replace(/-/g, ' '));
+            }
+
+            const breadcrumbHTML = parts.map((part, idx) => {
+                const isLast = idx === parts.length - 1;
+                return `<span class="breadcrumb-item ${isLast ? 'active' : ''}">${part}</span>`;
+            }).join('<span class="breadcrumb-separator">›</span>');
+
+            breadcrumbEl.innerHTML = breadcrumbHTML;
+        }
+
+        // Show empty content
+        function showEmptyContent() {
+            const contentArea = document.getElementById('contentArea');
+            if (!contentArea) return;
+
+            contentArea.innerHTML = '<div class="empty-state">Select a file to view content</div>';
+            diaryTitle.textContent = 'Select a file';
+        }
+
+        // Search functionality
+        searchInput.addEventListener('input', (e) => {
+            renderCategoryList();
+        });
+
+        // Update stats
+        function updateStats() {
+            const totalCategories = Object.keys(categories).length;
+            categoryCount.textContent = `${totalCategories} ${totalCategories === 1 ? 'category' : 'categories'}`;
+        }
+
+        // Update navigation buttons
+        function updateNavigationButtons() {
+            // Find current file in all files
+            const currentFileObj = allFiles.find(f => f.fullPath === currentFile);
+            if (!currentFileObj) {
+                prevBtn.disabled = true;
+                nextBtn.disabled = true;
+                return;
+            }
+
+            // Get files from the same category/subcategory
+            let relevantFiles = [];
+            if (currentFileObj.subcategory) {
+                relevantFiles = categories[currentFileObj.mainCategory]?.subcategories[currentFileObj.subcategory] || [];
+            } else {
+                relevantFiles = categories[currentFileObj.mainCategory]?.files || [];
+            }
+
+            const currentFileIndex = relevantFiles.findIndex(f => f.fullPath === currentFile);
+
+            if (currentFileIndex === -1 || relevantFiles.length === 0) {
+                prevBtn.disabled = true;
+                nextBtn.disabled = true;
+                return;
+            }
+
+            prevBtn.disabled = currentFileIndex === 0;
+            nextBtn.disabled = currentFileIndex === relevantFiles.length - 1;
+        }
+
+        // Navigate to previous file
+        function navigateToPrevious() {
+            const currentFileObj = allFiles.find(f => f.fullPath === currentFile);
+            if (!currentFileObj) return;
+
+            let relevantFiles = [];
+            if (currentFileObj.subcategory) {
+                relevantFiles = categories[currentFileObj.mainCategory]?.subcategories[currentFileObj.subcategory] || [];
+            } else {
+                relevantFiles = categories[currentFileObj.mainCategory]?.files || [];
+            }
+
+            const currentFileIndex = relevantFiles.findIndex(f => f.fullPath === currentFile);
+
+            if (currentFileIndex > 0) {
+                const prevFile = relevantFiles[currentFileIndex - 1];
+                loadDiary(prevFile.fullPath);
+            }
+        }
+
+        // Navigate to next file
+        function navigateToNext() {
+            const currentFileObj = allFiles.find(f => f.fullPath === currentFile);
+            if (!currentFileObj) return;
+
+            let relevantFiles = [];
+            if (currentFileObj.subcategory) {
+                relevantFiles = categories[currentFileObj.mainCategory]?.subcategories[currentFileObj.subcategory] || [];
+            } else {
+                relevantFiles = categories[currentFileObj.mainCategory]?.files || [];
+            }
+
+            const currentFileIndex = relevantFiles.findIndex(f => f.fullPath === currentFile);
+
+            if (currentFileIndex < relevantFiles.length - 1) {
+                const nextFile = relevantFiles[currentFileIndex + 1];
+                loadDiary(nextFile.fullPath);
+            }
+        }
+
+        // Load diary
+        async function loadDiary(filePath) {
+            if (currentFile === filePath) return;
+            currentFile = filePath;
+
+            try {
+                // Show loading state
+                const contentArea = document.getElementById('contentArea');
+                if (contentArea) {
+                    contentArea.innerHTML = '<div class="loading">Loading...</div>';
+                } else {
+                    content.innerHTML = '<div class="loading">Loading...</div>';
+                }
+                diaryTitle.textContent = 'Loading...';
+
+                const response = await fetch(filePath);
+                if (!response.ok) {
+                    throw new Error('Failed to load file');
+                }
+
+                const data = await response.json();
+
+                // Update active chip state
+                updateActiveFileChip(filePath);
+
+                displayDiary(data);
+                updateNavigationButtons();
+            } catch (error) {
+                const errorHTML = `
+                    <div class="error-message">
+                        Error: ${error.message}
+                    </div>
+                `;
+
+                const contentArea = document.getElementById('contentArea');
+                if (contentArea) {
+                    contentArea.innerHTML = errorHTML;
+                } else {
+                    content.innerHTML = errorHTML;
+                }
+                diaryTitle.textContent = 'Error';
+            }
+        }
+
+        // Update active file chip
+        function updateActiveFileChip(filePath) {
+            // Remove active state from all file chips
+            content.querySelectorAll('.small-chip[data-filepath]').forEach(c => c.classList.remove('active'));
+
+            // Add active state to the current file chip
+            const activeChip = content.querySelector(`.small-chip[data-filepath="${filePath}"]`);
+            if (activeChip) {
+                activeChip.classList.add('active');
+            }
+        }
+
+        // Display diary
+        function displayDiary(data) {
+            diaryTitle.textContent = data.title || 'Untitled';
+
+            const koreanTexts = data.diary.korean || [];
+            const englishTexts = data.diary.english || [];
+
+            const koreanHTML = koreanTexts.map((text, idx) => `
+                <p data-line="${idx + 1}">
+                    ${text}
+                    <button class="translate-btn always-visible" data-line="${idx + 1}">🔍</button>
+                </p>
+            `).join('');
+            const englishHTML = englishTexts.map((text, idx) => `<p data-line="${idx + 1}">${text}</p>`).join('');
+
+            const diaryHTML = `
+                <div class="dual-panel layout-${currentLayout}">
+                    <div class="panel korean-panel">
+                        <div class="panel-title">🇰🇷 Korean</div>
+                        <div class="text-content">
+                            ${koreanHTML}
+                        </div>
+                    </div>
+                    <div class="panel english-panel">
+                        <div class="panel-title">🇺🇸 English</div>
+                        <div class="text-content">
+                            ${englishHTML}
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            // Check if we have a content-area (split view with chips)
+            const contentArea = document.getElementById('contentArea');
+            if (contentArea) {
+                // Render in content area, keeping breadcrumb and chips visible
+                contentArea.innerHTML = diaryHTML;
+            } else {
+                // Fallback: replace entire content (for direct loads)
+                content.innerHTML = diaryHTML;
+            }
+
+            // Add hover event listeners for synchronized highlighting
+            setupLineHover();
+        }
+
+        // Setup synchronized line hover effect
+        function setupLineHover() {
+            let isPopupOpen = false;
+            const allParagraphs = content.querySelectorAll('.text-content p');
+
+            allParagraphs.forEach(p => {
+                p.addEventListener('mouseenter', function() {
+                    // Don't change highlight if popup is open
+                    if (isPopupOpen) return;
+
+                    const lineNumber = this.getAttribute('data-line');
+                    if (lineNumber) {
+                        // Highlight all paragraphs with the same line number
+                        content.querySelectorAll(`p[data-line="${lineNumber}"]`).forEach(el => {
+                            el.classList.add('highlighted');
+                        });
+                    }
+                });
+
+                p.addEventListener('mouseleave', function() {
+                    // Don't remove highlight if popup is open
+                    if (isPopupOpen) return;
+
+                    // Remove highlight from all paragraphs
+                    content.querySelectorAll('p.highlighted').forEach(el => {
+                        el.classList.remove('highlighted');
+                    });
+                });
+            });
+
+            // Function to show translation popup
+            function showTranslationPopup(lineNumber, triggerElement, event) {
+                // Remove any existing popup and overlay
+                const existingPopup = document.querySelector('.translation-popup');
+                const existingOverlay = document.querySelector('.popup-overlay');
+                if (existingPopup) {
+                    existingPopup.remove();
+                }
+                if (existingOverlay) {
+                    existingOverlay.remove();
+                }
+
+                // Lock the current highlight
+                isPopupOpen = true;
+
+                // Ensure current line is highlighted
+                content.querySelectorAll(`p[data-line="${lineNumber}"]`).forEach(el => {
+                    el.classList.add('highlighted');
+                });
+
+                // Find corresponding Korean and English text
+                const koreanP = content.querySelector(`.korean-panel .text-content p[data-line="${lineNumber}"]`);
+                const englishP = content.querySelector(`.english-panel .text-content p[data-line="${lineNumber}"]`);
+
+                if (koreanP && englishP) {
+                    // Create overlay
+                    const overlay = document.createElement('div');
+                    overlay.className = 'popup-overlay';
+                    document.body.appendChild(overlay);
+
+                    // Create popup
+                    const popup = document.createElement('div');
+                    popup.className = 'translation-popup';
+
+                    // Get Korean and English text content
+                    const koreanText = koreanP.childNodes[0].textContent.trim();
+                    const englishText = englishP.textContent;
+
+                    // Split English text into characters and wrap each in a span
+                    const wrappedChars = englishText.split('').map(char => {
+                        return `<span class="popup-char">${char}</span>`;
+                    }).join('');
+
+                    popup.innerHTML = `
+                        <div class="popup-korean-text">${koreanText}</div>
+                        <div class="popup-english-text">${wrappedChars}</div>
+                        <div class="popup-close-hint">
+                            <span>Click anywhere to close</span>
+                            <span class="popup-countdown">2</span>
+                        </div>
+                    `;
+
+                    document.body.appendChild(popup);
+
+                    // Position popup
+                    const triggerRect = triggerElement.getBoundingClientRect();
+                    const popupRect = popup.getBoundingClientRect();
+
+                    let left = event ? event.clientX - 30 : triggerRect.left;
+                    let top = triggerRect.top - popupRect.height - 15;
+
+                    // Adjust if popup goes off screen
+                    if (left + popupRect.width > window.innerWidth) {
+                        left = window.innerWidth - popupRect.width - 10;
+                    }
+                    if (left < 10) {
+                        left = 10;
+                    }
+                    if (top < 10) {
+                        top = triggerRect.bottom + 15;
+                    }
+
+                    popup.style.left = left + 'px';
+                    popup.style.top = top + 'px';
+
+                    // Countdown animation
+                    const countdownEl = popup.querySelector('.popup-countdown');
+                    let count = 2;
+
+                    const countdownInterval = setInterval(() => {
+                        count--;
+                        if (count > 0) {
+                            countdownEl.textContent = count;
+                        } else {
+                            clearInterval(countdownInterval);
+                            countdownEl.style.opacity = '0';
+                        }
+                    }, 1000);
+
+                    // Start character animation after 2 second delay
+                    setTimeout(() => {
+                        const charSpans = popup.querySelectorAll('.popup-char');
+                        const readingTimePerChar = 50; // milliseconds per character
+
+                        charSpans.forEach((span, index) => {
+                            setTimeout(() => {
+                                span.classList.add('read');
+                            }, index * readingTimePerChar);
+                        });
+                    }, 2000);
+
+                    // Prevent popup from closing when clicking inside it
+                    popup.addEventListener('click', function(e) {
+                        e.stopPropagation();
+                    });
+
+                    // Prevent popup from closing when right-clicking inside it
+                    popup.addEventListener('contextmenu', function(e) {
+                        e.stopPropagation();
+                    });
+
+                    // Function to close popup
+                    const closePopup = function() {
+                        isPopupOpen = false;
+                        popup.remove();
+                        overlay.remove();
+                        // Remove all highlights
+                        content.querySelectorAll('p.highlighted').forEach(el => {
+                            el.classList.remove('highlighted');
+                        });
+                        document.removeEventListener('click', closePopupClickHandler);
+                        document.removeEventListener('contextmenu', closePopupContextHandler);
+                    };
+
+                    // Close popup when clicking outside
+                    const closePopupClickHandler = function(e) {
+                        if (!popup.contains(e.target)) {
+                            closePopup();
+                        }
+                    };
+
+                    // Close popup when right-clicking outside
+                    const closePopupContextHandler = function(e) {
+                        if (!popup.contains(e.target)) {
+                            e.preventDefault();
+                            closePopup();
+                        }
+                    };
+
+                    setTimeout(() => {
+                        document.addEventListener('click', closePopupClickHandler);
+                        document.addEventListener('contextmenu', closePopupContextHandler);
+                    }, 100);
+                }
+            }
+
+            // Add click event for translate buttons
+            const translateButtons = content.querySelectorAll('.translate-btn');
+            translateButtons.forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    const lineNumber = this.getAttribute('data-line');
+                    if (lineNumber) {
+                        showTranslationPopup(lineNumber, this, e);
+                    }
+                });
+            });
+
+            // Add right-click event for Korean paragraphs to show English translation
+            const koreanParagraphs = content.querySelectorAll('.korean-panel .text-content p');
+
+            koreanParagraphs.forEach(p => {
+                p.addEventListener('contextmenu', function(e) {
+                    e.preventDefault();
+                    const lineNumber = this.getAttribute('data-line');
+                    if (lineNumber) {
+                        showTranslationPopup(lineNumber, this, e);
+                    }
+                });
+            });
+        }
+
+        // Listen for system theme changes
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+            if (settings.theme === 'auto') {
+                applyTheme('auto');
+            }
+        });
+
+        // Navigation event listeners
+        prevBtn.addEventListener('click', navigateToPrevious);
+        nextBtn.addEventListener('click', navigateToNext);
+
+        // Hamburger menu toggle
+        function toggleSidebar() {
+            sidebar.classList.toggle('open');
+            hamburgerBtn.classList.toggle('active');
+            sidebarOverlay.classList.toggle('active');
+
+            // Prevent body scroll when sidebar is open
+            if (sidebar.classList.contains('open')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = '';
+            }
+        }
+
+        hamburgerBtn.addEventListener('click', toggleSidebar);
+
+        sidebarOverlay.addEventListener('click', () => {
+            if (sidebar.classList.contains('open')) {
+                toggleSidebar();
+            }
+        });
+
+        // Close sidebar when a category or file is selected on mobile
+        function closeSidebarOnMobile() {
+            if (window.innerWidth <= 768 && sidebar.classList.contains('open')) {
+                toggleSidebar();
+            }
+        }
+
+        // Initialize
+        loadSettings();
+        loadFileList();
+
+        // Keyboard shortcuts
+        document.addEventListener('keydown', (e) => {
+            // Ctrl/Cmd + K to toggle settings
+            if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+                e.preventDefault();
+                settingsBtn.click();
+            }
+            // Escape to close settings
+            if (e.key === 'Escape' && appContainer.classList.contains('settings-open')) {
+                closeSettings.click();
+            }
+            // Ctrl/Cmd + L to toggle layout
+            if ((e.ctrlKey || e.metaKey) && e.key === 'l') {
+                e.preventDefault();
+                layoutBtn.click();
+            }
+            // Arrow keys for navigation
+            if (e.key === 'ArrowLeft' && !prevBtn.disabled) {
+                e.preventDefault();
+                navigateToPrevious();
+            }
+            if (e.key === 'ArrowRight' && !nextBtn.disabled) {
+                e.preventDefault();
+                navigateToNext();
+            }
+        });
+    </script>
+</body>
+</html>

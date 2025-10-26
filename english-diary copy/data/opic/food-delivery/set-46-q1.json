@@ -1,0 +1,33 @@
+{
+  "title": "How often do you order food delivery?",
+  "diary": {
+    "korean": [
+      "음, 저는 일주일에 2-3번 정도 배달 음식을 시켜 먹는 것 같아요.",
+      "혼자 살다 보니까 요리하기 귀찮을 때가 많거든요.",
+      "특히 퇴근하고 집에 오면 너무 피곤해서 요리할 엄두가 안 나요.",
+      "그럴 때 배달 앱으로 간편하게 주문하는 게 편하더라고요.",
+      "주로 치킨, 피자, 중국집 음식 같은 걸 자주 시켜요.",
+      "한식도 가끔 시키는데, 김치찌개나 제육볶음 같은 거요.",
+      "주말에는 친구 집에서 같이 모일 때 배달 음식 많이 시키고요.",
+      "요즘은 배달비가 무료인 곳도 많고, 할인도 많이 해줘서 좋아요.",
+      "쿠폰이랑 프로모션 잘 활용하면 가격도 괜찮거든요.",
+      "배달 앱에서 리뷰 보고 맛집 찾는 재미도 있고요.",
+      "근데 너무 자주 시켜 먹으면 건강에 안 좋을 것 같아서요,",
+      "요즘은 좀 줄이려고 노력하는 중이에요."
+    ],
+    "english": [
+      "Um, I think I order delivery food about 2-3 times a week.",
+      "Living alone, there are many times when cooking is bothersome.",
+      "Especially after work when I come home, I'm so tired I can't bring myself to cook.",
+      "In those times, ordering conveniently through a delivery app is comfortable.",
+      "I mainly order things like chicken, pizza, and Chinese restaurant food.",
+      "I also sometimes order Korean food, like kimchi stew or spicy stir-fried pork.",
+      "On weekends, when gathering together at a friend's house, we order a lot of delivery food.",
+      "These days, many places have free delivery and give lots of discounts, so it's good.",
+      "If you use coupons and promotions well, the price is okay too.",
+      "There's also the fun of finding good restaurants by looking at reviews on delivery apps.",
+      "But if I order too often, it seems bad for health,",
+      "so these days I'm trying to reduce it a bit."
+    ]
+  }
+}

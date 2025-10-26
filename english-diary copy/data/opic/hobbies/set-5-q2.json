@@ -1,0 +1,33 @@
+{
+  "title": "Describe your music listening habits. What kind of music do you like?",
+  "diary": {
+    "korean": [
+      "요즘 출퇴근할 때마다 음악 듣는 게 일상이 됐어.",
+      "이어폰 끼고 음악 들으면 지하철 소음이 안 들려서 좋아.",
+      "플레이리스트는 기분에 따라 다르게 듣는 편이야.",
+      "아침엔 신나는 음악 들으면서 기분 업시키려고 노력해.",
+      "K-pop도 듣고 팝송도 듣는데, 요즘엔 인디 음악도 자주 들어.",
+      "새로운 아티스트 발견하는 재미가 쏠쏠해.",
+      "유튜브 알고리즘이 추천해 주는 노래들이 의외로 취향 저격이야.",
+      "좋아하는 노래는 반복 재생하는데, 질릴 때까지 들어.",
+      "가끔은 가사 없는 재즈나 클래식 들으면서 집중하기도 해.",
+      "집에서 요리할 때도 음악 틀어놓는데, 분위기가 좋아져.",
+      "친구들이랑 음악 취향 얘기하는 것도 재미있어.",
+      "음악 없는 하루는 상상이 안 돼, 그만큼 중요한 부분이야."
+    ],
+    "english": [
+      "These days, listening to music during, well, my commute has become a daily routine.",
+      "When I put in my earbuds and listen to, like, music, I can't hear the subway noise, which is nice.",
+      "I mean, i tend to listen to different playlists depending on my mood.",
+      "In the morning, I try to lift, like, my mood by listening to upbeat music.",
+      "I listen to K-pop and pop songs, and lately I've been listening to indie music a lot too.",
+      "The fun of discovering, well, new artists is quite rewarding.",
+      "I mean, the songs YouTube's algorithm recommends are surprisingly right up my alley.",
+      "I play my favorite songs on repeat until I get sick of them.",
+      "Sometimes I listen to instrumental jazz or classical music to focus.",
+      "So i also play music when cooking at home, and it creates a nice atmosphere.",
+      "Talking about music tastes, you know, with friends is fun too.",
+      "I can't imagine a day without music, it's that important a part of my life."
+    ]
+  }
+}

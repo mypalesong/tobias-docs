@@ -1,0 +1,33 @@
+{
+  "title": "Describe the process of visiting a hospital in your country.",
+  "diary": {
+    "korean": [
+      "한국에서 병원 가는 과정은 비교적 간단해.",
+      "먼저 가고 싶은 병원을 정해.",
+      "요즘은 인터넷으로 미리 예약하는 경우가 많아.",
+      "예약 없이 가도 되는데, 기다리는 시간이 길 수 있어.",
+      "병원 도착하면 접수처에서 신분증이랑 보험증 제출해.",
+      "처음 가는 병원이면 간단한 정보 작성하고.",
+      "대기실에서 이름 불릴 때까지 기다려.",
+      "진료실 들어가면 의사가 증상 물어보고 진찰해.",
+      "필요하면 검사나 엑스레이 찍기도 하고.",
+      "진료 끝나면 처방전 받아서 약국 가.",
+      "수납할 때 건강보험 적용돼서 비용이 저렴한 편이야.",
+      "전체적으로 의료 접근성이 좋은 편이라 편해."
+    ],
+    "english": [
+      "The process of visiting a hospital in Korea is relatively simple.",
+      "First, I decide which hospital I want to go to.",
+      "These days, many people make reservations online in advance.",
+      "You can go without a reservation, but the waiting time can be long.",
+      "When you arrive at the hospital, you submit your ID and insurance card at the reception.",
+      "If it's your first time at that hospital, you fill out simple information.",
+      "You wait in the waiting room until your name is called.",
+      "When you enter the examination room, the doctor asks about symptoms and examines you.",
+      "If necessary, you also get tests or X-rays taken.",
+      "When the examination is over, you get a prescription and go to the pharmacy.",
+      "When paying, health insurance is applied, so the cost is relatively cheap.",
+      "Overall, medical accessibility is good, so it's convenient."
+    ]
+  }
+}

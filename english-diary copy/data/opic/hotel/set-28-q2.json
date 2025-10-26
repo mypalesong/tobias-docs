@@ -1,0 +1,35 @@
+{
+  "title": "What do you look for when choosing a hotel?",
+  "diary": {
+    "korean": [
+      "호텔 선택할 때 몇 가지 중요하게 보는 게 있어.",
+      "일단 위치가 제일 중요해.",
+      "대중교통 가까운 곳이나 관광지 근처가 좋아.",
+      "걸어다니기 편해야 여행하기 편하거든.",
+      "두 번째는 가격이야.",
+      "예산 안에서 최대한 좋은 곳을 찾으려고 해.",
+      "가성비를 따지는 편이라 리뷰를 꼭 확인해.",
+      "다른 사람들의 솔직한 후기가 정말 도움이 돼.",
+      "청결도도 엄청 중요하게 봐.",
+      "사진으로 방 상태도 확인하고.",
+      "조식 포함 여부도 체크하는 편이야.",
+      "마지막으로 취소 정책도 꼭 확인해.",
+      "일정이 바뀔 수 있으니까 무료 취소 가능한 게 좋아."
+    ],
+    "english": [
+      "There are a few things I consider important when choosing a hotel.",
+      "First of all, location is most important.",
+      "I like places close to public transportation or near tourist spots.",
+      "It should be easy to walk around to make traveling convenient.",
+      "Second is price.",
+      "I try to find the best place within my budget.",
+      "I'm the type who considers cost-effectiveness, so I definitely check reviews.",
+      "Other people's honest reviews are really helpful.",
+      "I also consider cleanliness very important.",
+      "I check the room condition through photos too.",
+      "I tend to check whether breakfast is included.",
+      "Lastly, I definitely check the cancellation policy.",
+      "Since schedules can change, free cancellation is good."
+    ]
+  }
+}

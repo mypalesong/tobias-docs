@@ -1,0 +1,33 @@
+{
+  "title": "How have reading habits changed?",
+  "diary": {
+    "korean": [
+      "요즘 사람들의 독서 습관이 많이 바뀐 것 같아요.",
+      "음, 제일 큰 변화는 종이책에서 전자책으로 넘어간 거예요.",
+      "특히 젊은 세대는 거의 다 전자책이나 오디오북으로 읽더라고요.",
+      "스마트폰이나 태블릿으로 언제 어디서나 읽을 수 있으니까요.",
+      "그리고 긴 소설보다는 짧은 에세이를 선호하는 경향이 있어요.",
+      "사람들이 집중력이 예전만 못해서 그런 것 같아요.",
+      "또 유튜브나 SNS로 책 요약 콘텐츠를 보는 사람들도 많아졌어요.",
+      "직접 읽는 대신 10분 요약 영상으로 대신하는 거죠.",
+      "그리고 독서 모임이나 북클럽 같은 것도 유행하고 있어요.",
+      "혼자 읽기보다는 같이 읽고 토론하는 걸 선호하더라고요.",
+      "전반적으로 독서량은 줄었지만, 독서 방법은 다양해진 것 같아요.",
+      "기술 발전과 함께 독서 문화도 계속 변하고 있는 것 같네요."
+    ],
+    "english": [
+      "I think people's reading habits have changed a lot these days.",
+      "Um, the biggest change is moving from paper books to e-books.",
+      "Especially the younger generation almost all read with e-books or audiobooks.",
+      "Because you can read anytime, anywhere with a smartphone or tablet.",
+      "And there's a tendency to prefer short essays over long novels.",
+      "I think it's because people's concentration isn't as good as before.",
+      "Also, many people watch book summary content on YouTube or SNS.",
+      "Instead of reading directly, they substitute with 10-minute summary videos.",
+      "And things like reading groups or book clubs are also trending.",
+      "People prefer reading together and discussing rather than reading alone.",
+      "Overall, reading volume has decreased, but reading methods have become more diverse.",
+      "It seems like reading culture continues to change along with technological development."
+    ]
+  }
+}
